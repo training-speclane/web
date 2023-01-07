@@ -16,7 +16,6 @@ function handleMultiplication () {
     
   }
 
-
 function hideShowSections() {
 
    var yesRadioBtnSelected =  document.getElementById('yes').checked; //Determine if the yes radio btn was selected
