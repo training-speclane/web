@@ -1,0 +1,17 @@
+  /* This how we reference class fields, by adding a '.' infront of the class name*/
+  .my-input { 
+    height: 30px;
+    width: 180px;
+    font-size: medium;
+
+  }
+
+  /* This how we reference ID fields, by adding a '#' infront of the id name*/
+  #submit {
+     height: 40px;
+     width:100px;
+     background-color: cadetblue;
+     color:white;
+     margin-left: 30%;
+     cursor: pointer;
+  }
