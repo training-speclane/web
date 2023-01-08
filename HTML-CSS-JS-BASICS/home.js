@@ -18,6 +18,7 @@ function handleMultiplication () {
 
 function hideShowSections() {
 
+    
    var yesRadioBtnSelected =  document.getElementById('yes').checked; //Determine if the yes radio btn was selected
    var redContainer =  document.getElementById('red-container'); //find the red container
    var greenContainer =  document.getElementById('green-container'); // find the green container
