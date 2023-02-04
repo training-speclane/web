@@ -3,10 +3,24 @@
     <head>
         <title>Hello world</title>
         <style>
-         table , td, th {
-            border: solid 1px  #000000
-         }
+          table {
+            width:100%;
+            border-collapse : collapse
+          }
+          td , th {
+            text-align: left;
+            padding : 6px; /* The space that exist between elements in a container.*/
+            border : solid 1px rgb(33, 33, 33)
+          }
 
+          tr:nth-child(even) {
+            background-color: #dddddd
+          }
+
+          th{
+            background-color: green;
+            color : #ffffff
+          }
         </style>
     </head>
      <body style = "background-color: #ffffff"> 
@@ -16,20 +30,25 @@
                 <th>Contact Person</th>
                 <th>State</th>
             </tr>
-             <tr style="color:green">
+             <tr>
                <td>Google</td>
                <td>Sundar Pichai</td>
                <td>Ca</td>
             </tr>
-            <tr style="color:red">
+            <tr>
                 <td>APPLE</td>
                 <td>Tim Cook</td>
                 <td>Ca</td>
              </tr>
-             <tr style="color:blue">
+             <tr>
                 <td>Amazon</td>
                 <td>ABC person</td>
                 <td>WA</td>
+             </tr>
+             <tr>
+                <td>Meta</td>
+                <td>Mark Zucker.</td>
+                <td>CA</td>
              </tr>
         </table>
 
