@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hello world</title>
+        <style>
+          table {
+            width:100%;
+            border-collapse : collapse;
+          }
+          td , th {
+            text-align: left;
+            padding : 12px; /* The space that exist between elements in a container.*/
+            /* border : solid 1px rgb(33, 33, 33) */
+          }
+
+          tr:nth-child(odd) {
+            background-color: #dddddd;
+            color : green;
+          }
+
+          th{
+            background-color: green;
+            color : #ffffff;
+          }
+          #table-container{
+            border-radius: 10px;
+            border-bottom: solid 3px green;
+            border-top: solid 10px green;
+          }
+        </style>
+    </head>
+     <body style = "background-color: #ffffff"> 
+        <h1>Welcome to HTML Tables</h1>
+        <div id = "table-container">
+        <table>
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Points</th>
+                <th>Team</th>
+            </tr>
+             <tr>
+               <td>1</td>
+               <td>Domenic</td>
+               <td>88,110</td>
+               <td>dcode</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Sally</td>
+                <td>72,400</td>
+                <td>Students</td>
+             </tr>
+             <tr>
+                <td>3</td>
+                <td>Nick</td>
+                <td>52,300</td>
+                <td>dcode</td>
+             </tr>
+        </table>
+    </div>
+    </body>
+</html>
