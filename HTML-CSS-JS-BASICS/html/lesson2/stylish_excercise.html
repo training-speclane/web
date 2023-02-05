@@ -3,19 +3,36 @@
     <head>
         <title>Hello world</title>
         <style>
-             td , th {
-            text-align: left;
-            padding : 10px; /* The space that exist between elements in a container.*/
-             border-top: 
+            table {
+                width:100%;
+                border-collapse: collapse;
           }
-            
-        
-         
+          td , th {
+            text-align: left;
+            padding : 12px; /* The space that exist between elements in a container.*/
+            /* border : solid 1px rgb(33, 33, 33) */
+          }
 
+          tr:nth-child(odd) {
+            background-color: #dddddd;
+            color : green;
+          }
+
+          th{
+            background-color: green;
+            color : #ffffff;
+          }
+          #table-container{
+            border-radius: 10px;
+            border-bottom: solid 3px green;
+            border-top: solid 10px green;
+          }
+           
         </style>
     </head>
-     <body style = "background-color: white"> 
+     <body style = "background-color: #ffffff"> 
         <h1>Welcome to HTML Tables</h1>
+        <div id = "table-container">
         <table>
             <tr>
 
