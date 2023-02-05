@@ -1,21 +1,79 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
     <head>
         <title>Hello world</title>
+
+        <style>
+
+            table {
+
+                width: 100%;
+                border-collapse: collapse;
+            }
+            td , th {
+
+                text-align: left;
+                padding: 10px; /* The space that exist between elecment in a container*/
+                border: solid 1px rgb(83, 41, 41);
+            }
+                tr:nth-child(even) {
+
+                background-color: grey
+            
+
+            }
+
+
+        </style>
+
+
+
+
     </head>
-     <body style= "background-color: antiquewhite;"> 
+     <body style = "background-color: #ffffff"> 
         <hr>
+        <!--HTML Headings-->
+        <h1 style="font-size:80px; color:green">Welcome to my HTML site 1</h1> <!--Custom Style for heading tags-->
+        <h2 style="color:blue">Welcome to my HTML site 2</h2>
+        <h3>Welcome to my HTML site 3</h3>
+        <h4>Welcome to my HTML site 4</h4>
+        <h5>Welcome to my HTML site 5</h5>
+        <h6>Welcome to my HTML site 6</h6>
 
-        <!--HTML Heading Tag-->
-        <h1 style="font-size:80px; color: green"> Welcome to my HTML site!</h1> <!--Custom Style for heading-->
-        <h2>Welcome to my HTML site!!!</h1>
-        <h3>Welcome to my HTML site!!!</h1>
-        <h4>Welcome to my HTML site!!!</h1>
-        <h5>Welcome to my HTML site!!!</h1>
-        <h6>Welcome to my HTML site!!!</h1>
-    
-        <div style="background-color: aqua;"
+        <div style="background-color:aqua; min-height: 100px; min-width: 100px; font-family: 'Lucida Sans'; ">
+            I'm using my own background color! If I didn't have a background color 
+            style, I would be using the one defined in the body(parent)
+        </div>
 
-        
+        <!-- Text color-->
+        <div style="color:brown;">
+            i'M A TEXT WITH SOME COLOR
+        </div>
+  <br/><br/><br/><br/>
+        <!--HTML Table-->
+        <table>
+            <tr>
+                <th>Company Name</th>
+                <th>Contact Person</th>
+                <th>State</th>
+            </tr>
+             <tr>
+               <td>Google</td>
+               <td>Sundar Pichai</td>
+               <td>Ca</td>
+            </tr>
+            <tr>
+                <td>APPLE</td>
+                <td>Tim Cook</td>
+                <td>Ca</td>
+             </tr>
+             <tr>
+                <td>Amazon</td>
+                <td>ABC person</td>
+                <td>WA</td>
+             </tr>
+        </table>
+
     </body>
 </html>

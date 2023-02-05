@@ -3,21 +3,69 @@
     <head>
         <title>Hello world</title>
     </head>
-     <body> 
+
+    <table>
+
+        <style>
+
+            table {
+
+                width: 100%;
+                border-collapse: collapse;
+            }
+            td , th {
+
+                text-align: left;
+                padding: 15px; /* The space that exist between elecment in a container*/
+                padding: 10px;
+               
+            }
+                tr:nth-child(odd) {
+                background-color: grey;
+                color : wheat
+                
+            }
+                th {
+                    background-color:green;
+                    color : white
+                }
+            table-container
+
+            
+
+
+        </style>
+    </table>
+
+
+     <body style="background-color: rgb(249, 250, 250);"> 
+
+        <h1> Welcome To My Table Creation</h1>
         
         <!--HTML Table-->
-        <table style="font-size: 300px;">
+        <table>
             <tr>
+                <th>Rank</th>
                 <th>Name</th>
-                <th>Age</th>
+                <th>Points</th>
+                <th>Team</th>
             </tr>
              <tr>
-               <td>Jill Smith</td>
-               <td>50</td>
+               <td>1</td>
+               <td>Domenic</td>
+               <td>88,400</td>
+               <td>dcode</td>
             </tr>
+
+                <td>2</td>
+                <td>Sally</td>
+                <td>72,400</td>
+                <td>Students</td>
             <tr>
-                <td>Eve Jackson</td>
-               <td>94</td>
+                <td>3</td>
+                <td>Nick</td>
+                <td>52,300</td>
+                <td>dcode</td>
              </tr>
              
         </table>
