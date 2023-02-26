@@ -1,1 +1,1 @@
-location of all projects belonging to Elizabeth
+location of all projects belonging to Elizabeth.This folder would contain HTML and JS
