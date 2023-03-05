@@ -1,1 +1,1 @@
-location of all projects belonging to instructor
+location of all projects belonging to instructor. This folder would contain HTML and JS

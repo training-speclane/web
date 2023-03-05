@@ -1,1 +1,1 @@
-location of all projects belonging to Doris
+location of all projects belonging to Doris. This folder would contain HTML and JS.
