@@ -6,12 +6,13 @@
         </head>
         <body>
            <h1>HTML list</h1>
-           <ul style="list-style-type: upper-roman;">
+           <ol style="list-style-type: upper-roman;">
             <li>Background Skills</li>
             <ul style="list-style-type: upper-alpha;">
                 <li>Unix Commands</li>
                 <li>Vim Text Editor</li>
-            <ul style="list-style-type: upper-roman;">
+            
+            <ol style="list-style-type: upper-roman;">
            <li>HTML</li>
                 <ul style="list-style-type: upper-latin;">
                     <li>Minimal Page</li>
