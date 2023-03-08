@@ -47,11 +47,13 @@
                     <li>Box Model</li>
                 </ul>
             <li>Programming</li>
-                <ul style="list-style-type: upper-latin;">
+                <ul style="list-style-type: upper-alpha;">
                     <li>Python</li>
                     <li>JavaScript</li>
+                </ul>
+                
             <li>Database</li>
-                <ul style="list-style-type: upper-latin;"
+                <ul style="list-style-type: upper-alpha;">
                     <li>Flat File</li>
                     <li>Relational</li>
                 </ul> 
