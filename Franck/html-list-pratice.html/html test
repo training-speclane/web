@@ -6,47 +6,54 @@
         </head>
         <body>
            <h1>HTML list</h1>
-           <ol>
-            <title>Background Skills</title>
-                <li>Unix Commands</li>
-                <li>Vim Text Editor</li>
-           </ol>
-           <ol>
-            <title>HTML</title>
-                <li>Minimal Page</li>
-                <li>Headings</li>
-                <li>Tags</li>
-                <li>Lists</li>
-                            <li>Unordered
-                            <li>Ordered
-                            <li>Definition
-                            <li>Nested
-                <li>Links</li>
+           <ul>
+            <li>Background Skills</li>
+                <ul style="list-style-type: upper-latin;">
+                    <li>Unix Commands</li>
+                    <li>Vim Text Editor</li>
+           <li>HTML</li>
+                <ul style="list-style-type: upper-latin;">
+                    <li>Minimal Page</li>
+                    <li>Headings</li>
+                    <li>Tags</li>
+                    <li>Lists</li>
+                        <ul style="list-style-type: lower-roman;">
+                            <li>Unordered</li>
+                            <li>Ordered</li>
+                            <li>Definition</li>
+                            <li>Nested</li>
+                <ul style="list-style-type: lower-roman;">
+                    <li>Links</li>
                             <li>Absolute</li>
                             <li>Relative</li>
-                <li>Images</li>
-            </ol>
-            <ol>
-            <title>CSS</title>
-                <li>Anatomy</li>
-                <li>Basic Selectors</li>
+                    <li>Images</li>
+            <li>CSS</li>
+                <ul style="list-style-type: upper-latin;">
+                    <li>Anatomy</li>
+                    <li>Basic Selectors</li>
+                        <ul style="list-style-type: lower-roman;">
                             <li>Element</li>
                             <li>Class</li>
                             <li>ID</li>
                             <li>Group</li>
-                <li>The DOM</li>
-                <li>Advanced Selectors</li>
-                <li>Box Model</li>
-            </ol>
-            <ol>
-            <title>Programming</title>
-                <li>Python</li>
-                <li>JavaScript</li>
-            </ol>
-            <ol>
-            <title>Database</title>
-                <li>Flat File</li>
-                <li>Relational</li>    
+                <ul>
+                    <li>The DOM</li>
+                    <li>Advanced Selectors</li>
+                    <li>Box Model</li>
+                </ul>
+            <li>Programming</li>
+                <ul style="list-style-type: upper-latin;">
+                    <li>Python</li>
+                    <li>JavaScript</li>
+            <li>Database</li>
+                <ul style="list-style-type: upper-latin;"
+                    <li>Flat File</li>
+                    <li>Relational</li>
+                </ul> 
+            </li>   
+            
+            
+                
 
            
 
