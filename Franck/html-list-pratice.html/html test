@@ -8,7 +8,7 @@
            <h1>HTML list</h1>
            <ul style="list-style-type: upper-roman;">
             <li>Background Skills</li>
-            <ul style="list-style-type: initial;">
+            <ul style="list-style-type: upper-alpha;">
                 <li>Unix Commands</li>
                 <li>Vim Text Editor</li>
            <li>HTML</li>
