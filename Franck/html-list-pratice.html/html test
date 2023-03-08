@@ -14,7 +14,7 @@
             </ul>
         
            <li>HTML</li>
-                <ul style="list-style-type: upper-latin;">
+                <ul style="list-style-type: upper-alpha;">
                     <li>Minimal Page</li>
                     <li>Headings</li>
                     <li>Tags</li>
@@ -24,7 +24,7 @@
                             <li>Ordered</li>
                             <li>Definition</li>
                             <li>Nested</li>
-                <ul style="list-style-type: lower-roman;">
+                        </ul>
                     <li>Links</li>
                             <li>Absolute</li>
                             <li>Relative</li>
