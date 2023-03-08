@@ -11,6 +11,7 @@
             <ul style="list-style-type: upper-alpha;">
                 <li>Unix Commands</li>
                 <li>Vim Text Editor</li>
+            <ul style="list-style-type: upper-roman;">
            <li>HTML</li>
                 <ul style="list-style-type: upper-latin;">
                     <li>Minimal Page</li>
