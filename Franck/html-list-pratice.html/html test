@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title>HTML list</title>
+
+        </head>
+        <body>
+           <h1>HTML list</h1>
+           <ol>
+            <title>Background Skills</title>
+                <li>Unix Commands</li>
+                <li>Vim Text Editor</li>
+           </ol>
+           <ol>
+            <title>HTML</title>
+                <li>Minimal Page</li>
+                <li>Headings</li>
+                <li>Tags</li>
+                <li>Lists</li>
+                            <li>Unordered
+                            <li>Ordered
+                            <li>Definition
+                            <li>Nested
+                <li>Links</li>
+                            <li>Absolute</li>
+                            <li>Relative</li>
+                <li>Images</li>
+            </ol>
+            <ol>
+            <title>CSS</title>
+                <li>Anatomy</li>
+                <li>Basic Selectors</li>
+                            <li>Element</li>
+                            <li>Class</li>
+                            <li>ID</li>
+                            <li>Group</li>
+                <li>The DOM</li>
+                <li>Advanced Selectors</li>
+                <li>Box Model</li>
+            </ol>
+            <ol>
+            <title>Programming</title>
+                <li>Python</li>
+                <li>JavaScript</li>
+            </ol>
+            <ol>
+            <title>Database</title>
+                <li>Flat File</li>
+                <li>Relational</li>    
+
+           
+
+         </body>
+</html>
