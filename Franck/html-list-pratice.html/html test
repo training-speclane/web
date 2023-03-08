@@ -26,9 +26,12 @@
                             <li>Nested</li>
                         </ul>
                     <li>Links</li>
+                        <ul style="list-style-type: lower-roman;">
                             <li>Absolute</li>
                             <li>Relative</li>
+                        </ul>
                     <li>Images</li>
+                </ul>
             <li>CSS</li>
                 <ul style="list-style-type: upper-latin;">
                     <li>Anatomy</li>
