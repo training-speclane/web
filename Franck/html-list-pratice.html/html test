@@ -33,7 +33,7 @@
                     <li>Images</li>
                 </ul>
             <li>CSS</li>
-                <ul style="list-style-type: upper-latin;">
+                <ul style="list-style-type: upper-alpha;">
                     <li>Anatomy</li>
                     <li>Basic Selectors</li>
                         <ul style="list-style-type: lower-roman;">
@@ -41,7 +41,7 @@
                             <li>Class</li>
                             <li>ID</li>
                             <li>Group</li>
-                <ul>
+                        </ul>
                     <li>The DOM</li>
                     <li>Advanced Selectors</li>
                     <li>Box Model</li>
