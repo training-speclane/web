@@ -5,7 +5,7 @@
     /* Step 2: setup rows amd columns */
     grid-template-columns: repeat(3, 1fr); 
     grid-template-columns: 300px 300px 300px;
-    grid-template-rows: 100px 350px 600px 100px;
+    grid-template-rows: 100px 600px 100px;
     grid-template-areas: 
     "hd hd hd hd hd hd hd hd"
     "feat feat feat feat feat feat feat feat"
@@ -20,8 +20,9 @@
     background: #cdd4d5;
 }
 
-.header{
+header{
     grid-area:hd;
+    text-align: center;
 }
 
 .footer{
@@ -37,8 +38,9 @@
 
 .content2 {
   grid-area: main;
+  height:100% ;
 }
-.extracontent div img{
+.extracontent figure img{
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -50,8 +52,8 @@ blockquote {
     display: block;
     margin-left: 40px;
     margin-right: 40px;
-    margin-top: .3em;
-    margin-bottom: .5em;
+    margin-top: .1em;
+    margin-bottom: 3em;
     padding: 0px;
 }
 
