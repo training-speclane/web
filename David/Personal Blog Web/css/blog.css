@@ -1,0 +1,62 @@
+
+.container{
+     /* Step 1: Set display to grid  */
+    display:grid;
+    /* Step 2: setup rows amd columns */
+    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: 300px 300px 300px;
+    grid-template-rows: 100px 600px 100px;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd hd"
+    "feat feat feat feat feat feat feat feat"
+    "main main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+    border: 2px solid rgb(45, 36, 70);
+}
+
+.box{
+    width: 100%;
+    border: 1px solid rgb(157, 169, 177);
+    background: #cdd4d5;
+}
+
+header{
+    grid-area:hd;
+    text-align: center;
+}
+
+.footer{
+    grid-area: ft;  
+}
+.feature{
+    grid-area: feat;
+}
+.content{
+    grid-area: main;
+}
+
+
+.content2 {
+  grid-area: main;
+  height:100% ;
+}
+.extracontent figure img{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 400px;
+    object-fit: cover; ;
+}
+
+blockquote {
+    display: block;
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-top: .1em;
+    margin-bottom: 3em;
+    padding: 0px;
+}
+
+div div p{
+    font-style: italic;
+}
