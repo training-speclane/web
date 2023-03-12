@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML CLASS SELECTOR</title>
+        <style>
+         .job-description {
+            min-height: 200px;
+            border: solid 2px orange;
+            border-radius: 10px;
+            padding: 10px ;
+         }
+         .description-heading{
+            text-shadow: 60px;
+            text-indent: 10px ;
+            color: blue;
+            font-weight: bolder ;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif   ;
+         }
+         .datail-description-1{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            color: green;
+         }
+         .datail-description-2{
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            color:crimson;
+         }
+         div img{
+            width: 80%;
+            vertical-align: middle ;
+         }
+
+          
+        </style>
+    </head>
+    <body>
+
+        <h1>Application Architect</h1>
+        
+        <div class="job-description">
+           <div class="description-heading"> Basic Description:</div>
+           <article class="datail-description-1">
+              Work with enterprise teams to define application requirements and identify 
+              areas of technical improvements, recommend design priciples.
+           </article>
+        </div> 
+        <br/>
+        <div class="job-description">
+           <div class="description-heading">Additional Description: </div>
+           <article class="datail-description-2">
+                Application architects oversee the design and development of software applications. 
+                They collaborate on application design with internal stakeholders and application 
+                development teams, implement and monitor application 
+                development stages, and document application development processes
+           </article>
+        </div>
+        <br/>
+        <div class="job-description">
+            <!--Add an image from any website-->
+            <img src="https://media.istockphoto.com/id/1230144854/photo/cloud-computing-technology-and-online-data-storage-for-business-network-concept.jpg?s=1024x1024&w=is&k=20&c=X2CqO7XpSRO9gv8ARP20BF5j7qNhRbEahqXTLHIxfsU=" alt="cloud architecting">
+         </div>
+
+    </body>
+</html>
