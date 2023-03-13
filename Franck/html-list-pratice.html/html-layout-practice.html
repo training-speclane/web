@@ -6,17 +6,22 @@
         <h1>Welcome to web development</h1>
         <p>Welcome to html training</p>
         <style>
-           body {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        } 
+            * {
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+         
             
             header{
                 background-color:darkgrey;
                 text-align: center;
                 color: #ffffff;
                 line-height: 4;
+                grid-area: hd;
+                font-size: 40px;
                 
             }
             footer{
