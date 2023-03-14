@@ -1,0 +1,172 @@
+@import "layout.css";
+@import "blog.css";
+
+/* Mobile first Or Anything smaller than 600px */
+.container{
+    /* rules for small screen*/
+    display: grid;
+    /* min-height:80vh; */
+    grid-gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 600px));
+    /*border: 1px solid red ; */
+    align-items: center;
+    grid-template-rows: repeat(auto-fit, minmax(20px, 1fr));
+    grid-template-areas: "hd"
+                         "main"
+                         "sd"                         
+                         "ft";
+}
+
+.box{
+    border: 1px solid rgb(191, 225, 238) ;
+    background-color: #9aaab4;
+    /*display: flex;
+    justify-content: center;*/
+}
+
+header{
+    grid-area: hd;
+    display: grid;
+    min-height: 30px;
+}
+
+
+.title{
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px rgb(206, 216, 222);
+    font-weight: bolder;
+}
+
+.sidebar{
+    grid-area: sd;
+    min-width: 100px;
+}
+.footer{
+    grid-area: ft;
+}
+.content{
+    grid-area: main;
+    background-image: url('../image/AstonMart.jpg');
+    background-size:60%;
+    background-position-y: bottom;
+    background-position-x:center ;
+    min-height: 240px;
+    max-width: 100% ;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-color: #010101;
+    color: rgb(114, 143, 169) ;
+}
+header img{
+    max-width: 40%;
+    height: 40%;
+    margin-top: 1px;
+    display: inline  ;
+    margin-inline: auto;
+    /*margin-right: auto;
+    margin-left: auto;*/
+}
+
+aside{
+    grid-column-start: span 4;
+}
+
+.button{
+    width: auto;
+    height: 10px;
+    box-shadow: inset 0px 1px 0px 0px #ffffff;
+    border-radius: 4px;
+    background-color: #097BC0;
+    box-shadow: 0px 2px 4px gray;
+    display: block;
+    border:1px solid #094BC0;
+}
+
+.button li a{
+    display: inline-table;
+    cursor: pointer;
+    text-decoration: none;
+    height: 10px;
+    width:100%;
+}
+
+.button li a h5{
+    margin: auto;
+    display: table-cell;
+    vertical-align: middle;
+    color: #f7f8f8;
+    font-family: cabinregular;
+    text-align: center;
+}
+
+/*figure {
+    border: 1px #cccccc solid;
+    margin: auto;
+    padding: 4px;    
+}*/
+  
+  figcaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    max-width:638px;
+}
+
+
+/* Medium Screens */
+/* Use the keyword 'and' to build a complex media query that evaluates both a min and max */
+@media (min-width: 600px) and (max-width:1100px) {
+    .container{
+    /* Set display to grid*/
+        display:grid;
+    /* Setup rows and columns */
+        grid-template-columns: minmax(400px, 1fr);
+        grid-template-rows: repeat(auto-fit, minmax(20px, 1fr));
+        grid-template-areas: "hd hd hd hd hd hd hd hd"
+                            "sd sd main main main main main main"
+                            "ft ft ft ft ft ft ft ft";
+        border: 2px solid cornsilk;
+        height: auto;
+    }
+    .content{
+        background-size: 100%;
+        max-width: 600px;
+        min-height: 1000px;
+        object-fit: contain;
+    }
+       
+}
+
+
+/* Lager Screens */
+@media (min-width:1101px){
+    .container{
+        grid-template-columns: 40px 400px ;
+        grid-template-rows: 80px 950px 60px;
+        border: 5px solid rgb(127, 121, 97);
+        grid-template-areas: "hd hd hd hd hd hd hd hd"
+                             "sd sd sd main main main main main"
+                             "ft ft ft ft ft ft ft ft";
+        height: auto;
+    }
+    
+    .nestedgrid {
+        display: grid;
+        grid-template-columns: 480px 200px 300px ;
+        /* grid-auto-rows: repeat(auto-fit, minmax(50px, 600px)); */
+        grid-gap: 30px;
+        grid-auto-flow:row;
+        align-items: center;
+        grid-auto-flow: dense;
+        justify-content: center;
+    }
+    .content{
+        background-size: 100%;
+        background-position-y:bottom;
+        max-width: 600px;
+        min-height: 940px;
+    }   
+}

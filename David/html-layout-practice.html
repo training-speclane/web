@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Layout Practice</title>
+    <style>
+        .container{
+          /* Set display to grid */
+            display: grid; 
+          /* Setup rows and columns */
+            grid-template-columns: 200px 1fr;
+            grid-template-rows: 150px 400px 40px;
+            grid-template-areas: 
+            "hd hd hd hd hd hd"
+            "sd main main main main main"
+            "ft ft ft ft ft ft";
+            border: 2px solid green;
+        }
+
+        .box{
+            display:flexbox ;
+            border:1px solid rgb(104, 86, 29);
+        }
+
+        header{
+            /* row start/ column start/ row end/ column end */
+            grid-area: hd;
+            font-size: 40px;
+            color: rgba(185, 228, 223, 0.13) ;
+            background-color: rgb(53, 64, 65);
+            text-align:center ;
+            padding: 45px 10px;
+        }
+
+        main{
+            grid-area: main;
+            background-color: rgba(152, 174, 140, 0.806);
+        }
+
+        .sidebar{
+            grid-area: sd;
+            background: rgba(138, 145, 103, 0.89);
+            padding-top: 30px;
+        }
+
+        footer{
+            grid-area: ft;
+            padding: 10px 10px;
+            text-align: center;
+            background: rgba(0, 10, 12, 0.879);
+        }
+        img{
+            display: inline;
+            width: 300px;
+        }
+        li{
+            list-style-type: none;;
+        }
+        .about{
+            display:grid  ;
+            grid-auto-rows: auto ;
+            justify-content:right ;
+            padding: 30px;
+        }
+        .container2{
+            display:flex  ;
+            flex-direction: row ;
+            justify-content:space-between ;
+            padding: 25px 25px;
+            margin: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to web development</h1>
+    <p>Welcome to HTML training</p>
+    <div class="container">
+        <header class="box">Junior David Roche</header>
+        <div class="box sidebar">
+            <ul>
+                <li><a href=""> About me</a></li>
+                <li><a href="">Projects</li></a>
+                <li><a href=""> Interests</li></a>
+            </ul>
+        </div>
+        <main class="about" > 
+            <p> <strong><u> About me</u></strong>: </p>
+            <div> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt assumenda et qui necessitatibus quos unde in molestiae voluptate officia asperiores consequuntur, alias saepe reiciendis dolorem fuga numquam? Quisquam, voluptate voluptatum. </div>
+            <div class="container2"> 
+                <img src="./Personal Blog Web/image/Sunday.jpeg" alt="" height="200px">  
+                <p><h3>Contact Me</h3></p>
+                <div><a href="https://www.linkedin.com/in/junior-david-roche/">LinkedIn</a> </div><br>
+            </div>
+        </main>
+        <footer class="box">Footer</footer>
+    </div>
+</body>
+</html>

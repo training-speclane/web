@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML TABLE: COL& ROW SPAN</title>
+        <style>
+            table , td, th {
+               width:100%;
+               border: solid 0.5px  #000000
+            }
+            td , th {
+               text-align: left;
+               padding : 6px;
+               border : solid 0.5px gray
+            }
+   
+        </style>
+    </head>
+    <body>
+     <h1>Table</h1> <!-- Headings are from 1-6-->
+     <h3>Table with col and ro spans</h1>
+       
+        <div style="padding:25px">
+
+            <div>
+               First Nam <input type ="text">
+             </div>
+
+             <div>
+                First Nam <input type ="text">
+              </div>
+             
+        </div>
+
+        <table>
+            <tr>
+              <th>Name</th>
+              <th>Subject</th>
+              <th>Marks</th>
+            </tr>
+            <tr>
+              <td rowspan = "2">Hillary</td>
+              <td>Advanced Web</td>
+              <td>75</td>
+            </tr>
+            <tr>
+              <td>Operating Syatem</td>
+              <td>60</td>
+            </tr>
+                <tr>
+              <td rowspan = "2">Lary</td>
+              <td>Advanced Web</td>
+              <td>80</td>
+            </tr>
+            <tr>
+              <td>Operating Syatem</td>
+              <td>75</td>
+            </tr>
+            <tr>
+              <td colspan="3">Total Average: 72.5</td>
+            </tr>
+          </table>
+    </body>
+</html>

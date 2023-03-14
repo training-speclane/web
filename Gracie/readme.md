@@ -1,1 +1,1 @@
-location of all projects belonging to Gracie
+location of all projects belonging to Gracie. Test delivery
