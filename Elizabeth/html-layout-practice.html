@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
+      <h2>Welcome to web development</h2>
+      <p>this is my layout html practice</p>
     <title>Html practice layout</title>
-    <!--Adds responsiveness to a wed page -->
+    
     <Meta name="viewport" content="width=device-width,initial-scale=1.0">
       <style>
         *{
@@ -13,13 +15,30 @@
         }
         /* style the header */
    header {
-        background-color: gray;
-        padding: 20px;
+    /*row start/ column start/ row end/ column end*/
+        grid-area:hd;
+        background-color: #666;
+        padding: 30px;
         text-align: center;
-        font-size: 30px;
-        color:azure;
-        height: 250px;
+        font-size: 35px;
+        color:white;
+        height: 300px;
         width: 100px;
+   }
+   main{
+    grid-area: main;
+    background-color: #666;
+   }
+   .sidebar{
+         grid-area: sd;
+         background-color: #ccc;
+   }
+   nav{
+    float:left;
+    width: 15%;
+    height: 90vh;
+    background-color: #ccc;
+    padding: 20px;
    }
    nav ul{
     list-style: none;
@@ -28,9 +47,9 @@
    article {
     float: left;
     padding: 20px;
-    width: 80%;
-    background-color: antiquewhite;
-    min-height: 850px;
+    width: 84%;
+    background-color: #f1f1f1;
+    min-height: 862px;
    }
    /*clear floats after the columns*/
         section::after{
@@ -40,10 +59,10 @@
         }
         /*style the footer*/
         footer{
-          background-color: gray;
+          background-color: grey;
           padding: 10px;
           text-align: center;
-          color: azure;
+          color: white;
           height: 200px;
           width: 100px;
         }
@@ -59,8 +78,8 @@
         </head>
         <body>
            <header>
-                 <h1>Elizabeth</h1>
-                 </header>
+           <h1>Elizabeth</h1>
+           </header>
       <section>
                
      <nav>
@@ -73,9 +92,9 @@
     
       <article>
         <div>
-        <h1>about me</h1> I am Elizabeth,i am strong,understanding and hard work
+        <h1>about me</h1> I am Elizabeth,i am strong,understanding and hard working
         
-                 <img src="https://blog.hubspot.com/hs-fs/hubfs/25_13%20Social%20Media%20Calendars%2c%20Tools%2c%20%26%20Templates%20to%20Plan%20Your%20Content-1.png?width=602&height=300&name=25_13%20Social%20Media%20Calendars%2c%20Tools%2c%20%26%20Templates%20to%20Plan%20Your%20Content-1.png"alt="my image">
+                 <img height="600" width="700"src="https://blog.hubspot.com/hs-fs/hubfs/25_13%20Social%20Media%20Calendars%2c%20Tools%2c%20%26%20Templates%20to%20Plan%20Your%20Content-1.png?width=602&height=300&name=25_13%20Social%20Media%20Calendars%2c%20Tools%2c%20%26%20Templates%20to%20Plan%20Your%20Content-1.png"alt="my image">
           </div>
        <a href="https://blog.hubspot.com" target="_blank">go to portal</a>
          <!--make this be a heading 1tag-->
@@ -83,7 +102,8 @@
         </section>
         <!--wrap this in a footer tag-->
             <footer>
-              <p>footer</p>
+             <p>footer</p>
+
               </footer>
             </body>
             </html>
