@@ -13,7 +13,11 @@
             body {
                 font-family: Arial, Helvetica, sans-serif;
             }
-         
+            main {
+                <div style="width:100%; display: inline-block;">
+                <div style="float:left; background-color: grey; min-width: 200x">
+
+            }
             
             header{
                 background-color:darkgrey;
@@ -24,23 +28,11 @@
                 font-size: 40px;
                 
             }
-            nav {
-                float: left;
-                 width: 15%;
-                height: 90vh;
-                 background: #ccc;
-                padding: 20px;
-            }
+            
 
             
 
-            article {
-                float: left;
-                 padding: 20px;
-                 width: 84%;
-                background-color: #f1f1f1;
-                min-height: 862px; 
-            }
+           
             footer{
                 background-color: darkgray;
                 text-align: center;
@@ -59,13 +51,17 @@
                 margin: 2px;
                 list-style: none;
                 width: 40%;
+                display: block;
             }
             section div{
             background-color: white;
             padding: 1rem;
             }
             
-
+            #aside div{
+                float: right;
+                width:60%;
+            }
         </style>
     </head>
      <body style = "background-color: #ffffff"> 
@@ -73,24 +69,28 @@
         <header> 
            {Franck S.}
         </header>
-        <section>
-            <aside>
-            <ul>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Projects</a></li>
-                <li><a href="#">Interest</a></li>
-            </ul>
-        </aside>
-        <article>
-            <h1>About me</h1>
-            <div><img src="da.avif" alt="this is my logo" width="300" height="300">
-                <p>About me</p>
-               
-            </div>
-             
-        </section>
-        </table>
-        <footer>Footer</footer> 
+        <main>
+            
+                    <section>
+                        <ul>
+                            <li>About me</li>
+                            <li>Projects</li>
+                            <li>Interest</li>
+                        </ul>
+                    </section>
+                    <aside>
+                        <section>
+                        <div>About me</div>
+                        </section>
+                    </aside>
+                
+                
+
+        </main> 
+        <footer>
+            Footer
+
+        </footer> 
         
     </body>
 </html>
