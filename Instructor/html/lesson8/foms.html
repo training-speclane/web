@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML forms</title>
+        <style>
+            form {
+                border-radius: 10px;
+                padding: 10px;
+                border-top: solid 4px purple;
+                border-bottom: solid 4px purple;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HTML FORMS</h1>
+
+         <form>
+            <div>
+               First Name :<input  type="text" required>
+            </div>
+            <br/>
+            <div>
+               Last Name :<input type="text" required>
+            </div>
+            <br/>
+            <div>
+                DOB :<input type="date">
+             </div>
+             <br/>
+             <div>
+               Password :<input type="password">
+             </div>
+             <br/>
+             <div>
+               Phone Number :<input type="tel">
+              </div>
+
+              <br/>
+              <div>
+                Email :<input type="email">
+              </div>
+
+               <div>
+                Gender :<br>
+                 Male:<input type="radio" name="gender">
+                 Female:<input type="radio" name="gender">
+                 Others:<input type="radio" name="gender">
+               </div>
+
+               <br/>
+               <div>
+                 Address: 
+                 <textarea rows ="4" cols="50">
+                   Please enter your address here
+                 </textarea>
+               </div>
+
+               <br/>
+              <div>
+                What are your hobbies? : <br/>
+                Swimming :<input type="checkbox">
+                Football :<input type="checkbox">
+                Marathon :<input type="checkbox">
+              </div>
+              <br/>
+              <div>
+              <select name="country">
+                <option value="us">USA</option>
+                <option value="cn">CANADA</option>
+                <option value="mx">MEXICO</option>
+                <option value="cm">CAMEROON</option>
+              </select>
+              </div>
+               <br/>
+               <div>
+                  <input type="submit">
+                </div>
+         </form>
+
+    </body>
+</html>
