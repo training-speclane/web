@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML form</title>
+        <style>
+            form{
+                border-radius: 10px;
+                padding: 10px;
+                border-top: solid 3px purple;
+                border-bottom: solid 3px purple;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>HTML FORMS</h1>
+        <form>
+            <div>
+                First Name: <input type="text" required>
+            </div>
+            <br>
+            <div>
+                Last Name: <input type="text" required>
+            </div>
+            <br>
+            <div>
+                DOB: <input type="date">
+            </div>
+            <br>
+            <div>
+                Password: <input type="password">
+            </div>
+            <br>
+            <div>
+                Cell Phone: <input type="tel">
+            </div>
+            <br>
+            <div>
+                Email address: <input type="email">
+            </div>
+            <br>
+            <div>
+                Gender: &nbsp;
+                Male <input type="radio" name="gender">
+                Female <input type="radio" name="gender">
+                Other <input type="radio" name="gender">
+            </div>
+            <br>
+            <div>
+                Address: 
+                <textarea rows="4" cols="32"> 
+                    Please, enter your valid address
+                </textarea>
+            </div>
+            <br>
+            <div>
+                What are your hobbies: <br>
+                Soccer:<input type="checkbox"> &nbsp;
+                PingPong: <input type="checkbox"> &nbsp;
+                Video games: <input type="checkbox"> 
+            </div>
+            <br>
+            <select name="country">
+                <option value="us">USA</option>
+                <option value="ca">Canada</option>
+                <option value="mx">Mexico</option>
+                <option value="ht">Haiti</option>
+            </select>
+            <br> <br>
+            <div style="text-align: center;">
+                <input type="submit">
+                <!--  <button type="submit">Submit</button> -->
+            </div>
+            <br><br>
+        </form>
+
+    </body>
+</html>
