@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign-Up HTML Form</title>
+        <style>
+            form{
+                height: 600px;
+                border-radius: 15px;
+                border: solid 2px darkblue;
+                padding: 30px;
+            }
+            form button{
+                text-align: center;
+            }
+            h1{
+                text-decoration:underline ;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <h1>Sign-Up Form</h1>
+        <br>
+        <form>
+            <div>
+                First Name: &nbsp <input type="text" required>
+            </div>
+            <br> <br>
+            <div>
+                Last Name: &nbsp <input type="text" required>
+            </div>
+            <br><br>
+            <div>
+                Email address: &nbsp <input type="email" required>
+            </div>
+            <br><br>
+            <div>
+                DOB: &nbsp <input type="date">
+            </div>
+            <br>
+            <br>
+            <div>
+                Password: &nbsp <input type="password" required>
+            </div>
+            <br><br>
+            <div>
+                Phone: &nbsp <input type="tel">
+            </div>
+            <br>
+            <div>
+                Address: 
+                <textarea rows="4" cols="32"> 
+                    Please, enter your valid address
+                </textarea>
+            </div>
+            <br>
+            <div>
+                Gender: &nbsp;
+                Male <input type="radio" name="gender">
+                Female <input type="radio" name="gender">
+                Other <input type="radio" name="gender">
+            </div>
+            <br>
+            <div>
+                Agree to terms: <br>
+                yes:<input type="checkbox" name="agreement"> &nbsp;
+                no: <input type="checkbox" name="agreement"> &nbsp;
+            </div>
+            <br>
+            <br>
+            <button type="submit">Sign-In</button>
+        </form>
+
+
+    </body>
+</html>
