@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-        <title> HTML Layout </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> IT Training Registration </title>
         <style>
             #welcome-to-webdev {
                 font-weight: bold;
@@ -58,7 +59,81 @@
     </header>
 
     <main>
-        <section>
+        <form>
+        <p>Software Training Registration</p>
+        <br/>
+        <div>
+            <input type="text" required>
+            First Name
+        </div>
+        <br/>
+        <div>
+            <input type="text required">
+            Last name
+        </div>
+        <br/>
+        <div>
+            <input type="text">
+            Other names
+        </div>
+        <br/>
+        <div>
+            <input type="email" required>
+            Email
+        </div>
+        <br/>
+        <div>
+            <input type="tel" required>
+            Phone
+        </div>
+        <br/>
+        <div>
+            <input type="text">
+            Nickname/Simple/Easy Name
+        </div>
+        <br/>
+        <div>
+            <textarea rows="4" cols="50">
+                Please enter your address here 
+            </textarea>
+            Mailing address(we may need to send you training material)
+        </div>
+        <br/>
+        <div>
+            <select name="country">
+                <option value="us">USA</option>
+                <option value="cmr">CAMEROON</option>
+                <option value="fr">FRANCE</option>
+                <option value="cn">CANADA</option>
+                <option value="it">ITALY</option>
+
+            </select>
+        </div>
+        <div>
+        <br/> 
+            Gender:
+             Female:<input type="radio" name="gender">
+             Male:<input type="radio" name="gender">
+             Other:<input type="radio" name="gender">
+           </div>
+        <br/>
+        <div>
+            Select level
+            <input type="text">
+        </div>
+        <br/>
+        <div>
+            Select session
+            <input type="date">
+        </div>
+        <br/>
+        <div>
+            <h2>Select Certification/Training Path</h2>
+            <ul style="list-style-type: circle;">
+                <li>Front-end/UI web developer certification (HTML, Javascript, CSS) - 8 months</li>
+                <li>Full-Stack web developer certification (HTML, Javascript, CSS, Database, NodeJS) - 10 months</li>
+                </ul>
+        </div>
             <div id = "left-nav">
                 <ul>
                     <li>About me</li>
