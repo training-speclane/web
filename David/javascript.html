@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Javascript</title>
+ </head>
+ <body>
+     
+    <div id = "dynamic-content">
+        This text will be replaced
+    </div>
+
+
+    <hr>
+
+    <button id = "update-text-btn" onclick="updateText();"> Update text </button>
+
+    <script>
+        var count = 1;
+
+        function updateText(){
+            document.getElementById("dynamic-content").innerHTML 
+            = `This text has been updated using JS. You clicked this button: <strong style='color:green'> ${count} </strong>  times`;
+            count = count+1; 
+        }
+    </script>
+
+ </body>
+
+</html>
