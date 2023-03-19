@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> HTML forms</title>
+        <style>
+            form {
+                border: solid;
+                border-radius: 10px;
+                border-color: rgb(136, 30, 150);
+                padding: 10px;
+                
+                border-bottom: 4pxgit peru;
+            }
+            div {
+                color: rgb(22, 184, 49);
+            }
+            
+            button{
+                font-size: larger;
+                color: blueviolet;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1>html forms</h1>
+        <form>
+            <!-- PUTTING THE INPUT IN A DIV WILL MAKE THEM APPEAR IN SEPERATE LINES -->
+            <!-- But if it was span,it will be in thesame line -->
+            <div>
+                <!-- input allows a user to input dat but it is important to always specify the type  -->
+                First Name :<input type="text" required>
+            </div>
+            <!-- the atribute "reqiure " to tell the user what must be fillled before moving to the next phase  -->
+            <br/>
+            <div>
+            Last Name :<input type="text" required>
+            </div>
+            <br/>
+            <div>
+
+                DOB :<input type="date">
+               <!-- DOB = dATE of Birth   -->
+            </div>
+            <br/>
+                     <div> 
+                    Password :<input type="password">
+                    </div>
+                    <br/>
+                    <div>
+                    Phone Nunmber :<input type="tel">
+                </div>
+                <br/>
+                <div>
+                Email :<input type="email">
+            </div>
+            <br/>
+            <div>
+                <!-- "radio" is use for option selection  -->
+                Gender : <br>
+                Female : <input type="radio" name="Gender">
+                Male : <input type="radio" name="Gender">
+                Other : <input type="radio" name="Gender">
+
+            </div>
+            <br>
+            <div>
+            Address : 
+            <textarea rows="4" cols="50">
+                please enter your address here
+            </textarea>
+        </div>
+        <br>
+        <div>
+            Agree to terms and conditions : <br/>
+            Agree <input type="checkbox">
+            Disagree <input type="checkbox">
+
+            
+        </div>
+        <br>
+        
+        <button type="submit">submit</button>
+        
+        </form>
+    
+    </body>
+</html>
