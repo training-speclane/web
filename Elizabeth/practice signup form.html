@@ -2,37 +2,54 @@
 <html>
     <head>
         <title>signup HTML form</title>
+        <style>
+            submit{
+                background-color: purple;
+                size: large;
+                border: 2px solid red;
+            }
+        </style>
     </head>
     <body>
         <h1>html signup form</h1>
         <form>
             <div>
-                first name <input type="first name">
+                first name :<input type="required">
             </div>
             <br/>
             <div>
-                last name <input type="last name">
+                last name: <input type="required">
             </div>
             <br/>
             <div>
-                email <input type="email">
+                email: <input type="required">
             </div>
             <br/>
             <div>
-                date of birth <input type="date of birth">
+                date of birth: <input type="date of birth">
             </div>
             <br/>
             <div>
-                phone number <input type="phone number">
+                phone number: <input type="phone number">
             </div>
             <br/>
             <div>
-                mailing address <textarea rows="4",cols="50">please enter your address</textarea>
+                mailing address: <textarea rows="4",cols="50">please enter your address</textarea>
             </div>
             <br/>
             <div>
-                gender:<input type="buttons">
-                mail:<in
+                gender:<input type="radio buttons">
+                male:<input type="radio button">
+                female:<input type="radio button">
+                others:<input type="radio button">
+            </div>
+            <br/>
+            <div>
+                agree to terms and conditions:<input type="checkbox">
+            </div>
+            <br/>
+            <div>
+                <input type="submit">
             </div>
         </form>
     </body>
