@@ -13,10 +13,14 @@
             header{
                 width:100%;
                 background-color: blue;
+                border: solid 0.5px;
+            }
+            div {
+                float: right;
             }
 
             .header-large {
-                min-height: 150px;
+                min-height: 100px;
                 color: white;
                 margin-left: 40%;
             }
@@ -31,6 +35,8 @@
 
             form {
                 text-align: center;
+                background-color: white;
+                
             }
             
             footer {
@@ -50,7 +56,19 @@
     <header>
         <div class="header-large">
             <br/>
-            <h1>{My name}</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Enrollment</a></li>
+                <li><a href="#">What is this training all about?</a></li>
+                <li><a href="#">Talk to someone</a></li>
+                <li><a href="#">FAQ</a></li>
+            </ul>
+               <div>
+                  <button type="submit"> Join today</button>
+                </div>
+                <div>
+                    <button type="submit"> Training portal</button>
+                  </div> 
         </div>
     </header>
     <br/>
