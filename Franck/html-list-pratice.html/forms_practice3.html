@@ -5,10 +5,14 @@
         <title> IT Training Registration </title>
         <style>
             
-
+            body {
+                background-color: purple;
+                margin: 0%;
+                padding: 0%;
+            }
             header{
                 width:100%;
-                background-color: grey;
+                background-color: purple;
             }
 
             .header-large {
@@ -20,19 +24,24 @@
             
 
             #main-content-area{
-                float : left;
+                float: ;
                 padding: 10px;
+                background-color: purple;
             }
 
+            form {
+                text-align: center;
+            }
             
             footer {
-                background-color: grey;
+                background-color: purple;
                 min-height: 100px;
             }
 
             .footer-text{
                 margin-left: 40%;
                 color :white;
+                text-align: center;
             }
         </style>
   </head>
@@ -44,46 +53,46 @@
             <h1>{My name}</h1>
         </div>
     </header>
-
+    <br/>
     <main>
         <form>
-        <p>Software Training Registration</p>
+        <h1>Software Training Registration</h1>
         <br/>
         <div>
-            <input type="text" required>
-            First Name
+            First Name<input type="text" required>
+            
         </div>
         <br/>
         <div>
-            <input type="text required">
-            Last name
+            Last name <input type="text required">
+            
         </div>
         <br/>
         <div>
-            <input type="text">
-            Other names
+            Other names <input type="text">
+            
         </div>
         <br/>
         <div>
-            <input type="email" required>
-            Email
+            Email <input type="email" required>
+            
         </div>
         <br/>
         <div>
-            <input type="tel" required>
-            Phone
+            Phone<input type="tel" required>
+           
         </div>
         <br/>
         <div>
-            <input type="text">
-            Nickname/Simple/Easy Name
+            Nickname/Simple/Easy Name<input type="text">
+            
         </div>
         <br/>
         <div>
-            <textarea rows="4" cols="50">
+            Mailing address(we may need to send you training material)<textarea rows="4" cols="50">
                 Please enter your address here 
             </textarea>
-            Mailing address(we may need to send you training material)
+           
         </div>
         <br/>
         <div>
@@ -98,7 +107,7 @@
         </div>
         <div>
         <br/> 
-            Gender:
+            Gender: <br/>
              Female:<input type="radio" name="gender">
              Male:<input type="radio" name="gender">
              Other:<input type="radio" name="gender">
