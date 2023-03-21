@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Javascript</title>
+    <style>
+        button{
+            padding : 15px 24px;
+        }
+    </style>
+ </head>
+ <body>
+     
+    <div id = "dynamic-content">
+        This text will be replaced
+    </div>
+
+
+    <hr>
+
+    <button id = "update-text-btn" onclick="updateText();"> Update text </button>
+
+    <script>
+        //Set up a counter starting at one by the first click
+        var count = 1;
+        // Define a constant string array of colors
+        const colors = ['blue', 'darkgoldenrod','turquoise', 'green', 'yellow', 'orange', 'red', 'purple', 'skyblue'];
+        //Set up a color variable to hold the value of each color indexes
+        let color = '';
+        let c = 0; //color index
+
+        function updateText(){
+            //change the color
+            color = colors[c];
+            
+            //call dynamic-content id element and update/change text appearance
+            document.getElementById("dynamic-content").innerHTML 
+            = `This text has been updated using JS. You clicked this button: <strong style='color:${color}; font-size:${(c+20)*1.4}px'> ${count} </strong>  times`;
+            //call button id element and change background color of button
+            document.getElementById('update-text-btn').style.backgroundColor = colors[c];
+            
+            //update the counter and color index c
+            count ++ ; 
+            c = (c+1)%colors.length
+        }
+
+    </script>
+
+ </body>
+
+</html>
