@@ -1,5 +1,4 @@
 footer {
-    /* background-size: 100%; */
     grid-column-start:span 8 ;
     display: flex;
     align-items: center;
@@ -9,7 +8,7 @@ footer {
 
 body {
     position: relative;
-    height: auto;
+    /* height: auto; */
     min-height: 100% !important;
   }
 
@@ -51,9 +50,17 @@ header ul li{
     list-style: none;
 }
 header ul ul {
-    display:flexbox ;
+    /* display:flexbox ; */
     flex-direction: row;
-    
+    padding-inline-start: 0px;
+}
+
+figure{
+    display:block;
+    margin-block-start: .2em;
+    margin-block-end: .2em;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
 }
 
 .card {
