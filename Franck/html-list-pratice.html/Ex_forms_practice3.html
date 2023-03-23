@@ -7,33 +7,50 @@
     <title>Practice 3</title>
     <style>
         *{
-            margin: 5px;
+            margin: 7px;
             box-sizing: border-box;
+            padding: 0px 0px;
         }
 
         body{
-            height: 95vh;
+            height: 50vh;
             background: white;
             font-family: sans-serif;
             text-align: center;
             color: black;
-            font-size: 24px;
+            font-size: 15px;
             display: flex;
             flex-direction: column;
+            
         }
 
         header{
             background: #6f42c1;
-            padding: 2em 0 2em 0;
+            padding: 1em 0 1em 0;
         }
 
-        
+        header ul{
+            float: left;
+
+        }
+
+        header li{
+            display: inline-block;
+            list-style: none;
+            
+        }
+
+        header li a{
+            color: white;
+            text-decoration: none;
+        }
 
         main{
             background: #6f42c1;
             padding: 1em 0 1em 0;
             flex: 5 5 150px;
             border: 2;
+            margin: 10px;
            
         }
 
@@ -44,6 +61,7 @@
             text-align: left;
 
         }
+
 
         .input{
             font-size: 16px;
@@ -58,8 +76,8 @@
 
         form{
             background-color: white;
-            margin-left: 400px;
-            margin-right: 400px;
+            margin-left: 450px;
+            margin-right: 450px;
             margin-top: 50px;
             margin-bottom: 50px;
             text-align: left;
@@ -70,16 +88,34 @@
             margin: 15px 0px;
         }
 
+        button{
+            font-weight: bold;
+        }
+
+        .submit{
+            font-weight: bold;
+        }
+
         
         footer{
             background-color: #6f42c1;
-            padding: 1em 0 1em 0;
+            padding: 5em 0 5em 0;
         }
     </style>
 </head>
 <body>
     <header>
-        HEADER
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Enrollment</a></li>
+            <li><a href="#">What is this training all about?</a></li>
+            <li><a href="#">Talk to someone</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+        <div style="text-align: right;">
+            <button type="submit"> Join today</button>
+            <button type="submit">Training portal</button>
+        </div>
     </header>
         <main>
             <div class="REGISTRATION-FORM"></div>
@@ -142,10 +178,10 @@
         </div>
         <div>
         <br/> 
-            Gender: <br/>
-             Female:<input type="radio" name="gender">
-             Male:<input type="radio" name="gender">
-             Other:<input type="radio" name="gender">
+            <strong>Gender:</strong> 
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Other
            </div>
         <br/>
         <div>
@@ -174,7 +210,7 @@
         <br/>
         <div style="text-align: right;">
             <button type="submit"> Reset all</button>
-            <input type="submit">
+            <input type="submit" style="background-color: yellow;">
         </div>
         </form>
                 </form>
