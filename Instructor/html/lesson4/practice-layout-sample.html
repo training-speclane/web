@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title> HTML Layout </title>
+        <style>
+            #welcome-to-webdev {
+                font-weight: bold;
+                font-size: large;
+            }
+
+            header{
+                width:100%;
+                background-color: grey;
+            }
+
+            .header-large {
+                min-height: 150px;
+                color: white;
+                margin-left: 40%;
+            }
+
+            #left-nav{
+                float:left;
+                background-color: rgb(215, 212, 212);
+                height: 70vh;
+                min-width: 200px;
+            }
+
+            #main-content-area{
+                float : left;
+                padding: 10px;
+            }
+
+            section{
+                display: inline-block;
+                width: 100%;
+            }
+
+            footer {
+                background-color: grey;
+                min-height: 100px;
+            }
+
+            .footer-text{
+                margin-left: 40%;
+                color :white;
+            }
+        </style>
+  </head>
+  <body>
+    <div id = "welcome-to-webdev">Welcome to web development</div>
+    <div>Welcome to HTML training</div>
+    <header>
+        <div class="header-large">
+            <br/>
+            <h1>{My name}</h1>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div id = "left-nav">
+                <ul>
+                    <li>About me</li>
+                    <li>Projects</li>
+                    <li>Interests</li>
+                </ul>
+            </div>
+            <div id = "main-content-area">
+                About me
+               <img height="300" width="300" src="https://bigwater.consulting/wp-content/uploads/2019/04/SDLC_BWC.png" >
+            </div>
+        </section>
+    </main>
+    <footer>
+        <span class = "footer-text">Footer text </span>
+    </footer>
+  </body>
+</html>

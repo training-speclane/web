@@ -1,6 +1,4 @@
 footer {
-    /* background-size: 100%; */
-    background-color: #302b3a;
     grid-column-start:span 8 ;
     display: flex;
     align-items: center;
@@ -10,7 +8,7 @@ footer {
 
 body {
     position: relative;
-    height: auto;
+    /* height: auto; */
     min-height: 100% !important;
   }
 
@@ -23,8 +21,8 @@ body {
 }
 
 aside {
-    background-color: #3c4a4c;
-    grid-column-start: span 1;
+    /* background-color: #3c4a4c; */
+    /* grid-column-start: span 1; */
     height: 100%;
     padding-right: 1em;
     padding-left: 1em;
@@ -38,15 +36,12 @@ aside .contactme, .subscribe {
     margin-top: 64px;
 }
 
-.nestedgrid {
+header{
+    grid-area:hd;
+    text-align: center;
     display: grid;
-    /* grid-template-columns: 480px 200px 300px ; */
-    grid-auto-rows: repeat(auto-fit, minmax(50px, 600px));
-    grid-gap: 30px;
-    /*grid-auto-flow:row;*/
-    align-items: center;
-    grid-auto-flow: dense;
-    justify-content: center;
+    min-height: 30px;
+    object-position: center;
 }
 
 header ul li{
@@ -54,10 +49,18 @@ header ul li{
     flex-direction: row;    
     list-style: none;
 }
-header ul li ul li{
-    display:flexbox ;
+header ul ul {
+    /* display:flexbox ; */
     flex-direction: row;
-    
+    padding-inline-start: 0px;
+}
+
+figure{
+    display:block;
+    margin-block-start: .2em;
+    margin-block-end: .2em;
+    margin-inline-start: 10px;
+    margin-inline-end: 10px;
 }
 
 .card {

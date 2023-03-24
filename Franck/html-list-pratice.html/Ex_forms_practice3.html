@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge"
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 3</title>
+    <style>
+        *{
+            margin: 7px;
+            box-sizing: border-box;
+            padding: 0px 0px;
+        }
+
+        body{
+            height: 50vh;
+            background: white;
+            font-family: sans-serif;
+            text-align: center;
+            color: black;
+            font-size: 15px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+
+        header{
+            background: #6f42c1;
+            padding: 1em 0 1em 0;
+        }
+
+        header ul{
+            float: left;
+
+        }
+
+        header li{
+            display: inline-block;
+            list-style: none;
+            
+        }
+
+        header li a{
+            color: white;
+            text-decoration: none;
+        }
+
+        main{
+            background: #6f42c1;
+            padding: 1em 0 1em 0;
+            flex: 5 5 150px;
+            border: 2;
+            margin: 10px;
+           
+        }
+
+        .software-training-registration h1{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            text-align: left;
+
+        }
+
+
+        .input{
+            font-size: 16px;
+            padding: 15px 10px;
+            width: 100%;
+            border: 0;
+            border-radius: 5px;
+            outline: none;
+            text-align: left;
+
+        }
+
+        form{
+            background-color: white;
+            margin-left: 450px;
+            margin-right: 450px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: left;
+        }
+
+        .software-training-registration p{
+            font-size: 20px;
+            margin: 15px 0px;
+        }
+
+        button{
+            font-weight: bold;
+        }
+
+        .submit{
+            font-weight: bold;
+        }
+
+        
+        footer{
+            background-color: #6f42c1;
+            padding: 5em 0 5em 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Enrollment</a></li>
+            <li><a href="#">What is this training all about?</a></li>
+            <li><a href="#">Talk to someone</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+        <div style="text-align: right;">
+            <button type="submit"> Join today</button>
+            <button type="submit">Training portal</button>
+        </div>
+    </header>
+        <main>
+            <div class="REGISTRATION-FORM"></div>
+                <form action="#" method="post">
+        <h3>SOFTWARE TRAINING REGISTRATION</h3>
+        <br/>
+        <div>           
+            <input type="text" required>
+            <p>First Name</p>
+            
+        </div>
+        <br/>
+        <div>
+        <input type="text required">
+        <p>Last Name</p>
+            
+        </div>
+        <br/>
+        <div>
+        <input type="text">
+        <p>Other names</p>
+            
+        </div>
+        <br/>
+        <div>
+        <input type="email" required>
+        <p>Email</p>
+            
+        </div>
+        <br/>
+        <div>
+        <input type="tel" required>
+        <p>Phone</p>
+           
+        </div>
+        <br/>
+        <div>
+        <input type="text">
+        <p>Nickname/Simple/Easy Name</p>
+            
+        </div>
+        <br/>
+        <div>
+        <textarea rows="4" cols="50">
+                Please enter your address here
+        </textarea>
+        <p>Mailing address(we may need to send you training material)</p>
+           
+        </div>
+        <br/>
+        <div>
+            <select name="country">
+                <option value="us">USA</option>
+                <option value="cmr">CAMEROON</option>
+                <option value="fr">FRANCE</option>
+                <option value="cn">CANADA</option>
+                <option value="it">ITALY</option>
+
+            </select>
+        </div>
+        <div>
+        <br/> 
+            <strong>Gender:</strong> 
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Other
+           </div>
+        <br/>
+        <div>
+            Select level
+            <input type="text">
+        </div>
+        <br/>
+        <div>
+            Select session
+            <input type="date">
+        </div>
+        <br/>
+        <div>
+            <h2>Select Certification/Training Path</h2>
+            <ul style="list-style-type: circle;">
+                <li>Front-end/UI web developer certification (HTML, Javascript, CSS) - 8 months</li>
+                <li>Full-Stack web developer certification (HTML, Javascript, CSS, Database, NodeJS) - 10 months</li>
+                <li>Full-Stack developer certification - Java (HTML, Javascript, CSS, Database, NodeJS, Java) - 12 months</li>
+                <li>Full-Stack developer certification - Python (HTML, Javascript, CSS, Database, NodeJS, Python) - 12 months</li>
+                <li>Database Administration (Oracle or SQL Server) Training - 6 months</li>
+                <li>AWS Solution Architect and DevOps Certification - 6 months</li>
+                <li>I'm not sure what to do yet. I need guidance</li>
+
+            </ul>
+        </div>
+        <br/>
+        <div style="text-align: right;">
+            <button type="submit"> Reset all</button>
+            <input type="submit" style="background-color: yellow;">
+        </div>
+        </form>
+                </form>
+
+            </div>
+        
+        </main>
+        
+    <footer>
+        FOOTER
+    </footer>
+</body>
+</html>
+    
