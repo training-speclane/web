@@ -7,32 +7,51 @@
     <title>Practice 3</title>
     <style>
         *{
-            margin: 4px;
+            margin: 7px;
             box-sizing: border-box;
+            padding: 0px 0px;
         }
 
         body{
-            height: 95vh;
+            height: 50vh;
             background: white;
             font-family: sans-serif;
             text-align: center;
             color: black;
-            font-size: 24px;
+            font-size: 15px;
             display: flex;
             flex-direction: column;
+            
         }
 
         header{
-            background: purple;
-            padding: 2em 0 2em 0;
+            background: #6f42c1;
+            padding: 1em 0 1em 0;
         }
 
-        
+        header ul{
+            float: left;
+
+        }
+
+        header li{
+            display: inline-block;
+            list-style: none;
+            
+        }
+
+        header li a{
+            color: white;
+            text-decoration: none;
+        }
 
         main{
-            background: purple;
-            padding: 3em 0 3em 0;
+            background: #6f42c1;
+            padding: 1em 0 1em 0;
             flex: 5 5 150px;
+            border: 2;
+            margin: 10px;
+           
         }
 
         .software-training-registration h1{
@@ -43,24 +62,65 @@
 
         }
 
-        form{
-            background-color: white;
+
+        .input{
+            font-size: 16px;
+            padding: 15px 10px;
+            width: 100%;
+            border: 0;
+            border-radius: 5px;
+            outline: none;
+            text-align: left;
+
         }
 
+        form{
+            background-color: white;
+            margin-left: 450px;
+            margin-right: 450px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            text-align: left;
+        }
+
+        .software-training-registration p{
+            font-size: 20px;
+            margin: 15px 0px;
+        }
+
+        button{
+            font-weight: bold;
+        }
+
+        .submit{
+            font-weight: bold;
+        }
+
+        
         footer{
-            background-color: purple;
-            padding: 1em 0 1em 0;
+            background-color: #6f42c1;
+            padding: 5em 0 5em 0;
         }
     </style>
 </head>
 <body>
     <header>
-        HEADER
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Enrollment</a></li>
+            <li><a href="#">What is this training all about?</a></li>
+            <li><a href="#">Talk to someone</a></li>
+            <li><a href="#">FAQ</a></li>
+        </ul>
+        <div style="text-align: right;">
+            <button type="submit"> Join today</button>
+            <button type="submit">Training portal</button>
+        </div>
     </header>
         <main>
             <div class="REGISTRATION-FORM"></div>
                 <form action="#" method="post">
-        <h1>SOFTWARE TRAINING REGISTRATION</h1>
+        <h3>SOFTWARE TRAINING REGISTRATION</h3>
         <br/>
         <div>           
             <input type="text" required>
@@ -69,34 +129,40 @@
         </div>
         <br/>
         <div>
-            Last name <input type="text required">
+        <input type="text required">
+        <p>Last Name</p>
             
         </div>
         <br/>
         <div>
-            Other names <input type="text">
+        <input type="text">
+        <p>Other names</p>
             
         </div>
         <br/>
         <div>
-            Email <input type="email" required>
+        <input type="email" required>
+        <p>Email</p>
             
         </div>
         <br/>
         <div>
-            Phone<input type="tel" required>
+        <input type="tel" required>
+        <p>Phone</p>
            
         </div>
         <br/>
         <div>
-            Nickname/Simple/Easy Name<input type="text">
+        <input type="text">
+        <p>Nickname/Simple/Easy Name</p>
             
         </div>
         <br/>
         <div>
-            Mailing address(we may need to send you training material)<textarea rows="4" cols="50">
-                Please enter your address here 
-            </textarea>
+        <textarea rows="4" cols="50">
+                Please enter your address here
+        </textarea>
+        <p>Mailing address(we may need to send you training material)</p>
            
         </div>
         <br/>
@@ -112,10 +178,10 @@
         </div>
         <div>
         <br/> 
-            Gender: <br/>
-             Female:<input type="radio" name="gender">
-             Male:<input type="radio" name="gender">
-             Other:<input type="radio" name="gender">
+            <strong>Gender:</strong> 
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Other
            </div>
         <br/>
         <div>
@@ -142,9 +208,9 @@
             </ul>
         </div>
         <br/>
-        <div>
+        <div style="text-align: right;">
             <button type="submit"> Reset all</button>
-            <input type="submit">
+            <input type="submit" style="background-color: yellow;">
         </div>
         </form>
                 </form>
