@@ -1,0 +1,136 @@
+.container{
+    display: block;
+    min-width: 800px;
+    height: 1000px;
+    color:#132d38;;
+    justify-items: center;
+    font-size: 1rem;
+    font-weight:400; 
+    margin: 0px;
+}
+
+header{
+    width: 100%;
+    display:flex ;
+    align-items: center;
+    background-color:   #5a0c9f  !important;
+    color: #ffffff !important;
+    margin: 0px;
+}
+
+header ul{
+    list-style-type: none;
+}
+
+ .headList{
+    display: flex;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    position: relative;
+    box-sizing: border-box;
+    }
+
+ .headList li{
+        display: inline-block;
+        font-size: 20;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-top: 4px;
+        margin-right: auto;
+
+ }
+ .headList li a{
+    color: white;
+    text-decoration: none;
+ }
+
+ .navButtons{
+    display: flex;
+    margin-left:auto ;
+    padding-right: 2.5rem;
+    gap:15px ;
+ }
+
+ .navButtons button{
+    color: #2794a7;
+    border-radius: 20px;
+    border-color: #ffffff;
+    background-color: white;
+    border: 1px solid transparent;
+ }
+
+ .navButtons button a{
+    text-decoration: none;
+    color: #2794a7;
+ }
+
+ .outer-main{
+    padding: 15px;
+    margin: 15px;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #5a0c9f;
+ }
+
+ .accent{
+    font-weight: bold;
+ }
+
+ form{
+    /* box-sizing: border-box; */
+    width: 750px;
+    min-height: 900px;
+    background-color: #ffffff;
+    padding: 2rem;
+    margin: auto;
+ }
+
+ form div{
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-template-rows: auto;
+ }
+
+ .oneline{
+    text-align: left;
+    display: inline;
+ }
+
+ .lowerbuttons{
+    display: flex;
+    justify-content:flex-end ;
+    gap: 25px;
+ }
+
+ .lowerbuttons [type="reset"]{
+    color: #2794a7;
+    border-color: #ffffff;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+ }
+
+ .lowerbuttons [type="submit"]{
+    background-color: yellow;
+    border-radius: 5px ;
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+ }
+
+ footer{
+    display: block;
+    background-color: #5a0c9f;
+    padding-left: 450px;
+    min-height: 25vh;
+    width: 100%;
+    color: white;
+    font-size: 1rem;
+    padding-top: 15px;
+ }
+
+ footer div span{
+    font-weight: 600 ;
+ }
