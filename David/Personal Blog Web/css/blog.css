@@ -8,22 +8,18 @@
     grid-template-rows: 100px 600px 100px;
     grid-template-areas: 
     "hd hd hd hd hd hd hd hd"
-    "feat feat feat feat feat feat feat feat"
     "main main main main main main main main"
+    "feat feat feat feat feat feat feat feat"
     "ft ft ft ft ft ft ft ft";
     border: 2px solid rgb(45, 36, 70);
 }
 
-.box{
+/*.box{
     width: 100%;
     border: 1px solid rgb(157, 169, 177);
-    background: #cdd4d5;
-}
+     background-color: #9aaab4; 
+}*/
 
-header{
-    grid-area:hd;
-    text-align: center;
-}
 
 .footer{
     grid-area: ft;  
@@ -31,10 +27,6 @@ header{
 .feature{
     grid-area: feat;
 }
-.content{
-    grid-area: main;
-}
-
 
 .content2 {
   grid-area: main;
@@ -44,7 +36,7 @@ header{
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-height: 400px;
+    max-height: 400px;
     object-fit: cover; ;
 }
 
@@ -59,4 +51,80 @@ blockquote {
 
 div div p{
     font-style: italic;
+}
+
+div span {
+    display:flex;
+    justify-content: center;
+    text-align: center; 
+    /* padding-top: 20px;  */
+}
+
+  
+figcaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    padding: 2px;
+    text-align: center;
+    min-width:200px;
+}
+
+
+/* Medium Screens */
+/* Use the keyword 'and' to build a complex media query that evaluates both a min and max */
+@media only screen and (min-width: 600px) and (max-width:1100px) {
+    .container2{
+        display: grid;
+        grid-template-columns: minmax(300px, 300px) ;
+        grid-template-rows: repeat(auto-fit, minmax(30px, 1fr));
+        border: 5px solid rgb(127, 121, 97);
+        grid-template-areas: "hd hd hd hd hd hd hd hd"
+                             "sd sd sd main main main main main"
+                             "ft ft ft ft ft ft ft ft";
+        height: auto;
+    }
+
+    .content2 {
+        grid-area: main;
+        min-height:100% ;
+        max-width: 600px;
+
+      }
+      .extracontent figure img{
+          display: flex;
+          flex-direction: column;
+          max-width: 100%;
+          max-height: 500px;
+          /* object-fit: cover;  */
+      } 
+}
+
+
+/* Lager Screens */
+@media (min-width:1101px){
+    .container2{
+        display: grid;
+        grid-template-columns: 300px 400px ;
+        grid-template-rows: 80px 1500px 60px;
+        border: 5px solid rgb(127, 121, 97);
+        grid-template-areas: "hd hd hd hd hd hd hd hd"
+                             "sd sd sd sd sd main main main"
+                             "ft ft ft ft ft ft ft ft";
+        height: auto;
+    }
+
+    .content2 {
+        grid-area: main;
+        min-height:100% ;
+
+      }
+      .extracontent figure img{
+          display: flex;
+          flex-direction: column;
+          max-width: 100%;
+          max-height: 650px;
+          /* object-fit: cover;  */
+      }
+ 
 }

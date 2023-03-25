@@ -3,10 +3,19 @@
     <head>
         <title>signup HTML form</title>
         <style>
-            submit{
+           .submit{
                 background-color: purple;
                 size: large;
                 border: 2px solid red;
+            }
+            form{
+                border: 2px solid red;
+                border-radius: 10px;
+                padding: 10px;
+                
+            }
+            div{
+                color: blue;
             }
         </style>
     </head>
@@ -14,7 +23,7 @@
         <h1>html signup form</h1>
         <form>
             <div>
-                first name :<input type="required">
+                first name :<input type="name required">
             </div>
             <br/>
             <div>
@@ -26,7 +35,7 @@
             </div>
             <br/>
             <div>
-                date of birth: <input type="date of birth">
+                BOD: <input type="date" required>
             </div>
             <br/>
             <div>
@@ -38,10 +47,10 @@
             </div>
             <br/>
             <div>
-                gender:<input type="radio buttons">
-                male:<input type="radio button">
-                female:<input type="radio button">
-                others:<input type="radio button">
+                Gender:<br/>
+                male:<input type="radio">
+                female:<input type="radio">
+                others:<input type="radio">
             </div>
             <br/>
             <div>
@@ -49,7 +58,7 @@
             </div>
             <br/>
             <div>
-                <input type="submit">
+                <input class="submit" type ="submit">
             </div>
         </form>
     </body>

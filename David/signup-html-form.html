@@ -4,7 +4,7 @@
         <title>Sign-Up HTML Form</title>
         <style>
             form{
-                height: 600px;
+                height: 100%;
                 border-radius: 15px;
                 border: solid 2px darkslategray;
                 padding: 30px;
@@ -12,15 +12,30 @@
             }
             form button{
                 text-align: center;
-            }
+                background-color: purple;
+                height: 55px;
+                width: 105px;
+                border-radius: 15px;
+                margin-left: 50%;
+                margin-right: auto;
+               }
             h1{
                 text-decoration:underline ;
+                padding-left: 20%;
+            }
+            body{
+                margin-left: 25%;
+                margin-right: 25%;
+            }
+            .container{
+                border: solid black 1px;
+                padding: 25px;
             }
 
         </style>
     </head>
 
-    <body>
+    <body class="container">
         <h1>Sign-Up Form</h1>
         <br>
         <form>
@@ -48,25 +63,25 @@
             <div>
                 Phone: &nbsp; <input type="tel">
             </div>
-            <br>
+            <br><br>
             <div>
                 Address: 
                 <textarea rows="4" cols="32"> 
                     Please, enter your valid address
                 </textarea>
             </div>
-            <br>
+            <br><br>
             <div>
                 Gender: &nbsp;
                 Male <input type="radio" name="gender">
                 Female <input type="radio" name="gender">
                 Other <input type="radio" name="gender">
             </div>
-            <br>
+            <br><br>
             <div>
-                Agree to terms: <br>
-                yes:<input type="checkbox" name="agreement"> &nbsp;
-                no: <input type="checkbox" name="agreement"> &nbsp;
+                Agree to terms: &nbsp;
+                yes:<input type="checkbox" name="agreement"> 
+                
             </div>
             <br>
             <br>
