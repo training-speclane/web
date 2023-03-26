@@ -23,8 +23,8 @@
  * 
 */
 const navBarMenu = document.getElementById('navbar__list') ;            //empty unordered list
-const navBarMenuSections = [...document.querySelectorAll('section')];   //creates an array of sections and add items to it for every single section in the document
-// const listLinks = document.querySelectorAll('.navbar__menu a');      // Links in the navbar
+const navBarMenuSections = document.querySelectorAll('section');        //creates an array of sections and add items to it for every single section in the document
+const listLinks = document.querySelectorAll('.navbar__menu a');      // Links in the navbar
 var navBarMenuItems = document.querySelectorAll('.navbar__menu li a');  //create a list of menu item/section with a href reference
 
 /**
@@ -69,22 +69,24 @@ const addActiveClass = () => {
         if (sectionInViewport(navBarMenuSection)) {
             if (!navBarMenuSection.classList.contains("your-active-class")) {
                 navBarMenuSection.classList.add("your-active-class");
-                for (let navItem of navBarMenuItems){
-                    if (`#${navBarMenuSection.id}` === navItem.getAttribute('href')) {   
-                        navItem.classList.add("highlight");
-                        navItem.classList.remove('menu__link');
-                        console.log('I\'m working as it\'s supposed to')
-                    } else{
-                        navItem.classList.remove('highlight');
-                        console.log('Keep on testing'); navItem.classList.add('menu__link');
-                        navBarMenuSection.classList.remove("your-active-class");
-                    }
+                document.querySelector('data-nav').classList.add('highlight');
+                // for (let navItem of navBarMenuItems){
+                //     if (`#${navBarMenuSection.id}` === navItem.getAttribute('href')) {   
+                //         navItem.classList.add("highlight");
+                //         // navItem.classList.remove('menu__link');
+                //         // console.log('I\'m working as it\'s supposed to')
+                //     } else{
+                //         navItem.classList.remove('highlight');
+                //         navItem.classList.remove('menu__link:hover');
+                //         console.log('Keep on testing'); navItem.classList.add('menu__link');
+                        
+                //     }
                     
-                }
+                // }
             }
-        } else {
-            
-            
+        }   else {
+                navBarMenuSection.classList.remove("your-active-class");
+                // document.querySelector('data-nav').classList.remove('highlight');
         }
     }
 };
