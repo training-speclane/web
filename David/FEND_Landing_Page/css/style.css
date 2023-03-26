@@ -98,7 +98,7 @@ section {
     text-shadow: 0px 0px 5px rgb(255, 255, 255);
 }
 
-.navbar__menu .menu__link:hover {
+.navbar__menu .menu__link:hover , .top-menu-btn-active{
     background: #333;
     color: #fff;
     transition: ease 0.3s all;
@@ -251,3 +251,5 @@ section.highlight {
 		           rotate(-360deg);
 	}
 }
+
+
