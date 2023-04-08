@@ -24,6 +24,12 @@
                 text-align: center;
                 padding-bottom: 20px;
             }
+            textarea{
+                text-align: left;
+            }
+            li{
+                padding-top: 20px;
+            }
         </style> 
     </head>
     <body>
@@ -126,7 +132,7 @@
                 <hr>
 
                 <li>Use CSS to set the background color of the document to yellow.</li>
-                <textarea style="height:140px; width:23rem; text-align: left;">
+                <textarea style="height:140px; width:23rem;">
                     <html>
                     <body style="background-color:yellow;">                
                         <h1>This is a heading</h1>                
@@ -137,7 +143,7 @@
                 <hr> 
 
                 <li> Use CSS to center align the document. </li>
-                <textarea style="height:140px; width:23rem; text-align: left;">
+                <textarea style="height:140px; width:23rem; ">
                     <html>
                     <body style="text-align:center;">                    
                     <h1>This is a heading</h1>                    
@@ -165,7 +171,7 @@
                 <hr>  
 
                 <li> Add a line through (strikeout) the letters "blue" in the text below. </li>
-                <p> My favorite color is <del> blue </del> red.</p>
+                <p> My favorite color is <del> blue</del> red.</p>
                 <hr>  
 
                 <li> Use an HTML element to add quotation marks around the letters "cool". </li>
@@ -232,14 +238,11 @@
                 <hr>  
                 
                 <li> Use the HTML image attributes to set the size of the image to 250 pixels wide and 400 pixels tall. </li>
-                <img src="scream.png" width="250" height="400">
+                <img src="./Personal Blog Web/image/AstonMart2.jpg" width="250" height="400">
                 <hr>  
 
                 <li> Use CSS to set the size of the image to 250 pixels wide and 400 pixels tall.</li>
-                <img src="scream.png" style="width:250px;height:400px;">
-                <hr>
-
-                <li>  </li>
+                <img src="./Personal Blog Web/image/softdev.jpg" style="width:250; height:400">
                 <hr> 
 
                 <li> Make the image below float to the right of the paragraph. </li>
@@ -247,12 +250,12 @@
                 <hr>  
 
                 <li> Add the correct HTML attribute to display the "smiley.gif" image. </li>
-                <img src="smiley.gif" >
+                <img src="https://media.tenor.com/yFi06hL-W1IAAAAM/smiley.gif" >
                 <hr>  
 
                 <li> Specify an alternate text for the image. The alternate text should say "Smiley".
                     Alternate text is useful when the image cannot be displayed, like when the page is read by a screen reader. </li>
-                <img src="smiley.gif" alt="Smiley">
+                <img src="https://media.tenor.com/yFi06hL-W1IAAAAM/smiley.gif" alt="Smiley">
                 <hr>  
 
                 <li>  </li>
@@ -390,67 +393,370 @@
                     </dl>
                 <hr>  
 
-                <li>  </li>
+                <h2>HTML Classes</h2>
+                <li> In the &lt;style&gt; section, create a class selector named "special". Add a color property with the value "blue" inside the "special" class. </li>
+                    <textarea style="height:140px; width:23rem;">
+                        <html>
+                            <head>
+                            <style>
+                            .special {
+                                color:blue;
+                            }
+                            </style>
+                            </head>
+                        </html>
+                    </textarea>
                 <hr>  
-                <li>  </li>
+
+                <li> Add the correct class to make the H1 element red. </li>
+                <textarea style="height:140px; width:23rem;">
+                    <!DOCTYPE html>
+                    <html>
+                        <head>
+                            <style>
+                            .mystyle {color:red;}
+                            </style>
+                        </head>
+                        <body>                            
+                            <h1 class="mystyle">My Home Page</h1>
+                        </body>
+                    </html>
+                </textarea>
                 <hr>  
-                <li>  </li>
+
+                <li> Add two classes to the H1 element, to make the background pink and the color red. </li>
+                <textarea style="height:140px; width:23rem;">
+                    <html>
+                        <head>
+                            <style>
+                                .intro {background:pink;}
+                                .special {color:red;}
+                            </style>
+                        </head>
+                        <body>                        
+                            <h1 class="intro special">My Home Page</h1>
+                        </body>
+                    </html>
+                </textarea>
                 <hr>  
-                <li>  </li>
+
+                <h3>HTML Id</h3>
+                <li> Add the correct HTML attribute to make the H1 element red. </li>
+                <textarea style="height:140px; width:23rem;">
+                    <html>
+                        <head>
+                            <style>
+                                #myheader {color:red;}
+                            </style>
+                        </head>
+                        <body>
+                            <h1 id="myheader">My Home Page</h1>
+                        </body>
+                    </html>
+                </textarea>
+                <hr>
+
+                <li>  Create an id selector named "special". Add a color property with the value "blue" inside the "special" declaration block.</li>
+                <textarea style="height:140px; width:23rem;">
+                    <html>
+                        <head>
+                            <style>
+                                #special {
+                                    color:blue;
+                                    }
+                            </style>
+                        </head>
+                        <body>                        
+                            <p id="special">My paragraph</p>
+                        </body>
+                    </html>
+                </textarea>
                 <hr>  
-                <li>  </li>
+                
+                <h3>HTML Iframes</h3>
+                <li> Create an iframe with a URL address that goes to https://www.w3schools.com. </li>
+                <textarea style="height:40px; width:23rem; text-align: left;">
+                    <iframe src ="https://www.w3schools.com"></iframe>
+                </textarea>
                 <hr>  
-                <li>  </li>
-                <hr>  
-                <li>  </li>
-                <hr>  
-                <li>  </li>
-                <hr>  
-                <li>  </li>
-                <hr>  
-                <li>  </li>
-                <hr>  
-                <li>  </li>
-                <hr>  
-                <li>  </li>
-                <hr>  
-                <li>  </li>
-                <hr>  
-                <li>  </li>
-                <hr>  
-                <li>  </li>
-                <hr>  
-                <li>  </li>
-                <hr>  
-                <li>  </li>
-                <hr>  
-                <li>  </li>
-                <hr>  
-                <li>  </li>
-                <hr>  
-                <li>  </li>
-                <hr>  
-                <li>  </li>
-                <hr>  
-                <li>  </li>
-                <hr>  
-                <li>  </li>
-                <hr>  
-                <li>  </li>
-                <hr>  
-                <li>  </li>
-                <hr>  
-                <li>  </li>
+                
+                <li> Use an iframe attribute to make the iframe 500 pixels wide. </li>
+                <textarea style="height:40px; width:23rem;">
+                    <iframe src="https://www.w3schools.com" width="500"></iframe>
+                </textarea>
                 <hr> 
-                <li>  </li>
+
+                <li> Use CSS to display an iframe with no borders. </li>
+                <textarea style="height:50px; width:23rem;">
+                    <iframe src="https://www.w3schools.com" style="border:none"></iframe>
+                </textarea>
                 <hr>  
-                <li>  </li>
+                
+                <li> Create an iframe with a URL address that goes to "default.html". </li>
+                <textarea style="height:40px; width:23rem;">
+                    <iframe src="default.html"></iframe>
+                </textarea>
                 <hr>  
-                <li>  </li>
+
+                <h3>HTML Scripts</h3>
+                <li> Use JavaScript to change the HTML content of the &lt;p&gt; element to "Hello World!". </li>
+                <textarea style="height:140px; width:23rem;">
+                    <body>
+                        <p id="demo">Hi.</p>
+                        <script> document.getElementById("demo").innerHTML = "Hello World!";</script>
+                    </body>
+                </textarea>
                 <hr>  
-                <li>  </li>
+                
+                <li> Use JavaScript to change the text size of the <p> element to 40 pixels. </li>
+                    <textarea style="height:140px; width:23rem;">
+                        <body>
+                            <p id="demo">Hi.</p>
+                            <script> document.getElementById("demo").style.fontSize= "40px";</script>
+                        </body>
+                    </textarea>
+                <hr>
+
+                <li>  Use JavaScript to set the color of the &lt;p&gt; element to "red".</li>
+                <textarea style="height:140px; width:23rem; text-align: left;">
+                    <body>
+                        <p id="demo">Hi.</p>
+                        <script>document.getElementById("demo").style.color= "red";</script>
+                    </body>
+                </textarea>
                 <hr>  
-                <li>  </li> 
+                
+                <li>  Use JavaScript to change the image source from "scream.png" to "smiley.gif".</li>
+                <textarea style="height:140px; width:23rem;">
+                    <body>
+                    <img id="demo" src="scream.png">
+                    <script>document.getElementById("demo").src= "smiley.gif";</script>
+                    </body>
+                </textarea>
+                <hr>  
+                
+                <h3>HTML Computercode</h3>
+                <li> Define the text "var person;" as programming code. </li>
+                <textarea style="height:50px; width:23rem;">
+                    <p>Code example: <code> var person; </code> </p>
+                </textarea>
+                <hr>  
+                
+                <li> Define the text inside the &lt;code&gt; element as preformatted text (to preserve spaces and line breaks). </li>
+                    <p>Code example:</p>
+                    <pre><code>var person = {
+                      firstName:"John",
+                      lastName:"Doe"
+                    }</code></pre>   
+                <hr>  
+
+                <li> Define the character "x" in the equation as a variable. </li>
+                    <p>A simple math equation: &lt;var&gt;x&lt;/var&gt; = 3 + 2; </p>
+                <hr>  
+
+                <h3>HTML Forms</h3>
+                <li> In the form below, add an input field with the type "button" and the value "OK". </li><br>
+                    <form>
+                        <input type="button" value="OK">
+                    </form><br>
+                    <textarea style="height:70px; width:23rem;">
+                        <form>
+                            <input type="button" value="OK">
+                        </form>
+                    </textarea>
+                <hr>  
+
+                <li> In the form below, add two radio buttons, both with the name "fav_language". </li><br>
+                    <form>
+                        <input type="radio" name="fav_language" value="html"> HTML
+                        <input type="radio" name="fav_language" value="css"> CSS
+                    </form><br>
+                    <textarea style="height:100px; width:23rem;">
+                        <form>
+                            <input type="radio" name="fav_language" value="html"> HTML
+                            <input type="radio" name="fav_language" value="css"> CSS
+                        </form>
+                    </textarea>
+                <hr>  
+                
+                <h3>HTML Form Attributes</h3>
+                <li>Add a submit button, and specify that the form should go to "/action_page.php".  </li><br>
+                    <form action ="/action_page.php">
+                        Name: <input type="text" name="name">
+                        <input type="submit">
+                    </form><br>
+                    <textarea style="height:110px; width:23rem;">
+                        <form action ="/action_page.php">
+                            Name: <input type="text" name="name">
+                            <input type="submit">
+                        </form>
+                    </textarea>
+                <hr>  
+                
+                <li> Specify that the form is submitted using the "POST" method. </li><br>
+                    <form action="/action_page.php" method="post">
+                        Name: <input type="text" name="name">
+                        <input type="submit">
+                    </form><br>
+                    <textarea style="height:110px; width:23rem;">
+                        <form action="/action_page.php" method="post">
+                            Name: <input type="text" name="name">
+                            <input type="submit">
+                        </form>
+                    </textarea>
+                <hr>  
+                
+                <h3>HTML Form Elements</h3>
+                <li> In the form below, add an empty drop down list with the name "cars". </li><br>
+                    <form action="/action_page.php">
+                        <select name="cars"></select>
+                    </form> <br>
+                    <textarea style="height:110px; width:23rem;">
+                        <form action="/action_page.php">
+                            <select name="cars"></select>
+                        </form>
+                    </textarea>
+                <hr>  
+
+                <li> In the form below, add two option elements to the drop down list.The first 
+                    option must have the value "Volvo". The second option must have the value "Ford". </li><br>
+                    <form action="/action_page.php">
+                        <select name="cars">
+                            <option value="Volvo">Volvo</option>
+                            <option value="Ford">Ford</option>
+                        </select>
+                    </form> <br>
+                    <textarea style="height:110px; width:23rem;">
+                        <form action="/action_page.php">
+                            <option value="Volvo">Volvo</option>
+                            <option value="Ford">Ford</option>
+                        </form>
+                    </textarea>
+                <hr>  
+
+                <li> In the form below, add a text area with the name "note". </li> <br>
+                    <form action="/action_page.php">
+                        <textarea name="note"></textarea>
+                    </form>
+                    <textarea style="height:110px; width:23rem;">
+                        <form action="/action_page.php">
+                            <textarea name="note"></textarea>
+                        </form>
+                    </textarea>
+                <hr> 
+
+                <h3>HTML Input Types</h3>
+                <li>In the form below, add an input field for text, with the name "username".  </li><br>
+                    <form action="/action_page.php">
+                        <input type="text" name="username">
+                    </form><br>
+                    <textarea style="height:110px; width:23rem;">
+                        <form action="/action_page.php">
+                            <input type="text" name="username">
+                        </form>
+                    </textarea>
+                <hr> 
+
+                <li> In the form below, add a submit button with the value "Submit Form". </li><br>
+                    <form action="/action_page.php">
+                        <input type="text" name="username">
+                        <input type="submit" value="Submit Form">
+                    </form> <br>
+                    <textarea style="height:110px; width:23rem;">
+                        <form action="/action_page.php">
+                            <input type="text" name="username">
+                            <input type="submit" value="Submit Form">
+                        </form>
+                    </textarea>
+                <hr>
+
+                <li> Add two radio buttons with the name "color" </li><br>
+                    <form action="/action_page.php">
+                        Favorite color: 
+                        Blue
+                        <input value="blue" type="radio" name="color" >
+                        Red
+                        <input value="red" type="radio" name="color">
+                        <input type="submit">
+                    </form> <br>
+                    <textarea style="height:155px; width:23rem;">
+                        <form action="/action_page.php">
+                            Favorite color: 
+                            Blue
+                            <input value="blue" type="radio" name="color" >
+                            Red
+                            <input value="red" type="radio" name="color">
+                            <input type="submit">
+                        </form>
+                    </textarea>
+                <hr> 
+                
+                <li> In the form below, add a input field for button with the value "Click Me". </li> <br>
+                    <form action="/action_page.php">
+                        <input type="button" value="Click Me">
+                    </form> <br>
+                    <textarea style="height:110px; width:23rem;">
+                        <form action="/action_page.php">
+                            <input type="button" value="Click Me">
+                        </form>
+                    </textarea>
+                <hr>
+
+                <li> 1. In the form below, add an input field that can only contain numbers <br>
+                     2. Use the correct input attributes to only allow numbers between 1 and 5. </li><br>
+                    <form action="/action_page.php">
+                        <input type="number" min="1" max="5">
+                    </form> <br>
+                    <textarea style="height:110px; width:23rem;">
+                        <form action="/action_page.php">
+                            <input type="number" min="1" max="5">
+                        </form>
+                    </textarea>
+                <hr>  
+                
+                <h3>HTML Input Attributes</h3>
+                <li>  In the input field below, add placeholder that says "Your name here".</li> <br>
+                    <form action="/action_page.php">
+                        <input type="text" placeholder="Your name here">
+                    </form> <br>
+                    <textarea style="height:110px; width:23rem;">
+                        <form action="/action_page.php">
+                            <input type="text" placeholder="Your name here">
+                        </form>
+                    </textarea>
+                <hr>  
+                
+                <li> Disable the input field below. </li> <br>
+                    <form action="/action_page.php">
+                        <input type="text" disabled>
+                    </form> <br>
+                    <textarea style="height:110px; width:23rem;">
+                        <form action="/action_page.php">
+                            <input type="text" disabled>
+                        </form>
+                    </textarea>
+                <hr>  
+
+                <li> Set the max numbers of characters allowed in the input field to 40. </li> <br>
+                    <form action="/action_page.php">
+                        <input type="text" maxlength="40">
+                    </form> <br>
+                    <textarea style="height:110px; width:23rem;">
+                        <form action="/action_page.php">
+                            <input type="text" maxlength="40">
+                        </form>
+                    </textarea>
+                <hr>
+                
+                <li>Set the input field to be read only (meaning that the value cannot be changed). </li> <br>
+                    <form action="/action_page.php">
+                        <input type="text" readonly>
+                    </form> <br>
+                    <textarea style="height:110px; width:23rem;">
+                        <form action="/action_page.php">
+                            <input type="text" readonly>
+                        </form>
+                    </textarea>
             </ol>
         </main>
     </body>
