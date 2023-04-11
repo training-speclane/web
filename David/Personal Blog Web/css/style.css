@@ -1,0 +1,141 @@
+@import 'topButton.css';
+@import "layout.css";
+@import "blog.css";
+
+
+/* Mobile first Or Anything smaller than 600px */
+.container{
+    /* rules for small screen*/
+    display: grid;
+    /* min-height:80vh; */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 600px));
+    /*border: 1px solid red ; */
+    align-items: center;
+    grid-template-rows: repeat(auto-fit, minmax(20px, 1fr));
+    grid-template-areas: "hd"
+                         "main"
+                         "sd"                         
+                         "ft";
+}
+
+.box{
+    border: 1px solid rgb(191, 225, 238) ;
+    background-color: #9aaab4;
+    /*display: flex;
+    justify-content: center;*/
+}
+
+.title{
+    font-family: 'Tangerine', serif;
+    font-size: 48px;
+    text-shadow: 4px 4px 4px rgb(206, 216, 222);
+    font-weight: bolder;
+}
+
+.sidebar{
+    grid-area: sd;
+    min-width: 100px;
+}
+.footer{
+    grid-area: ft;
+}
+.main{
+    grid-area: main;
+    background-image: url('../image/AstonMart.jpg');
+    background-size: 400px ;
+    border: 1px solid rgb(191, 225, 238) ;
+    background-position-y: bottom;
+    background-position-x:center ;
+    min-height: 320px;
+    max-width: 100% ;
+    object-fit: contain;
+    background-repeat: no-repeat;
+    background-color: #010101;
+    color: rgb(114, 143, 169) ;
+    /* box-sizing:border-box ; */
+}
+header img{
+    max-width: 30%;
+    height: 40%;
+    margin-top: 1px;
+    display: inline  ;
+    margin-inline: auto;
+    /*margin-right: auto;
+    margin-left: auto;*/
+}
+.nestedgrid{
+    padding-inline-start: 0px;
+}
+
+.centered{
+    display:flex;
+    justify-content: center;
+    text-align: center; 
+    padding-top: 20px; 
+}
+
+
+/* Medium Screens */
+/* Use the keyword 'and' to build a complex media query that evaluates both a min and max */
+@media only screen and (min-width: 600px) and (max-width:1100px) {
+    .container{
+    /* Set display to grid*/
+        display:grid;
+    /* Setup rows and columns */
+        grid-template-columns: minmax(100px, 300px);
+        grid-template-rows: repeat(auto-fill, minmax(20px, 1fr));
+        grid-template-areas: "hd hd hd hd hd hd hd hd"
+                            "sd sd main main main main main main"
+                            "ft ft ft ft ft ft ft ft";
+        height: auto;
+    }
+    .main{
+        background-position-y:bottom;
+        background-size: 100%;
+        max-width: 600px;
+        min-height: 1120px;
+        /* object-fit: contain; */
+    } 
+    
+    .nestedgrid {
+        display: grid;
+        /* grid-template-columns: 480px 200px 300px ; */
+        grid-gap: 10px;
+        padding-inline-start: 0em;
+        justify-content: center;
+    }
+  
+}
+
+
+/* Lager Screens */
+@media (min-width:1101px){
+    .container{
+        grid-template-columns: 200px 400px ;
+        grid-template-rows: 80px 1100px 60px;
+        border: 5px solid rgb(127, 121, 97);
+        grid-template-areas: "hd hd hd hd hd hd hd hd"
+                             "sd sd sd main main main main main"
+                             "ft ft ft ft ft ft ft ft";
+        height: auto;
+    }
+    
+    .nestedgrid {
+        display: grid;
+        grid-template-columns: 480px 200px 300px ;
+        /* grid-auto-rows: repeat(auto-fit, minmax(50px, 600px)); */
+        grid-gap: 30px;
+        grid-auto-flow:row;
+        align-items: center;
+        grid-auto-flow: dense;
+        justify-content: center;
+    }
+    .main{
+        background-position-y:bottom;
+        /* min-width: 600px; */
+        min-height: 100%;
+        min-width: max-content;
+        background-size: 100% ;
+
+    }   
+}

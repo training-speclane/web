@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<head>
+    <h2>Welcome to web development</h2>
+    <p>Weclome to HTML training</p>
+<title>HTML exercise</title>
+<meta name="viewport" content="width=device-width, initial-scale=2">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color:white;
+  height: 300px;
+  width:100%;
+}
+
+nav {
+  float: left;
+  width: 15%;
+  height: 90vh;
+  background: #ccc;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 84%;
+  background-color: #f1f1f1;
+  min-height: 862px; 
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: grey;
+  padding: 10px;
+  text-align: center;
+  color: white;
+  height: 200px;
+  width:100%;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+/*This is responsive tag*/
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+    <header>
+        <h1>Gracie</h1>
+
+
+    </header>
+<section>
+  <nav>
+     <ul>
+        <li>About me</li>
+        <li>Projects</li>
+        <li>Interests</li>
+    </ul>
+
+  </nav>
+  
+  <article>
+    <h1>About me</h1> I am flexible, reliable and possess excellent time keeping skills.
+     I am an enthusiastic, self-motivated, reliable, responsible and hard working person.
+      I am a mature team worker and adaptable to all challenging situations. 
+      I am able to work well both in a team environment as well as using own initiative.
+    <img height="700" width="800" src=https://www.web.com/website-builder-landing-v3/_jcr_content/root/section_1450887834/responsivecolumns/column-1/image.coreimg.82.800.gif/1641828325986/test.gif alt="this is not a logo" width="500" height="400">
+</div>
+     
+    <a href="https://www.web.com/" target="_blank"> Go to portal</a>
+
+<!--Make this be a heading 1 tag-->
+    
+  </article>
+</section>
+
+
+<!--Wrap this in a footer tag-->
+  
+  <footer>
+
+    <p>Footer</p>
+  </footer>
+
+
+
+</body>
+</html>

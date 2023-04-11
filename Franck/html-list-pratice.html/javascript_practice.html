@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Javascript</title>
+ </head>
+ <body>
+     
+    <div id = "dynamic-content">
+        Welcome in the world of Javascript
+    </div>
+
+
+    <hr>
+
+    <button id = "update-text-btn" onclick="updateText();"> Update text </button>
+
+    <script>
+        var count = 1;
+
+        function updateText(){
+            document.getElementById("dynamic-content").innerHTML 
+            = `<div style='color:${getRandomColor()}; font-weight:bolder'>This text has been updated using JS. You clicked this button: <u> ${count} </u>  times </div>`;
+            count = count+1; 
+        }
+
+        function getRandomColor() {
+            var letters = '0123456789ABCDEF';
+            var color = '#';
+            //there are 6 color codes 
+            for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+    </script>
+
+ </body>
+
+</html>
