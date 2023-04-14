@@ -1,1 +1,0 @@
-location of all projects belonging to Ruth. Testing. One more test
