@@ -1,0 +1,15 @@
+/* Title: My sustom file CSS */
+
+body{
+    background-color: lightgray;
+    font-size: 14px;
+    
+    width: 90%;
+    max-height:90% ;
+    margin: auto;
+    padding-left: 10px;
+}
+
+h1{
+    color: rgb(107, 84, 98);
+}
