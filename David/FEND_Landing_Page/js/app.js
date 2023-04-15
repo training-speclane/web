@@ -49,6 +49,7 @@ const dynamicNavBar = () => {
         navBarMenuSectionName = navBarMenuSection.getAttribute('data-nav');
         navBarMenuSectionLink = navBarMenuSection.getAttribute('id');
         navBarMenuListItem    = document.createElement('li');
+        navBarMenuListItem.setAttribute('id', `top-section${navBarMenuSectionName.slice(-1)}`);
         navBarMenuListItem.innerHTML = `<a class =  "menu__link" href = "#${navBarMenuSectionLink}" > ${navBarMenuSectionName} </a>` ;
         navBarMenu.appendChild(navBarMenuListItem);
     }
@@ -67,9 +68,12 @@ const addActiveClass = () => {
       // function to add active class to viewed section
     for (const navBarMenuSection of navBarMenuSections) {
         if (sectionInViewport(navBarMenuSection)) {
+
             if (!navBarMenuSection.classList.contains("your-active-class")) {
                 navBarMenuSection.classList.add("your-active-class");
-                document.querySelector('data-nav').classList.add('highlight');
+                
+
+                //document.querySelector('data-nav').classList.add('highlight');
                 // for (let navItem of navBarMenuItems){
                 //     if (`#${navBarMenuSection.id}` === navItem.getAttribute('href')) {   
                 //         navItem.classList.add("highlight");
@@ -83,9 +87,22 @@ const addActiveClass = () => {
                 //     }
                     
                 // }
+
+                 //If section contains class "active", then find the id of that section
+                 const targetSectionID =  navBarMenuSection?.getAttribute('id');
+                 if(targetSectionID){
+                   const targetMenuTop =  document.getElementById('top-'+targetSectionID);
+                   targetMenuTop?.classList.add('top-menu-btn-active');
+                 }
             }
         }   else {
                 navBarMenuSection.classList.remove("your-active-class");
+                const targetSectionID =  navBarMenuSection?.getAttribute('id');
+                if(targetSectionID){
+                  const targetMenuTop =  document.getElementById('top-'+targetSectionID);
+                  targetMenuTop?.classList.remove('top-menu-btn-active');
+                }
+
                 // document.querySelector('data-nav').classList.remove('highlight');
         }
     }
