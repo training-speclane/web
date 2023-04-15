@@ -9,13 +9,15 @@ body{
     margin: auto;
     padding-left: 10px;
     padding-top: 30px;
-    border-left: 1px solid slategray ;
+    
 }
 
 h1{
     color: rgb(107, 84, 98);
     padding-left: 25px;
+    border-left: 5px solid slategray ;
 }
 p{
+    border-left: 1px solid slategray ;
     padding: 25px;
 }
