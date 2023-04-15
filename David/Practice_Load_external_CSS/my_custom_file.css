@@ -8,12 +8,14 @@ body{
     max-height:90% ;
     margin: auto;
     padding-left: 10px;
+    padding-top: 30px;
+    border-left: 1px solid slategray ;
 }
 
 h1{
     color: rgb(107, 84, 98);
-    padding-left: 15px;
+    padding-left: 25px;
 }
 p{
-    padding: 20px;
+    padding: 25px;
 }
