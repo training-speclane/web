@@ -1,5 +1,4 @@
-.my-custom {
-    color: blue;
-    background-color: yellow;
-    font-size: 12px;
+body {
+    background-color: red;
+    font-size: 14px;
 }
