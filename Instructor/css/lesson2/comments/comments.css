@@ -1,0 +1,16 @@
+/*********************************************************************************************************
+* This file contains common css styles for web pages. Please load this file on all pages
+* to get uniform consistent style accross the application. Please follow statndards and use kebab casing
+* where neccesry. Please donot capitalization, unless needed.
+**********************************************************************************************************/
+
+
+h1{
+    color : green
+}
+
+body {
+    background-color: purple;
+    color : grey;
+    font-size: 14px; /* You can override this by providing a new font-size for your container*/
+}

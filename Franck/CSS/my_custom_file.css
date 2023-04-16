@@ -2,3 +2,19 @@ body {
     background-color: red;
     font-size: 14px;
 }
+
+.The-world-of-CSS {
+    width: 75%;
+    min-height: 50px;
+    border: solid 2px black;
+}
+
+.The-world-of-CSS-info-child {
+    width: 50%;
+    min-height: 25px;
+    border: solid 1px blue;
+    background-color: beige;
+}
+/* This is how we write a comment in CSS */
+/* Padding it's a space inside a container */
+/* */
