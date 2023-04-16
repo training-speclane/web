@@ -13,6 +13,7 @@ body {
     width: 50%;
     min-height: 25px;
     border: solid 1px blue;
+    background-color: beige;
 }
 /* This is how we write a comment in CSS */
 /* Padding it's a space inside a container */
