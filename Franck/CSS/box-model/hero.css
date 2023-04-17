@@ -18,6 +18,16 @@ body {
     border-bottom: solid 2px purple;
     border-radius: 10px;
     background-image: url('apartment-cropped.jpg');
+
 }
+
+#pond {
+    display: flex;
+  }
+
+  .my-hero {
+    justify-content: center;
+  }
+
 
 
