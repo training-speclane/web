@@ -1,0 +1,23 @@
+
+body {
+    background-color: rgb(233, 230, 230);
+}
+
+.my-header{
+    width: 100%;
+    height: 45px;
+    background-color: purple;
+    border-bottom: solid 3px orange;
+    border-top:solid 2px orange;
+    color: white
+}
+
+.my-hero {
+    width : 100%;
+    min-height: 300px;
+    border-bottom: solid 2px purple;
+    border-radius: 10px;
+    background-image: url('apartment-cropped.jpg');
+}
+
+
