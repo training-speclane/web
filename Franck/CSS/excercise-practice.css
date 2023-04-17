@@ -16,3 +16,7 @@ body {
 .My-Organization {
     border: solid 3px blue;
 }
+
+tr, th, td {
+    border: solid 3px;
+}
