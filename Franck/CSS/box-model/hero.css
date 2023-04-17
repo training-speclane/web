@@ -1,6 +1,7 @@
 
 body {
     background-color: rgb(233, 230, 230);
+    font-size: larger;
 }
 
 .my-header{
@@ -10,6 +11,7 @@ body {
     border-bottom: solid 3px orange;
     border-top:solid 2px orange;
     color: white
+    
 }
 
 .my-hero {
@@ -21,13 +23,23 @@ body {
 
 }
 
-#pond {
+.my-hero {
     display: flex;
-  }
-
-  .my-hero {
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 
+.search-btn {
+    
+    background-color: green;
+}
 
+.register-now {
+    background-color: darkorange;
+}
+
+.schedule-appointment {
+    background-color: coral;
+}
 
