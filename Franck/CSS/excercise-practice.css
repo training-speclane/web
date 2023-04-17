@@ -14,7 +14,7 @@ body {
 }
 
 tr, th, td {
-    border: solid 2px;
+    border: solid 0.5px;
 }
 
 th {
