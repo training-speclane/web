@@ -1,0 +1,13 @@
+.section-info-child {
+  width: 50%;
+  min-height: 50px;
+  border : solid 2px green;
+}
+
+.my-section {
+  width:70%;
+  min-height: 250px;
+  border: solid 3px orange
+}
+
+
