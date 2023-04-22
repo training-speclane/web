@@ -67,6 +67,9 @@ input{
     min-height: 50px;
     margin: 10px;
     border-radius: 3px;
+    background-color:purple;
+    color: white;
+    opacity: 10px;
     
 
 }
@@ -77,6 +80,9 @@ input{
     min-width: 40px;
     min-height: 50px;
     border-radius: 3px;
+    background-color:purple;
+    color:white;
+    opacity: 10px;
 
 
 }
