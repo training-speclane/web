@@ -1,0 +1,10 @@
+.my-custom-div {
+
+    min-height: 150px;
+    width : 400px;
+    background-color: aqua;
+    border: solid 2px orangered;
+    outline-style: dotted;
+    outline-color: blue;
+    border-radius: 15px;
+}
