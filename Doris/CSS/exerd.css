@@ -1,0 +1,78 @@
+body {
+    background-color: aqua;
+}
+
+h1::before {
+    content: url(https://media.tenor.com/mZNbvmNhm-0AAAAj/emoji-smiley.gif);
+}
+h2::after{
+    content: url(https://media.tenor.com/mZNbvmNhm-0AAAAj/emoji-smiley.gif)
+    
+}
+
+.order-list {
+    border: 3px solid brown;
+    color: blue;
+    border-radius: 10px;
+    border-top: 6px;
+    border-bottom: 4px;
+    width: 300px;
+    height: 150px;
+    padding: 2px ;
+    margin: 6rem;
+    text-align: center;
+    list-style-position: inside;
+    
+   
+}
+ul li{
+    list-style-type:circle;
+    margin: 0;
+}
+
+.unordered-list {
+    border: 3px solid black;
+    border-bottom: 4px;
+    border-radius: 10px;
+    border-top: 6px;
+    width: 300px;
+    height: 150px;
+    padding: 2px;
+    margin: 6rem;
+    text-align: center;
+    /* center the list */
+    list-style-position: inside;
+    /* move bullet points inside the list items */
+    list-style-type: square;
+    /* use a filled circle as the bullet point */
+}
+
+
+
+    .tables {
+        border: 6px solid chocolate;
+        border-radius: 7px;
+        border-bottom: 9px;
+        border-top: 12px;
+        width: 400px;
+        height: 230px;
+        padding: 2px;
+        margin: 6rem;
+    }
+
+
+
+    th,
+    tr,
+    td {
+        border: 1px solid;
+    }
+
+    th {
+        background-color: darkorchid;
+        color: plum;
+    }
+
+    td {
+        color: rgb(40, 51, 3);
+    }

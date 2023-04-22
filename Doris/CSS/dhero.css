@@ -1,0 +1,102 @@
+.my-header {
+    width: 100%;
+    height: 45px;
+    background-color: rgb(197, 86, 106);
+    border-top: 3px solid #006E52;
+    border-bottom: 3px solid #006E52;
+    color: #006E52;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+.my-hero {
+    width: 100%;
+    min-height: 300px;
+    border-bottom: 2px solid #006e52;
+
+    border-radius: 10px;
+    background-image: url(https://images.pexels.com/photos/6207825/pexels-photo-6207825.jpeg?auto=compress&cs=tinysrgb&w=400);
+    align-items: center;
+    justify-content: center;
+    /* background-size: cover makes the image take the entire space */
+
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    /* or column, row-reverse, column-reverse */
+    flex-wrap: wrap;
+    /* or nowrap, wrap-reverse */
+    position: relative;
+
+}
+
+.info-text {
+    position: absolute;
+    /* position: absolute moves the text up */
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    margin: 2rem;
+    color: rgb(197, 86, 106);
+    font-weight: 300px;
+    border: 3px groove rgb(197, 86, 106);
+    background-color: #006E52;
+    border-radius: 7px;
+    font-size: 2em;
+    text-align: center;
+    border-bottom: 2px solid transparent;
+    animation: pulse 2s ease-in-out infinite forwards;
+}
+
+.search-button {
+    margin-bottom: 4rem;
+    font-size: 14px;
+    padding: 8px 8px;
+    border: 2px groove;
+    border-radius: 5px;
+    border: none;
+    color:white;
+    background-color: rgb(193, 73, 95);
+
+
+
+}
+input{
+     
+        padding: 10px 10px;
+        border: 2px groove;
+        border-radius: 2px;
+        border: none;
+        color: #006e52;
+}
+
+
+.Register-now {
+    font-size: 20px;
+    padding: 10px 20px;
+    /* increase the padding to make the button larger */
+    border: 2px solid rgb(197, 86, 106);
+    background-color: #720028;
+    border-radius: 30px;
+    color: #006e52;
+
+}
+
+.Schedule-Appointment {
+    font-size: 20px;
+    padding: 10px 20px;
+    border: 2px solid;
+    background-color: #720028;
+    border: 2px solid rgb(197, 86, 106);
+    border-radius: 30px;
+    color: #006e52;
+
+}
+
+
+body {
+    background-color: linen;
+    margin: 0 auto;
+    padding: 0px auto;
+
+}

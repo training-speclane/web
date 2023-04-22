@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <style>
+        table, th, tr, td {
+            border: solid 0.5px grey;
+        }
+
+        footer, header {
+            min-height: 150px;
+            background-color:green;
+            border-bottom: solid 2px purple;
+            width:100%
+
+        }
+
+        .ai-info-text {
+            color:green;
+            font-size: 24px;
+        }
+        #details-text {
+            color : blue;
+        
+        }
+     </style>
+    </head>
+    <body>
+
+        <!-- Browser tries to keep conmtent inside a header at top of the page-->
+        <header>
+            Content in this always stays at the top, in the body element
+
+            <nav>
+                <a href="/..s">Home</a>
+                <a href="/..s">Contact me</a>
+
+            </nav>
+        </header>
+      
+        <h1>Welcome</h1> <!--Element-->
+
+
+        <!--Attributes are qulaities of an element. Not all elements have attributes-->
+        <!-- <img src="../lesson4/sample_exercise.png" alt="my image"> -->
+        <br/> <!-- Line break: Means go to next line-->
+        <hr>  <!-- Draw a horizontal line-->
+        <input type="week">
+
+        <iframe src="https://speclane.com" height="500" width="900">
+        </iframe>
+
+        <br/>
+
+        <!--IMAGE ELEMENBT-->
+        
+        <img src="https://speclane.com/images/learner-img2.jpeg" alt="iamges" width="300" height="300"> 
+
+        <br/>
+
+        <!--link-->
+        <a href="https://portal.speclane.com/" target="_blank">Go to portal</a>
+
+        <br/>
+
+        <!--html list-->
+        <!--Unorderd list-->
+        <ul style="list-style-type:square">
+            <li>Apple</li>
+            <li>Eggs</li>
+            <li>Milk</li>
+            <li>School
+                <ul>
+                    <li>Pencil</li>
+                    <li>Drawing book</li>
+                    <li>
+                        Crayon
+                        <ul>
+                            <li>Green color</li>
+                            <li>Yellow color</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+
+        <!-- Orderd list-->
+
+        <ol>
+            <li>Apple</li>
+            <li>Eggs</li>
+            <li>Milk</li>
+            <li>School
+                <ol>
+                    <li>Pencil</li>
+                    <li>Drawing book</li>
+                    <li>
+                        Crayon
+                        <ol>
+                            <li>Green color</li>
+                            <li>Yellow color</li>
+                        </ol>
+                    </li>
+                </ul>
+            </li>
+        </ol>
+
+        <br/>
+
+        <!--HTML Table-->
+        <table>
+            <tr>
+                <th>Student</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+            <tbody>
+                <tr>
+                    <td>0019</td>
+                    <td>John</td>
+                    <td>Doe</td>
+                </tr>
+                <tr>
+                    <td>002929</td>
+                    <td>James</td>
+                    <td>Tula</td>
+                </tr>
+                <tr>
+                    <td>8383</td>
+                    <td>Abra</td>
+                    <td>Lin</td>
+                </tr>
+                
+            </tbody>
+        </table>
+
+        <br/>
+
+
+       <section>
+        <!-- row containing elements-->
+        <div>
+            This is a div in a section
+        </div>
+       </section>
+
+       <!--Text attributes and info-->
+       <article>
+           This is an article
+       </article>
+       <br/>
+
+       <div class="ai-info-text"> <!--Identity most often by association-->
+           AI is growing fast
+       </div>
+       <div class="ai-info-text"> <!--Identity most often by association-->
+           Learn Javascript for Web3
+       </div>
+
+       <div id = "details-text"> <!--Uniq identifier-->
+            Learning how to program the web is a great way to stay in the world of technology
+       </div>
+    
+       <br/>
+
+       <!-- HTML forms-->
+
+       <form method="post" action="WHERE TO SUBMIT THE FORM DATA">
+        <div>
+            <label for="firstName">First Name : </label>
+            <input id="firstName" type="text"> 
+        </div>
+          
+       </form>
+
+       <!--Audio-->
+       <audio controls>
+         <source src="audio.mp3" type = "audio/mpeg">
+       </audio>
+
+       <!--Video-->
+       <br/>
+    
+       <video height="200" width="200">
+         <source src="video.mp4" type = "video/mp4">
+       </video>
+
+       <br/>
+
+       <iframe width="400" height="400" src="https://www.youtube.com/embed/tgbNymZ7vqY">
+     
+
+       </iframe>
+
+
+
+   <br/>
+
+
+        <!--HTML Layout-->
+
+        <!--The browser tries to keep this at the botom of the page-->
+        <footer>
+            This always stays at the bottom
+        </footer>
+
+       
+        <script>
+            var today = new Date();
+            alert(today);
+        </script>
+
+        
+    </body>
+</html>
