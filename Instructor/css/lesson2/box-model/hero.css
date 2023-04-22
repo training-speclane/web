@@ -18,6 +18,38 @@ body {
     border-bottom: solid 2px purple;
     border-radius: 10px;
     background-image: url('apartment-cropped.jpg');
+    position: absolute;
 }
 
+.my-box {
+    margin-top: 5%;
+    margin-left: 40%;
+    background-color: white;
+    margin-right: 30%;
+    opacity: 0.75;
+    padding: 25px;
+    border-radius: 20px;
+}
 
+.info-text, .search-appartments, .action-buttons{
+    padding: 10px
+}
+
+.search-btn, .search-input, .register-now, .schedule-appointment{
+    height: 30px;
+}
+
+.register-now, .schedule-appointment {
+    background-color: purple;
+    color : white
+}
+
+.search-btn {
+    background-color: green;
+    color : white;
+}
+
+.search-btn, .register-now, .schedule-appointment{
+    border: 2px solid blue;
+    border-radius: 10px;
+}
