@@ -1,0 +1,119 @@
+:root{
+    --input_width: 580px;    
+    --input-border-style: rgb(133, 133, 133, .4 );
+}
+
+/* Reset some the following properties to corresponding values  */
+*{
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+.container{
+    min-width:650px;
+    min-height: 430px;
+    box-shadow: inset .5px 1px 2px 1px gainsboro;
+    margin: 25px 20px 25px;  /*top, right, bottom, left*/
+    padding: 25px;
+    background-color: white;
+    border-radius: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+body{
+    background-color: rgba(143, 157, 188, 0.384);
+}
+
+input{
+    border: solid var(--input-border-style);
+    margin-top:8px;
+}
+
+input:hover{
+    border: 1px solid #078ddb ;
+}
+
+input:focus{
+    /* background-color:rgba(75, 123, 227, 0.2) ; */
+    outline:none;
+}
+
+#one input, #two input{
+    width:100%;
+    height: 5vh;
+}
+
+.names_section div{
+    display: inline-block;
+    padding-right: 8px;
+    width: 49%;
+}
+
+h2{
+    color: rgba(143, 157, 188, 0.7);
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    border-bottom:1px groove rgba(143, 157, 188, 0.384);
+    width: fit-content;
+    padding: 8px;
+    letter-spacing: 2px;
+}
+
+.names_section{
+    display: block ;
+    width: 100%;
+    /* margin-bottom: 20px; */
+}
+
+.container div{
+    margin-bottom: 10px;
+}
+
+.input_email_size{
+    width: 98%;
+    height: 5vh;
+}
+
+.message_area{
+    width: 98%;
+    height: 180px;
+    margin-top:8px;
+    border: solid var(--input-border-style);
+}
+.message_area:hover{
+    border: 1px solid #078ddb ;
+}
+
+.message_area:focus{
+    /* background-color:rgba(149, 178, 239, 0.2) ; */
+    outline:none;
+}
+
+::placeholder{
+    opacity: .4;
+}
+
+button{
+    border-style: none;
+    background-color: darkslategray;
+    width: 70px;
+    height: 35px;
+    position: relative;
+    left: 45%;
+    color: white;
+}
+button:hover{
+    box-shadow: inset 1px 2px 3px 2px   #323730 ;
+    border-style: none;
+}
+
+.lower_div_centered{
+    position: relative;
+    left: 45%;
+    padding-right: 15px;    
+}
+
+i{
+    color: rgb(81, 81, 106);
+    padding-right: 5px; 
+}
