@@ -15,7 +15,7 @@ body {
     margin-right: 30%;
     border: 1px solid #555;
     box-sizing: border-box;
-    border-radius: 5px;
+    border-radius: 10px;
 
 }
 
@@ -30,7 +30,7 @@ textarea {
 }
 
 .button {
-    margin-left: 50%;
+    margin-left: 45%;
     padding: 10px;
     background: #5a0c9f;
     color: #fff;
