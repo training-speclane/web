@@ -1,0 +1,17 @@
+
+.my-info {
+    color : blue !important;
+}
+/* .container {
+    min-height: 200px;
+    border : solid 2px orange;
+    border-radius: 20px;
+    padding : 10px;
+    color : green;
+} */
+
+/*Overrde style from Boostrap library*/
+.accordion-button:not(.collapsed) {
+    color: #ffffff;
+    background-color: green;
+}
