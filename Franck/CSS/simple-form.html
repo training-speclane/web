@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+    <style>
+        body {
+            display: flex;
+            height: 100vh;
+            
+            
+        }
+
+        .container {
+            max-width: 700px;
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            padding: 25px 30px;
+            border-radius: 10px;
+            border: 100%;
+            margin: 2%;
+            display: flex;
+            justify-content: space-between;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: stretch;
+            
+            border: solid 0.5px;
+        }
+
+        .container .details {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .container .input-box .details{
+            height: 25px;
+            width: 100px;
+        }
+
+        .container input {
+            width: 100%;
+            height: 30px;
+            margin: 3%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container .text input {
+            width: 100%;
+            height: 75px;
+        }
+
+        .container .button input {
+            width: 10%;
+            margin: 1%;
+            padding: auto;
+        }
+
+        .container .button {
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+            margin-right:           
+            width: 25%;
+
+        }
+
+        .container .button .submit {
+            background-color: blue;
+            justify-content: space-evenly;
+            color: #fff;
+            symbols: \F400;
+        }
+    </style>
+    <link rel="stylesheet" href="documents/bootstrap-icons-1.10.4/bootstrap-icons.css">
+    
+</head>
+<body>
+    
+      
+    
+    
+    <div class="container">
+        
+        <div class="input-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-right-square-fill" viewBox="0 0 16 16">
+                <path d="M14 16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12zM5.904 5.197 10 9.293V6.525a.5.5 0 0 1 1 0V10.5a.5.5 0 0 1-.5.5H6.525a.5.5 0 0 1 0-1h2.768L5.197 5.904a.5.5 0 0 1 .707-.707z"/>
+              </svg>
+            <span class="details">First Name</span>
+            <input type="text" required>
+        </div>
+
+        <div class="input-box">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-right-square-fill" viewBox="0 0 16 16">
+                <path d="M14 16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12zM5.904 5.197 10 9.293V6.525a.5.5 0 0 1 1 0V10.5a.5.5 0 0 1-.5.5H6.525a.5.5 0 0 1 0-1h2.768L5.197 5.904a.5.5 0 0 1 .707-.707z"/>
+              </svg>
+            <span class="details">Last Name</span>
+            <input type="text" required> 
+        </div>
+
+        <div class="email">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-right-square-fill" viewBox="0 0 16 16">
+                <path d="M14 16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12zM5.904 5.197 10 9.293V6.525a.5.5 0 0 1 1 0V10.5a.5.5 0 0 1-.5.5H6.525a.5.5 0 0 1 0-1h2.768L5.197 5.904a.5.5 0 0 1 .707-.707z"/>
+              </svg>
+            <span class="details">Email</span>
+            <input type="text" required> 
+        </div>
+
+        <div class="text">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-right-square-fill" viewBox="0 0 16 16">
+                <path d="M14 16a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12zM5.904 5.197 10 9.293V6.525a.5.5 0 0 1 1 0V10.5a.5.5 0 0 1-.5.5H6.525a.5.5 0 0 1 0-1h2.768L5.197 5.904a.5.5 0 0 1 .707-.707z"/>
+              </svg>
+            <span class="details">Message</span>
+            <input type="text" required> 
+        </div>
+
+        <div class="button">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right-square-fill" viewBox="0 0 16 16">
+                <path d="M0 14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v12zm4.5-6.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5a.5.5 0 0 1 0-1z"/>
+              </svg>
+            <input class="submit" value="Send">
+        </div>
+
+
+    </div>
+
+    
+
+    
+    
+</body>
+</html>
