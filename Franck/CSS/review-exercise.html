@@ -5,7 +5,7 @@
     <meta charset="utf-8">
 
     <style>
-       .menu-ul {
+       .container-fluid {
            list-style-type: none;
            margin: 0;
            padding: 0;
@@ -13,20 +13,26 @@
            background-color: purple;
        }
 
-       .menu-li {
+       .nav-item {
         float: left;
        }
 
-        #my-custom-body{
-            min-height: 60vh;
-            border: solid 2px purple;
-            border-radius: 10px;
-            display: inline-block;
-            width:100%;
-            text-align: center;
-        }
+       .navbar-nav me-auto mb-2 mb-lg-0 {
+        list-style-type: none;
+           margin: 0;
+           padding: 0;
+           overflow: hidden;
+           background-color: purple;
+       }
 
-        .menu-li a {
+       .navbar-brand {
+        list-style-type: none;          
+           background-color: purple;
+           float: left;
+       }
+
+       
+        .nav-item {
              display: block;
              color:white;
              text-align: center;
@@ -34,19 +40,9 @@
              text-decoration: none;
         }
 
-        .body-inner {
-            float:left;
-        }
+        
 
-        #body-one {
-            color : orange;
-        }
-
-        #body-two {
-            color : green;
-        }
-
-        .menu-li-btn{
+        .d-flex {
             margin-left: 60%;
             margin-top: 14px;
         }
@@ -60,6 +56,36 @@
         .btn:hover{
             background-color:orange;
         }
+
+        .my-hero {
+            width : 100%;
+            min-height: 300px;
+            border-bottom: solid 2px purple;
+            border-radius: 10px;
+            background-image:url(file:///C:/Users/Franck/Desktop/DEV/web/Franck/CSS/box-model/apartment-cropped.jpg);
+
+        }
+
+        .my-hero {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .search-btn {
+    
+            background-color: green;
+        }
+
+        .register-now {
+            background-color: darkorange;
+        }
+
+        .schedule-appointment {
+            background-color: coral;
+        }
+
 
     </style>
  </head>
@@ -102,18 +128,29 @@
       </nav>
      
       <br/>
-     <div id="my-custom-body">
-        <div id="body-one" class="body-inner"> 
-            Body 1 conten
-
-        </div>
-        <div id="body-two" class="body-inner" >
-            Body 2 content
-        </div>
+    
      </div>
+     <div class="my-hero">
+
+        <div class="info-text">
+            Welcome to Apartment hub. Search for appartments
+        </div>
+        <div class = "search-appartments"> 
+            <input type="text"> <button class="search-btn">Search</button>
+        </div>
+        <div class="action-buttons">
+            <button class="register-now">Register Now</button>
+            <button class="schedule-appointment"> Schedule Appointment</button>
+        </div>
+
+
+    </div> 
+
      <br/>
      <div class="abc"> <!--Kebab-->
         Hello world!
+
+        
      </div>
  </body>
 </html>
