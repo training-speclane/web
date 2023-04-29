@@ -1,0 +1,11 @@
+
+:root {
+    --my-blue: rgb(71, 71, 246);
+    --my-white : white
+}
+
+
+.requirements {
+   font-weight: bold;
+   color: var(--my-blue);
+}
