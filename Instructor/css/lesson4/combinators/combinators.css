@@ -1,0 +1,17 @@
+ul li a {
+    color : green;
+    font-weight: bolder;
+    text-decoration: none;
+}
+/*All children of Section with element of type P */
+section > p { 
+    background-color: yellow;
+}
+section + p { 
+    background-color: yellow;
+}
+
+/* Select all P elements after the class "para-text"*/
+.para-text ~ p {
+    background-color: green;
+}

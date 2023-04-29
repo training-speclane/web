@@ -21,7 +21,8 @@ body {
 
 .parent{
     text-align:center;
-    
+    background-color: white;
+    opacity: 0.75;  
 
 }
 .info-text{
