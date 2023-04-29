@@ -1,0 +1,36 @@
+.my-animation{
+    animation-name: mytext;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes mytext{
+    from{
+        margin-left: 100%;
+        width: 300%;
+
+    }
+    to{
+        margin-left: 0%;
+            width: 100%;
+
+    }
+}
+.my-div-ani{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+@keyframes my-diva-ni{
+    /* change the look and feel of element without moving it */
+0%{background-color: red;
+
+}
+25%{background-color: green;}
+50%{background-color: yellow;}
+
+
+
+}
