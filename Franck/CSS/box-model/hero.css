@@ -19,7 +19,7 @@ body {
     min-height: 300px;
     border-bottom: solid 2px purple;
     border-radius: 10px;
-    background-image: url('apartment-cropped.jpg');
+    background-image: url(file:///C:/Users/Franck/Desktop/DEV/web/Franck/CSS/box-model/apartment-cropped.jpg);
 
 }
 
