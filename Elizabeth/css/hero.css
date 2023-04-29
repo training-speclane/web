@@ -19,23 +19,32 @@ body {
     border-radius: 10px;
     background-image: url('apartment-cropped.jpg');
     text-align: center;
-    padding: 20px;
-    text-size-adjust: large;
+    padding:20px;
 }
 .info-text{
     color: rgb(0, 255, 68);
+    padding: 20px;
 }
 .search-btn{
     border: solid 2px purple;
-    color: green;
+    background-color: green;
+    color: white;
 }
 .register-now{
     border: solid 2px blue;
     color: aqua;
+    background-color: purple;
 }
 .schedule-appointment{
-    border: solid 2px green;
-    color: rgb(100, 0, 75);
+    border: solid 2px blue;
+    color: aqua;
+    background-color: purple;  
+}
+.info-text,.search-appartment,.action-buttons{
+    padding: 20px;
+}
+.search-btn,.action-input,.register-now,.schedule-appointment{
+    height: 30px;
 }
 
 
