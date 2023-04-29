@@ -1,0 +1,22 @@
+form{
+    border: solid 4px red;
+    border-radius: 15px;
+    outline-style: double;
+    outline-color: aqua;
+}
+h1{
+    text-align: center;
+}
+.username,.input,.required,.message,.send{
+    padding: 10px;
+    
+}
+.send{
+    margin-left: 250px;
+    border: solid 2px blue;
+    background-color: purple;
+    color: white;
+    border-radius: 10px;
+}
+
+    
