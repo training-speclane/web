@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    height: 100vh;   
+}
+
+    .name {
+        display: inline-block;
+        float: left;
+        margin: 10px;
+        padding: 2px;
+    }
+
+    form {
+        float: left;
+        position: fixed;
+    }
+
+    .button {
+        align-items: baseline;
+    }
+
+
+
+
+
+
+.text input {
+    padding: 1px 2px;
+    width: 250px;
+    height: 75px;
+    
+}

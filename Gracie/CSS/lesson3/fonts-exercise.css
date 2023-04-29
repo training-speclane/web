@@ -1,0 +1,128 @@
+.my-hero{
+    width : 100%;
+    min-height: 500px;
+    border-bottom: solid purple;
+    border-top: solid lavender;
+    border-radius: 5px;
+    background-color:lavender;
+    
+}
+
+.my-box{
+    margin-top: 3%;
+    margin-left: 20%;
+    background-color: white;
+    margin-right: 50%;
+    opacity: 0.75;
+    padding: 25px;
+    border-radius: 45px;
+    min-height: 350px;
+    min-width: 52%;
+    margin-bottom: 5%;
+
+}
+
+
+.row-1{
+    display: inline-block;
+}
+.first-name-row,.last-name-row{
+    float:left;
+    font-size: larger;
+}
+
+.last-name-row{
+    margin-left: 45px;
+    font-size: larger; 
+}
+.email{
+    font-size: larger;
+}
+.input{
+    width: 425px;
+    height:35px;
+    
+    
+}
+.input-email{
+    min-width: 895px;
+    height:35px;
+}
+
+.button-send{
+    background-color: purple;
+    color:white;
+    font-size:medium;
+    border-radius: 3px;
+    width: 90px;
+    height: 50px;
+    margin-top: 25px;
+    
+}
+.send-icon{
+    color:white;
+    font-size: 20px;
+    border: 1px;
+    padding: 5px;
+    
+}
+.menu-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: purple;
+}
+
+.menu-li {
+ float: left;
+}
+
+.menu-li a {
+    display: block;
+    color:white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+}
+
+.menu-li-btn{
+    margin-left: 60%;
+    margin-top: 14px;
+}
+.btn {
+    background-color: lightblue;
+    border: solid 2px white;
+    border-radius: 20px;
+    height: 25px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color:orange;
+}
+.bi-send{
+    color:black;
+
+}
+.div4{
+    font-size: larger;
+    
+}
+.bi-person-vcard-fill{
+    color:black;
+}
+.bi-envelope-at-fill{
+    color:blue;
+}
+.bi-chat-square-text{
+    color: green;
+}
+
+
+
+
+    
+
+
+
+    

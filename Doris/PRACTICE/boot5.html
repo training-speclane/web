@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../PRACTICE/boot5.css">
+    <title>Frontend Bootcamp</title>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark">
+        <div class="container">
+            <!-- creating this container and putting the a tag inside it,created some padding and margin by default  -->
+            <a href="#" class="navbar-brand">Frontend Bootcamp</a>
+
+            <button class="navbar-toggler"
+             type="button" 
+             data-bs-toggle="collapse" 
+             data-bs-target="#navmenu">
+            <span class="navbar-toggler-icon"></span>
+            
+
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <!-- using ms (margin start-auto) will shift the list to the other side (right side)  -->
+                    <!-- this listing ensures that everything is position next to another  -->
+                    <li class="nav-item">
+                        <a href="#learn" class="nav-link">What you'll learn</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Questions" class="nav-link"> Questions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#Instructors" class="nav-link">Instructors</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        </div>
+
+
+    </nav>
+    <!-- showcase -->
+    <section class="bg-dark text-light p-5 text-center text-sm-start">
+        <!-- adding text-sm-start will ensure that it will be center on the mobile screen -->
+        <div class="container">
+            <div class="d-sm-flex align-items-center justify-content-between  ">
+                <div>
+                    <h1>Become a <span class="text-warning">web developer</span></h1>
+                    <p class="lead my-4">
+                        <!-- class-lead makes the text a little bigger and my-4(margin on the y axis)
+                        gives margin top in the text and send it closer  to the left side   -->
+                        We focus on teachinhg our students the fundamentals of the latest
+                        and greatest technologies to prepare them for thier first dev role
+                    </p>
+                    <!-- using a span class of text-warning gives us a yellow color by default 
+                    primary= blue,dander=red etc -->
+                    <button class="btn-warning btn-lg">Start the Enrollment</button>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block" src="img2/undraw_dev_focus_re_6iwt.svg" alt="">
+                <!-- we add d-none so that the image doesn't display on mobile d=display  -->
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
