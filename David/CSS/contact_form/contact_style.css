@@ -9,8 +9,8 @@
     box-sizing: border-box;
 }
 .container{
-    min-width:650px;
-    min-height: 430px;
+    max-width:800px;
+    min-height: 400px;
     box-shadow: inset .5px 1px 2px 1px gainsboro;
     margin: 25px 20px 25px;  /*top, right, bottom, left*/
     padding: 25px;
@@ -76,7 +76,7 @@ h2{
 
 .message_area{
     width: 98%;
-    height: 180px;
+    min-height:220px;
     margin-top:8px;
     border: solid var(--input-border-style);
 }
