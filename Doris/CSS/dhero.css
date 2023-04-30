@@ -1,4 +1,4 @@
-.container-fluid {
+/* .container-fluid {
     width: 100%;
     height: 45px;
     background-color: rgb(197, 86, 106);
@@ -7,7 +7,7 @@
     color: #006E52;
     font-size: 20px;
     padding: 10px 20px;
-}
+} */
 
 .my-hero {
     width: 100%;
@@ -61,14 +61,14 @@
 
 
 }
-input{
+/* input{
      
         padding: 10px 10px;
         border: 2px groove;
         border-radius: 2px;
         border: none;
         color: #006e52;
-}
+} */
 
 
 .Register-now {
@@ -94,7 +94,7 @@ input{
 }
 
 
-body {
+/* body {
     background-color: linen;
     margin: 0 auto;
     padding: 0px auto;
@@ -109,4 +109,12 @@ button:hover{
     
       background-color: transparent;
         
+} */
+
+/* .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: white;
 }
+
+.nav-link {
+    color: white !important;
+} */
