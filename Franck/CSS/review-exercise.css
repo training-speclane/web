@@ -37,7 +37,7 @@ li:hover ul.dropdown-menu {
  visibility: visible;
 }
 
-.dropdown-item: :hover a{
+.dropdown-item:hover a{
  left: 0;
  opacity: 0;
  position: absolute;
