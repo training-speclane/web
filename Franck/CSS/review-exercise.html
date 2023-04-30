@@ -3,120 +3,13 @@
  <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Responsiveness-->
     <meta charset="utf-8">
+    <link rel="stylesheet" href="../CSS/review-exercise.css">
     
-    <style>
-       .container-fluid {   
-           overflow: hidden;
-           background-color: purple;
-           margin: 0;
-           padding: 0;
-       }
-
-       .nav-item {
-        float: left;
-       }
-
-       .nav-link, nav-link-active, nav-link-disabled {
-        color: white;
-       }
-
-       .contact-form {
-        float: left;
-        color: white;
-        list-style-type: none;
-       }
-
-       .navbar-brand {
-        list-style-type: none;          
-           background-color: purple;
-           color: white;
-           float: left;
-       }
-
-       .dropdown-menu {
-        display: none;
-        position: absolute;
-       }
-
-       li:hover ul.dropdown-menu {
-        opacity: 1;
-        top: 80px;
-        visibility: visible;
-       }
-
-       .dropdown-item: :hover a{
-        left: 0;
-        opacity: 0;
-        position: absolute;
-        top: 35px;
-        display: none;
-        z-index: 1;
-       }
-       
-        .nav-item {
-             display: block;
-             
-             text-align: center;
-             padding: 16px;
-             text-decoration: none;
-        }
-
-        
-
-        .d-flex {
-            margin-left: 60%;
-            margin-top: 14px;
-        }
-        .btn {
-            background-color: lightblue;
-            border: solid 2px white;
-            border-radius: 20px;
-            height: 25px;
-            cursor: pointer;
-        }
-        .btn:hover{
-            background-color:orange;
-        }
-
-        .my-hero {
-            width : 100%;
-            min-height: 300px;
-            border-bottom: solid 2px purple;
-            border-radius: 10px;
-            background-image:url(file:///C:/Users/Franck/Desktop/DEV/web/Franck/CSS/box-model/apartment-cropped.jpg);
-
-        }
-
-        .my-hero {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-        }
-
-        .search-btn {
-    
-            background-color: green;
-        }
-
-        .register-now {
-            background-color: darkorange;
-        }
-
-        .schedule-appointment {
-            background-color: coral;
-        }
-
-
-    </style>
  </head>
  <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+          
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
@@ -137,9 +30,9 @@
                 </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link disabled">Projects</a>
               </li>
-              <a href="simple-form.html">
+              <a class="button" href="simple-form.html">
                 <button>Contact us</button>
               </a>
             </ul>
