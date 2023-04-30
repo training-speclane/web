@@ -1,0 +1,21 @@
+
+h2 {
+    text-shadow: 1.5px 1.5px orange;
+    color : green
+}
+
+h3 {
+    text-shadow: 1.5px 1.5px 1.5px blue;
+    color : green
+}
+
+.min-requirements {
+
+    max-height: 600px;
+    max-width: 300px;
+    border: solid 1px rgb(213, 211, 211);
+    box-shadow: 3px 3px rgb(219, 219, 219);
+    padding : 8px;
+    border-radius: 20px;
+
+}
