@@ -1,4 +1,4 @@
-.my-header {
+/* .container-fluid {
     width: 100%;
     height: 45px;
     background-color: rgb(197, 86, 106);
@@ -7,7 +7,7 @@
     color: #006E52;
     font-size: 20px;
     padding: 10px 20px;
-}
+} */
 
 .my-hero {
     width: 100%;
@@ -61,14 +61,14 @@
 
 
 }
-input{
+/* input{
      
         padding: 10px 10px;
         border: 2px groove;
         border-radius: 2px;
         border: none;
         color: #006e52;
-}
+} */
 
 
 .Register-now {
@@ -78,7 +78,7 @@ input{
     border: 2px solid rgb(197, 86, 106);
     background-color: #720028;
     border-radius: 30px;
-    color: #006e52;
+    color: #fff;
 
 }
 
@@ -89,14 +89,32 @@ input{
     background-color: #720028;
     border: 2px solid rgb(197, 86, 106);
     border-radius: 30px;
-    color: #006e52;
+    color: #fff;
 
 }
 
 
-body {
+/* body {
     background-color: linen;
     margin: 0 auto;
     padding: 0px auto;
 
 }
+.btn{
+    margin-right: 2em;
+    background-color: #720028 ;
+    color: white !important;
+}
+button:hover{
+    
+      background-color: transparent;
+        
+} */
+
+/* .navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: white;
+}
+
+.nav-link {
+    color: white !important;
+} */

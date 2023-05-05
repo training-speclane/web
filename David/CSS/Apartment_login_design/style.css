@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+}
+
+:root{
+    --main-color: rgb(16, 58, 26);
+    --main-font : 'Akaya Telivigala', cursive;
+    --border-round: 10px
+}
+header{
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: var(--main-color);
+    
+}
+
+.topGreenNav{
+    height: 80px;
+    display: flex;
+    align-items:center ;
+    padding: 25px  ;
+    justify-content:left;
+}
+
+header .section2{
+    background-size: 100% 100%;
+    min-height: 65vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://cdn.home-designing.com/wp-content/uploads/2018/12/luxury-white-kitchen.jpg);
+    background-repeat: no-repeat;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.enhanced-font{
+    font: 40px/800% var(--main-font);
+}
+
+.glow {
+    color: #b9b18e;;
+    text-shadow: 1px 2px 3px rgba(0, 0, 0, 1);
+}
+
+.space-between{
+    gap: 15px 25px;
+    padding: 15px;
+}
+.search-Btn{
+    width: 75px;
+    height: 30px;
+    border-radius: var(--border-round);
+    background-color: var(--main-color) ;
+    font: 20px var(--main-font);
+}
+
+.search-Btn:hover{
+    box-shadow:inset 5px 10px 2px #112c05 ;
+}
+
+header section input{
+    width: 10rem;
+    height: 30px;
+    border-radius: var(--border-round);
+    transition: width 0.5s ease-in-out ;
+}
+
+ header section input:focus {
+  background-color:rgb(247, 245, 242);
+  border-style:none;
+  width: 70%;
+  /* Setting 'outline' property to "none" is used to clear fields in forms */
+  outline: none; 
+  padding-left: 4px;
+}
+
+.inline-btween-space{
+    display: flex;
+    justify-content: space-around;
+    min-width: 350px;
+}
+.nav-items{
+    font: 25px var(--main-font);
+    color: black;
+    margin: 15px;
+    width: fit-content;
+    border-radius:var(--border-round) ;
+    text-align: center;
+}
+
+.nav-items:hover{
+    box-shadow: 3px 5px 2px #112c05 ;
+}
+
+.row-Btns{
+    width:fit-content  ;
+    font: 20px var(--main-font);
+    border-radius: var(--border-round);
+    background-color:whitesmoke;
+    color:var(--main-color) ;
+    padding: 3px;
+}
+
+.row-Btns:hover{
+    box-shadow: 3px 5px 2px #112c05 ;
+}
+
+main{
+    min-height: 45vh;
+    background-color: #f5f4ef;
+}
+footer{
+    height: 60px;
+    
+    background-color: var(--main-color);
+}
+
+footer div{
+    padding: 15px;
+    text-align: center;
+}

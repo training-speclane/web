@@ -1,0 +1,20 @@
+.my-custom-div {
+   color : red;
+}
+
+.desktop-only {
+    min-height: 400px;
+    min-width: 200px;
+    background-image: linear-gradient(green, red, orange);
+}
+
+@media screen and (max-width:800px) {
+    .my-custom-div {
+        color : green;
+        font-weight: bolder;
+     }
+    .desktop-only {
+        display: none;
+    }
+    
+}

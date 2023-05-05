@@ -1,0 +1,32 @@
+.my-flex-box {
+    width:100%;
+    display: flex;
+    border : solid 3px green
+}
+
+
+.flex-child1 {
+    background-color: grey;
+    min-width: 70px;
+    min-height: 40px;
+}
+
+
+.flex-child2 {
+    background-color: rgb(202, 25, 25);
+    min-width: 70px;
+    min-height: 40px;
+}
+
+.flex-child3 {
+    background-color: rgb(23, 156, 127);
+    min-width: 70px;
+    min-height: 40px;
+}
+
+
+.flex-child4 {
+    background-color: rgb(143, 16, 122);
+    min-width: 70px;
+    min-height: 40px;
+}

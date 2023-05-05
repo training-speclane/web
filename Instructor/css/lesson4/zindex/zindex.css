@@ -1,0 +1,53 @@
+
+footer {
+    min-height: 300px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: black;
+    border-top: solid 3px orange;
+    color : #ffffff;
+    display: inline-block;
+}
+
+.footer-div1 {
+    position : relative;
+    float: left;
+    min-height: 150px;
+    border: solid 3px red;
+    background-color: red;
+    z-index: 1;
+    min-width:200px ;
+
+}
+
+.footer-div2 {
+    position: relative;
+    float: left;
+    min-height: 150px;
+    border: solid 3px green;
+    background-color: green;
+    z-index: 2;
+    min-width: 200px;
+    margin-left: -50px;
+}
+
+.footer-div3 {
+    position : relative;
+    float: left;
+    min-height: 150px;
+    background-color: blue;
+    min-width:200px ;
+    z-index: 3;
+
+}
+
+.footer-div4 {
+    position: relative;
+    float: left;
+    min-height: 150px;
+    background-color: white;
+    min-width: 200px;
+    z-index: 4;
+
+}
