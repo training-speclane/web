@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+
+        <div>
+
+             <div id = "balance-info"></div>
+
+        </div>
+
+
+      
+        <!--LAST THING INSIDE OF  YOUR HTML BODY-->
+        <script>
+          var destination = "NY";
+          var flight_cost =  800;
+          var my_account_balance = 500;
+
+             /* Suppose you work for a company and they want to determine if user has
+             enough balance to book a flight */
+
+          //STEP1. Check if user has enough balance to book the flight
+
+          if(my_account_balance > flight_cost){
+            //Display text inside of the div with id=balance_info telling user they qualify for booking
+            var target_id =  document.getElementById("balance-info");
+                target_id.innerHTML = 'You Qualify to book this flight';
+          }else{
+              //Tell them how much more they need in order to qulify for booking this flight
+              //Display text inside of the div with id=balance_info telling user they donot qualify for booking
+              var target_id =  document.getElementById("balance-info");
+              var amount_needed =  flight_cost - my_account_balance;
+
+              target_id.innerHTML = '<div style="color:red;">You did not Qualify to book this flight. You need additional ' + amount_needed + ' in your account</div>';
+          }
+
+
+        </script>
+    </body>
+</html>
