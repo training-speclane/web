@@ -3,6 +3,8 @@ form{
     border-radius: 15px;
     outline-style: double;
     outline-color: aqua;
+    max-width: 600px;
+    max-height: 400px;
 }
 h1{
     text-align: center;
