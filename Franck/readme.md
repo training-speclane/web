@@ -1,1 +1,0 @@
-location of all projects belonging to Franck.This folder would contain HTML and JS
