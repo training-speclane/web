@@ -7,6 +7,10 @@
 
         <div>
             <h1>Welcome to Javascript </h1>
+            <input type="text" id="my-output">
+            <div id = "my-output-text">
+               <!-- this will contain output -->
+            </div>
         </div>
 
 
@@ -17,24 +21,33 @@
             //Create  variable called 'price' and assign a value of 800;
 
             const price = 800; //assign a value of 800
-
+             
+            const outputArea = document.getElementById("my-output");
+            const outputArea2 = document.getElementById("my-output-text");
 
             let x = 6;
             let y = 3;
-            //let z = september;
+            let z = "september";
+            
 
 
             //add
             let c = x+y;
             console.log("c is --->", c);
-            
+                c = x+y+z;
+            console.log("new c is --->", c);
+            outputArea.value = c;
+           
             //subtract
             let d = y-x;
             console.log("d is --->", d);
+            outputArea2.innerHTML = `<div style="color:red; font-weight:bold"> ${d} </div>`;
 
             //multiply
             let f = x*y;
             console.log("f is --->", f);
+                f = x*y*z;
+            console.log("new f is --->", f);  //NaN --> which means Not a Number   
             
             //division
             let g = x/y;
