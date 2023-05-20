@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+        <style>
+            .error {
+              color: red;
+            }
+          </style>
+    </head>
+    <body>
+
+        <div>
+
+            <form>
+               How much do you ?  <input type = "number" id = "how-muchuser-has">
+               
+                 <button onclick="checkQualification();" type="button">Check if you qualify</button>
+                
+                 <div id = "balance-info"></div>
+                 <h3>Travel Recommendation</h3>
+                 <button onclick="recommendations()">
+                    Check Travel Recommendations
+                
+                </button>
+                <div id="recomendation_containner"></div>
+
+
+            </form>
+
+             
+
+        </div>
+
+
+      
+        <script>
+//The code for the assignment begins here
+function recommendations() {
+    var amount = 800;
+    var recomendation_containner = document.getElementById('recomendation_containner');
+
+    if(amount < 100) {
+        var errorMessage = document.createElement('p');
+        errorMessage.textContent = "Sorry, you do not qualify for any travel option.";
+        errorMessage.classList.add('error');
+        recomendation_containner.innerHTML = errorMessage.outerHTML;
+
+    } else{
+        //here i created an array, an array is a collection of elements,where each element can be accessed using an index. Arrays are denoted by square brackets ([]) in JavaScript.
+        var travelOptions = ['road trip','sea travel','private jets','uber','lyft','taxi','bus','train'];
+        //Create a dropdown select element
+        var dropdown = document.createElement('select');
+        dropdown.id = 'travelSelect';
+        //  Add options to the dropdown
+        for (var i = 0; i < travelOptions.length; i++){
+            var dropdownOption = document.createElement('option');
+            dropdownOption.value = travelOptions[i].toLowerCase().replace(/\s/g,'_');
+            //(/\s/g, '_')this ensures that all the white space characters(spaces,tabsand line breaks)are removed in the lowercase.
+            dropdownOption.textContent = travelOptions[i];
+            dropdown.innerHTML += dropdownOption.outerHTML;
+        }
+          // Append the dropdown to the recommendation container
+          recomendation_containner.innerHTML += dropdown.outerHTML;
+          // Add event listener to detect when an option is selected
+          dropdown.addEventListener('change', function() {
+            var selectedOption = dropdown.value;
+            // Perform action based on the selected option
+            console.log('if you do not qualify to book this flight:', selectedOption);
+
+          }
+          );
+
+            // Apply recommendation based on the amount
+            if(amount >= 100 && amount <= 300) {
+                 // Taxi, Uber, and Lyft recommendations
+                 var recommendationMessage = document.createElement('p');
+                 recommendationMessage,textContent = 'We recommend using a Taxi, Uber, or Lyft,';
+                 recommendationContainer.innerHTML += recommendationMessage.outerHTML;
+
+            }else if (amount > 800) {
+          // Airplane and private plane recommendations
+          var recommendationMessage = document.createElement('p');
+          recommendationMessage.textContent = 'You qualify for airplane and private plane options.';
+          recommendationContainer.innerHTML += recommendationMessage.outerHTML;
+            } else {
+                // Remaining travel options (train, bus, sea, road)
+                var recommendationMessage = document,createElement('p');
+                recommendationMessage.textContent = 'You have various travel options including train, bus, sea, and road.';
+          recommendationContainer.innerHTML += recommendationMessage.outerHTML;
+        }
+
+
+            }
+    
+    }
+
+
+
+          
+            function checkQualification () {
+                var destination = "NY";
+                var flight_cost =  800;
+                var amount_of_taxi
+
+                //Change to a value that is provided by the user
+                var input =  document.getElementById("how-muchuser-has");
+                var my_account_balance = input.value;
+
+                    /* Suppose you work for a company and they want to determine if user has
+                    enough balance to book a flight */
+
+                //STEP1. Check if user has enough balance to book the flight
+
+                if(my_account_balance >= flight_cost){
+                    //Display text inside of the div with id=balance_info telling user they qualify for booking
+                    var target_id =  document.getElementById("balance-info");
+                        target_id.innerHTML = '<div style="color:green;">You Qualify to book this flight</div>';
+                }else{
+                    //Tell them how much more they need in order to qulify for booking this flight
+                    //Display text inside of the div with id=balance_info telling user they donot qualify for booking
+                    var target_id =  document.getElementById("balance-info");
+                    var amount_needed =  flight_cost - my_account_balance;
+
+                    target_id.innerHTML = '<div style="color:red;">You did not Qualify to book this flight. You need additional ' + amount_needed + ' in your account</div>';
+                }
+
+            }
+
+
+        </script>
+    </body>
+</html>

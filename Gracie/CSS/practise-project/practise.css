@@ -1,0 +1,90 @@
+*{box-sizing: border-box;
+
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    outline-style:double;
+  }
+  /*****/
+  .my-box-many-colors{
+    width: 300px;
+    height:50px;
+    background-image: linear-gradient(red,green,yellow);
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+    margin-right: 200px;
+    outline-style:double;
+    text-shadow: 25px;
+  }
+
+.my-box-custom{
+  width: 300px;
+  height:150px ;
+  background-image: linear-gradient(white,yellow);
+  background-repeat: repeat-x;
+  border:solid;
+  border-color: gray;
+  border-top: royalblue;
+  background-color: brown;
+  margin: 25px 50px 75px 100px;
+  outline-color: red;
+  outline-width:thick;
+  outline-style:double;
+  outline-offset: 15px;
+  text-shadow: 50px;
+  text-indent: 10px;
+  line-height: 0.7;
+  font-family: "sofia", sans-serif;
+  font-variant: small-caps;
+  font-size: 30px;
+  background-color: cyan;
+  
+
+  
+}
+  
+  
+.my-box-radial{
+  width:300;
+  height:50px;
+  background-image: url("gradient_bg.png");
+}
+
+.practise-1{
+  color: red;
+  text-shadow: 0px 0px 4px #000000;
+  font-weight: 900px;
+  
+
+}
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+  box-sizing: border-box;
+}
+  

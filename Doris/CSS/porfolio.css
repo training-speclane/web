@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(235, 159, 105);
+    color: #000;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    align-items: center;
+    background-color: rgb(187, 85, 12);
+}
+.container{
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
+    margin: 1rem;
+}
+ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+div li a {
+    text-decoration: none;
+}
