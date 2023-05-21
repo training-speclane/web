@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+        <div>
+            <h1>Welcome to Javascript </h1>
+        </div>
+
+        <div id = "my-output">
+        </div>
+        <br/>
+        <div>
+            <input id = "num1"><input id = "num2">
+        </div>
+        <hr/>
+        <button onclick="add()">+add</button>
+        <button onclick="multiply()">*Multiply</button>
+
+      
+        <script>
+          
+            const outputArea =  document.getElementById("my-output");
+            const num1 = document.getElementById("num1");
+            const num2 = document.getElementById("num2");
+
+            //Add the two numbers 
+            function add(){
+                const result = parseInt(num1.value) + parseInt(num2.value);
+                //Call another function to format results. Pass the results as an ARGUMENT 
+                const formattedResults =  formatOutput(result); //Call function 
+                outputArea.innerHTML = formattedResults;
+            }
+
+
+            //Multiply the 2 numbers 
+            function multiply(){
+                const result = parseFloat(num1.value) * parseFloat(num2.value);
+                //Call another function to format results. Pass the results as an ARGUMENT 
+                const formattedResults =  formatOutput(result); // call function
+                
+                outputArea.innerHTML = formattedResults; //Set the ouput area so it has the formatted results
+            }
+
+
+            function formatOutput (result){
+                return result.toLocaleString(); //return the formmated value
+            }
+
+        </script>
+    </body>
+</html>
