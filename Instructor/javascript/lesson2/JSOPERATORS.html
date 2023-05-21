@@ -119,8 +119,8 @@
 
             m == 6 || k < 11 // true; because only one side is needed for this to evaluate to true. The left side is true in this case
            
-            (m == 6 || k < 11) && ( m == 6 &&  k < 11) // ASSIGNMENT: What would this evaluate to??
-            (m == 6 || k < 11) || ( m == 6 &&  k < 11) // ASSIGNMENT: What would this evaluate to??
+            (m == 6 || k < 11) && ( m == 6 &&  k < 11) //  LEFT:true && RIGHT:false. This is false because both thr right and leftside must eveluate to true 
+            (m == 6 || k < 11) || ( m == 6 &&  k < 11)  // LEFT:true || RIGHT:false. True because the leftside evealuates to true. Only one side is needed to be true
 
 
         </script>
