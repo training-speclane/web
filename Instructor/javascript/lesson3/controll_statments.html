@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+
+        <div>
+            <h1>Welcome to Javascript </h1>
+            <div id = "my-output-text">
+               <!-- this will contain output -->
+            </div>
+            <div id = "my-output-text-comp">
+                <!-- this will contain output -->
+             </div>
+        </div>
+
+
+    
+        <script>
+
+          
+           
+            
+            let a = 3; //number "3" is a string
+            let b = 6; // number
+            let a1 = '3' //String, not a number
+          
+            const outputAreaComp = document.getElementById("my-output-text-comp");
+
+
+            //equal
+            a == b //false, because a is NOT equal to b.
+            a == 3 //true , because a is 3
+            a == '3' // true, because the value of a is 3
+            a === '3' // false, because, eventhough the values are same, the types are different.
+
+            //not equal
+            a != b // true, because the values are diferent
+            a !== b // true, because they don't have same value. but they have same type(number)
+            a != '3'// false, becuase a is equal 3. They have same value
+            a !== '3' // true, because they are not of same type, eventhough they have same value.
+
+
+            //condiftional statements
+
+            const price = 800;
+            const numStops =  3;
+            const weather = "sunny";
+            const airline = "Delta";
+
+            // user can only book flight if the following conditions are true/met
+            // 1) price is less than 800, weather is sunny, and not more than 2 stops. However , they can book the flight if airline is
+            //Delta aireline, no matter price, stops, or weather. Else, display message telling them to try again soo
+
+            if((price < 800 && weather == "sunny" && numStops <= 2) && (airline == "Delta")){
+                //user can book flight
+            }else {
+                //display text
+            }
+
+           
+            
+        </script>
+
+
+   
+    </body>
+</html>

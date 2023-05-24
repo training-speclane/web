@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+
+        <div>
+            <h1>Welcome to Javascript </h1>
+            <div id = "my-output-text">
+               <!-- this will contain output -->
+            </div>
+            <div id = "my-output-text-comp">
+                <!-- this will contain output -->
+             </div>
+        </div>
+
+
+      
+        <!--LAST THING INSIDE OF  YOUR HTML BODY-->
+        <script>
+
+            //Create  variable called 'price' and assign a value of 800;
+
+            const price = 800; //assign a value of 800
+             
+            const outputArea = document.getElementById("my-output");
+            const outputArea2 = document.getElementById("my-output-text");
+
+            let x = 6;
+            let y = 3;
+            let z = "september";
+            
+
+
+            //add
+            let c = x+y;
+            console.log("c is --->", c);
+                c = x+y+z;
+            console.log("new c is --->", c);
+            outputArea.value = c;
+           
+            //subtract
+            let d = y-x;
+            console.log("d is --->", d);
+            outputArea2.innerHTML = `<div style="color:red; font-weight:bold"> ${d} </div>`;
+
+            //multiply
+            let f = x*y;
+            console.log("f is --->", f);
+                f = x*y*z;
+            console.log("new f is --->", f);  //NaN --> which means Not a Number   
+            
+            //division
+            let g = x/y;
+            console.log("g is --->", g);
+
+            //remainder
+            let h = x%y;
+            console.log("h is --->", h);
+
+            //Increment
+            console.log('y is', ++x);
+            
+
+            //Exponential n
+            let i =  x**y; //6*6*6. multiply  3 times 
+            
+            console.log("i is ", i);
+
+
+
+        </script>
+
+        <script>
+
+            /**********************************************************************************
+            * COMPARISON OPRATORS
+            *
+            **********************************************************************************/
+           
+            
+            let a = 3; //number "3" is a string
+            let b = 6; // number
+            let a1 = '3' //String, not a number
+          
+            const outputAreaComp = document.getElementById("my-output-text-comp");
+
+
+            //equal
+            a == b //false, because a is NOT equal to b.
+            a == 3 //true , because a is 3
+            a == '3' // true, because the value of a is 3
+            a === '3' // false, because, eventhough the values are same, the types are different.
+
+            //not equal
+            a != b // true, because the values are diferent
+            a !== b // true, because they don't have same value. but they have same type(number)
+            a != '3'// false, becuase a is equal 3. They have same value
+            a !== '3' // true, because they are not of same type, eventhough they have same value.
+            
+        </script>
+
+
+        <script>
+
+            /**********************************************************************************
+            * LOGIC  OPRATORS
+            *
+            **********************************************************************************/
+           
+            let m = 6;
+            let n = 5;
+            let k =  m+n;
+
+            m > n && k //false, because k is greater than m , n
+            
+            m == 6 &&  k < 11 // false; because the right hand side AND the left hand side are NOT true
+
+            m == 6 || k < 11 // true; because only one side is needed for this to evaluate to true. The left side is true in this case
+           
+            (m == 6 || k < 11) && ( m == 6 &&  k < 11) //false because the are not thesame ASSIGNMENT: What would this evaluate to??
+            (m == 6 || k < 11) || ( m == 6 &&  k < 11) //true because the right hand is ture ASSIGNMENT: What would this evaluate to??
+
+
+        </script>
+    </body>
+</html>

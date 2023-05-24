@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+
+        <div>
+
+            <form>
+               How much do you ?  <input type = "number" id = "how-muchuser-has">
+               
+                 <button onclick="checkQualification();" type="button">Check if you qualify</button>
+                 <div id = "balance-info"></div>
+
+                 when you dont qualify for this flight ?<input type="dropdown" id ="if-you-dont-qualify">
+                 <button onclick="recommendations();" type="button">check if you dont qualify</button>
+                 <div id ="balance-info"></div>  
+            
+        </div>
+        <form>
+           <div class="dropdown">
+            <div class="select">
+                <span class="selected">recommendations</span>
+                <div class="caret"></div>
+           
+           <ul class="menu">
+              <li>road trip</li>
+              <li>sea travel</li>
+              <li>uber</li>
+              <li>lyft</li>
+              <li>taxi</li>
+              <li>bus</li>
+              <li>train</li>
+              <li class="active">
+           </ul>
+           </div>
+           
+        <script>
+          
+            function checkQualification () {
+                var destination = "NY";
+                var flight_cost =  800;
+                var input =  document.getElementById("how-muchuser-has");
+                var my_account_balance = input.value;
+
+                if(my_account_balance >= flight_cost){
+                
+                    var target_id =  document.getElementById("balance-info");
+                        target_id.innerHTML = '<div style="color:green;">You Qualify to book this flight</div>';
+                }else{
+                    
+                    function recommendations () {
+                      //when user does not qualify for this flight
+                      //what means of travel will you like ,you can choice from the list below for the means of travel you will like 
+                      const price =100;
+                      var input =document.getElementById("if-you-dont-qualify");
+                      if(my_account_balance < 100){
+                        var target_id =document.getElementById("balance-info");
+                             target_id.innerHTML = '<div style="color:red;">you do not qualify for any additional travel recommendations</div>';
+                      } 
+
+                    }
+
+                    /**************************************************************************************************************
+                    * ASSIGNMENT
+                    *
+                    * Write a function and call it here, when user doesn't qulify for this flight. name of the 
+                    * function should be 'recommendations' and within that function, display a dropdown to ask
+                    * user what means of travel they like. the options should be "road trip, sea travels, private jets,
+                    * uber, lyft, taxi, bus, train".
+                    * if they have less than  $100, they will not qulaify for any ttravel option. Show a message in red
+                    * Indicating they don't for any travel option.
+                    * Amounts between 100-300 = taxi, uber, lyft. Amounts greater than 800, qulifies for aiplane and private planes
+                    * All other amounts qulaified s for the remianing travel options(train, bues, sea, road)
+                    * 
+                    ****************************************************************************************************************/
+                  
+                }
+
+            }
+
+        </script>
+    </body>
+</html>
