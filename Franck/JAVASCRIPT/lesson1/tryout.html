@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--how to add JS to our html page-->
+    <!--two main way: Inner(Last thing inside your html body) and External-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+
+    <div>
+        <form>
+
+            How much do you have?<input type="number" id = "how-muchuser-has">    
+        <button onclick=checkQualification(); type="button">Check if you qualify</button>
+        <div id="balance-info"></div> 
+        
+        </form>
+
+    </div>
+    <!--Last thing inside of your html body-->
+    <script>
+
+        function checkQualification () {
+            var destination = "NY"; //strings
+            var flight_cost = 800; //number
+        
+        //Suppose you work for a company and they want to determine if user has
+        //enough balance to book a flight
+
+        //Step1. Check if user has enough balance to book the flight
+
+         if(my_account_balance >= flight_cost){
+            //Display text inside of the div with id = balance-info telling user they qualify for booking
+            var target_id= document.getElementById("balance-info");
+                target_id.innerHTML='You qualify to book this flight';
+         }else{
+            //Tell them how much more they need in order to qualify
+            //Display text inside of the div with id = balance-info telling user they do not qualify for booking
+            var target_id= document.getElementById("balance-info");
+            var amount_needed = flight_cost - my_account_balance;
+
+            target_id.innerHTML ='<div style="color:red;">You did not qualify to book this flight. You need additional ' + amount_needed + ' in your account</div>';
+         }
+
+        }   
+
+    </script>
+    <!--This tell the browser that this is JS-->
+</body>
+</html>
