@@ -1,0 +1,6 @@
+@media(min-width:768px) {
+    .news-input{
+        width: 50%;
+    }
+}
+/* this code above help to reduce the width of the input area  */
