@@ -1,0 +1,86 @@
+*body{
+    padding: 0;
+    margin: 0;
+
+}
+div.form{
+    width: 280px;
+    padding: 30px;
+    position: relative;
+    top: 60px;
+    margin: auto;
+    border-radius: 30px; 
+    background-color: #000;
+    text-align: center;
+    border: 1px solid white;
+    
+    /* outline-color: 5px #333; */
+    
+    outline: 15px solid  #333;
+ border-radius: 0;  
+    
+   
+   
+  
+  
+   
+
+}
+div.form border {
+    border: 1 solid white;
+   
+    border-radius: 30px; /* Adjust the border radius as needed */
+  }
+div.form form input[type="text"]{
+
+    width: 95%;
+    padding: 10% 6%;
+    text-align: right;
+    font-size: 4rem;
+    background-color: #000;
+    outline: none;
+    border: none;
+    color: #fff;
+    
+   
+   
+}
+div.form form input[type="button"]{
+    width: 65px;
+    height: 65px;
+   color: #fff;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 1.5em;
+    
+
+}
+/* div.form.form.input[type="button"].s{
+    width: 202px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    background-color: #9e9e9e; */
+
+
+div.form form input[type="button"].s{
+    width: 130px;
+    border-top-right-radius: 35px;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    background-color: #333;
+    
+
+}
+div.form form input[type="button"].ac{
+    background: #9e9e9e;
+
+}
+div.form form input[type="button"].d{
+    background-color: #f79013;
+}
+div.form form input[type="button"].n{
+    background-color: #333;
+}
