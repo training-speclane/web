@@ -14,10 +14,11 @@ div.form{
     text-align: center;
     border: 1px solid white;
     
-    /* outline-color: 5px #333; */
+    outline-color: 15px #333; 
     
     outline: 15px solid  #333;
  border-radius: 0;  
+ 
     
    
    
