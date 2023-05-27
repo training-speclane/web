@@ -14,7 +14,7 @@
         <form>
 
             How much do you have?<input type="number" id = "how-muchuser-has">    
-        <button onclick=checkQualification(); type="button">Check if you qualify</button>
+        <button onclick="checkQualification();" type="button">Check if you qualify</button>
         <div id="balance-info"></div> 
         
         </form>
@@ -35,7 +35,7 @@
          if(my_account_balance >= flight_cost){
             //Display text inside of the div with id = balance-info telling user they qualify for booking
             var target_id= document.getElementById("balance-info");
-                target_id.innerHTML='You qualify to book this flight';
+                target_id.innerHTML='<div style="color:green;">You qualify to book this flight';
          }else{
             //Tell them how much more they need in order to qualify
             //Display text inside of the div with id = balance-info telling user they do not qualify for booking
