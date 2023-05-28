@@ -28,13 +28,38 @@
         const num1 = 18;
         const num2 = 25;
         const resultofmultiplication = num1 * num2;
+        console.log("The result of multiply is --> ", resultofmultiplication);
     } //performs multiplication
 
     function addition () {
         const num1 = 18;
         const num2 = 25;
         const resultofaddition = num1 + num2;
+        console.log("The result of addition is --> ", resultofaddition);
     } //performs addition
+
+    //We have to call these functions in order for them to be executed
+    
+    multiply(); 
+    //Calls the multiply function
+    addition(); 
+    //Calls the addition function
+
+    //Another way to do it
+
+    function multiply (num1, num2) {
+        const resultofmultiplication = num1 * num2;
+        console.log("The result of multiply is --> ", resultofmultiplication);
+    }
+
+    multiply (7, 10);
+
+    function addition (num1, num2) {
+        const resultofaddition = num1 + num2;
+        console.log("The result of addition is --> ", resultofaddition);
+    }
+
+    addition (10, 25);
 
  </script>
 </body>
