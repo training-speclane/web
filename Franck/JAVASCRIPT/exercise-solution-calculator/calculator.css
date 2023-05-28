@@ -1,3 +1,5 @@
+
+
 .calculator-container {
     height:700px;
     width: 400px;
@@ -7,9 +9,11 @@
 
 .calculator-inner-container {
         background-color: black;
-        height: 680px;
+        height: 600px;
         border: solid white 3px;
         border-radius: 50px;
+        margin: 0;
+        padding: 0;
         /* width: 360px; */
 }
 
@@ -19,6 +23,11 @@
     font-weight: bold;
     margin-top: 100px;
     text-align: right;
+}
+
+.operators {
+    margin: 0;
+    padding: 0;
 }
 
 table {
@@ -64,11 +73,28 @@ td {
 
 .btn-grey0 {
     height: 70px;
-    width: 80px;
-    border-radius: 12px;
+    width: 160px;
+    border-radius: 50px;
     border: none;
     font-weight: bold;
     cursor: pointer;
     background-color: grey;
     font-size: 24px;
+}
+
+.btn-grey1 {
+    height: 70px;
+    width: 70px;
+    border-radius: 360px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: grey;
+    font-size: 24px;
+}
+
+.last-rw {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
 }
