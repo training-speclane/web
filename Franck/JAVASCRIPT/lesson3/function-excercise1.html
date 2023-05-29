@@ -23,38 +23,24 @@
 
  <script>
    
-    
-    
-    
-
-    //Another way to do it
-
-    function multiply (num1, num2) {
-        const resultofmultiplication = num1 * num2;
-        console.log("The result of multiply is --> ", resultofmultiplication);
-    }
-
-    multiply (7, 10);
-
-    function addition (num1, num2) {
-        const resultofaddition = num1 + num2;
-        console.log("The result of addition is --> ", resultofaddition);
-    }
-
-    addition (10, 25);
-
     //If we want the user to provide the numbers, we have to add some input
 
     function handlemultiply () {
         const num1 = document.getElementById("num1").value;
         const num2 = document.getElementById("num2").value;
         multiply (num1, num2);
-    }
+        console.log("The result of multiply is --> ", resultofmultiplication);
+        }
+    //Exercise3
+    document.getElementById("results").value = "handlemultiply";    
+
+
     //Exercise1
     function handleaddition () {
         const num1 = document.getElementById("num1").value;
         const num2 = document.getElementById("num2").value;
         addition (num1, num2);
+        console.log("The result of addition is --> ", resultofaddition);
     }
 
     //Exercise2
@@ -62,8 +48,7 @@
 
     
 
-    //Exercise3
-    document.getElementById("results").value = "handlemultiply";
+    
     
  </script>
 </body>
