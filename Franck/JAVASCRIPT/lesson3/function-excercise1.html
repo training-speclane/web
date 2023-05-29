@@ -8,8 +8,10 @@
 
 <input id="num1">
 <input id="num2">
-<button onclick="document.getElementById('results').innerHTML= resultofaddition;">+</button>
-<button onclick="document.getElementById('results').innerHTML= resultofmultiplication;">*</button>
+
+
+<button onclick="handleaddition();">+</button>
+<button onclick="handlemultiply();">*</button>
 
 <br/><br/>
 
@@ -43,7 +45,7 @@
 
     //If we want the user to provide the numbers, we have to add some input
 
-    function handlemultipy () {
+    function handlemultiply () {
         const num1 = document.getElementById("num1").value;
         const num2 = document.getElementById("num2").value;
         multiply (num1, num2);
@@ -56,15 +58,13 @@
     }
 
     //Exercise2
-    if (num1*num2) {
-        document.getElementById("results").innerHTML="resultofmultiplication";
-    }
+    document.getElementById("results").value = "handleaddition";
+
+    
 
     //Exercise3
-    if (num1+num2) {
-        document.getElementById("results").innerHTML="resultofaddition";
-    }
-
+    document.getElementById("results").value = "handlemultiply";
+    
  </script>
 </body>
 </html>
