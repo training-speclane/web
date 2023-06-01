@@ -10,8 +10,8 @@
 <input id="num2">
 
 
-<button onclick="handleaddition();">+</button>
-<button onclick="handlemultiply();">*</button>
+<button onclick="handleAddition();">+</button>
+<button onclick="handleMultiply();">*</button>
 
 <br/><br/>
 
@@ -25,26 +25,47 @@
    
     //If we want the user to provide the numbers, we have to add some input
 
-    function handlemultiply () {
+    function handleMultiply () {
         const num1 = document.getElementById("num1").value;
         const num2 = document.getElementById("num2").value;
         multiply (num1, num2);
-        console.log("The result of multiply is --> ", resultofmultiplication);
-        }
-    //Exercise3
-    document.getElementById("results").value = "handlemultiply";    
+        //end of program
+    }
+      function multiply(num1, num2){
+
+        const results =  num1*num2;
+
+        //Find element we  want to display results in
+        //const resultsElement = document.getElementById("results");
+
+        //Set the value of the target element to the results tht\at we got from multiplication
+        //resultsElement.value = results;
+
+        document.getElementById("results").value = results;
+
+
+       /// alert(results)
+        ///console.log(results);
+      }
 
 
     //Exercise1
-    function handleaddition () {
+    function handleAddition () {
         const num1 = document.getElementById("num1").value;
         const num2 = document.getElementById("num2").value;
         addition (num1, num2);
-        console.log("The result of addition is --> ", resultofaddition);
     }
 
     //Exercise2
-    document.getElementById("results").value = "handleaddition";
+    function addition (num1, num2){
+        
+        //parseInt is  a native JS functon thst converts a number strint to integer
+       const results = parseInt(num1) + parseInt(num2);
+
+       document.getElementById("results").value = results;
+
+
+    }
 
     
 
