@@ -4,29 +4,64 @@
     font-family: 'poppins' ,sans-serif ;
     box-sizing: border-box;
 }
+
 .container{
-    min-height: 100vh;
-    width: 100%;
-    background-color:skyblue;
-    display:flex;
-    align-items: center;
-    justify-content: center; 
+    height: 700px;
+    width: 400px;
+    background-color:grey;
+    padding:15px;
+    
 }
 .box-model{
-    background:steelblue;
-    padding:20px;
-    border-radius: 10px;
+    height:680px;
+   /* width:325px;*/
+    background-color:black;
+    border-radius: 50px;
+    border: solid white;
 }
-.box-model form input{
-    border:0;
-    outline:0;
-    width:60px;
-    height: 60px;
+.result{
+    height:75px;
+    width: 300px;
+    background-color: white;
+    align-content: center;
     border-radius: 10px;
-    background:rgb(226, 121, 207);
-    font-size: 20px;
-    color:#fff;
-    cursor:pointer;
-    margin:10px;
-    box-shadow: 55px;
+    margin:15px;
+    padding: 10px;
+
+}
+table{
+    width:100%;
+    padding:45px;
+}
+td{
+    height:70px;
+    width:70px;
+    border-radius: 360px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+}
+
+button{
+    height:70px;
+    width: 70px;
+    border-radius: 360px;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: gray;
+    
+
+}
+.signs{
+    background-color:orange;
+}
+
+.symbol{
+    background-color:white ;
+    color:black;
+}
+.double-btn{
+    min-width:125px;
+    height: 65px;
+    margin-left: -60px;
 }

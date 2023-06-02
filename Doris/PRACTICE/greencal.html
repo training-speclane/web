@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=., initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../PRACTICE/greencal.css">
+</head>
+<body>
+    <h1>Green calculator using a table</h1>
+    <!-- first thing first, we have to create a grey box -->
+    <div class="green-cal-container">
+        <!-- 1 -->
+        <div class="cal-inner-container">
+            <!-- 2 -->
+             
+<div class="results"  contenteditable="+=" id="results">
+    
+</div>
+<!-- 3 -->
+            
+            <div class="operators">
+                <!-- 4 -->
+                <table>
+                    <thead>
+                    <tr>
+                     <th>1</th>
+                     <th>2</th>
+                     <th>3</th>
+                     <th>4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><button  onclick="clearResults()" class="btn-lightgrey">AC</button></td>
+                        <td><button onclick="printOperators('/')" class="btn-lightgrey">+/-</button></td>
+                        <td><button onclick="printOperators('%')" class="btn-lightgrey">%</button></td>
+                        <td><button onclick="printOperators('/')" class="btn-green">&divide;</button></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><button onclick="printOperators(7)" class=" btn-darkgrey">7</button></td>
+                        <td><button onclick="printOperators(8)" class=" btn-darkgrey">8</button></td>
+                        <td><button onclick="printOperators(9)" class=" btn-darkgrey">9</button></td>
+                        <td><button onclick="printOperators('*')" class="btn-green">&ast;</button></td>
+                        
+                    </tr>
+                    <tr>
+                        <td><button onclick="printOperators(4)" class="btn-darkgrey">4</button></td>
+                        <td><button  onclick="printOperators(5)" class="btn-darkgrey">5</button></td>
+                        <td><button  onclick="printOperators(6)" class="btn-darkgrey">6</button></td>
+                        <td><button onclick="printOperators('-')"  class="btn-green">&minus;</button></td>
+                        
+                    </tr>
+                    <tr style="margin-top: 1rem;">
+                        <td><button onclick="printOperators(1)"  class="btn-darkgrey">1</button></td>
+                        <td><button onclick="printOperators(2)"  class="btn-darkgrey">2</button></td>
+                        <td><button onclick="printOperators(3)" class="btn-darkgrey">3</button></td>
+                        <td><button onclick="printOperators('+')" class="btn-green">&plus;</button></td>
+                        
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button onclick="printOperators(0)"  class="btn-darkgrey" style="width: 140px;  margin-top: .5em;">0</button></td>
+                        <td><button  onclick="printOperators('.')" class="btn-darkgrey">.</button></td>
+                        <td><button onclick="printOperators('=')" class="btn-green">&equals;</button></td>
+                        
+                        
+                    </tr>
+                </tbody>
+
+                </table>
+            </div>
+
+        </div>
+        
+        
+    </div>
+    
+
+
+    <script>
+
+        function printOperators (newCommand) {
+                const targetResults =  document.getElementById("results");
+                //get whatever we have in the results area
+                const currentResultsContent =  targetResults.textContent;
+                //add newCammd to the text that existed in the results
+                const newValue =  newCommand + currentResultsContent;
+                targetResults.innerHTML = newValue;
+        }
+        function clearResults() {
+            calculation = "";
+            updateResults();
+        }
+
+</script>
+
+    
+</body>
+</html>

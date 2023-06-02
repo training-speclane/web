@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../PRACTICE/greencal.css">
+</head>
+<body>
+    <h1>Green calculator using a table</h1>
+    <div class="green-cal-container">
+        <div class="cal-inner-container">
+            <div class="results" contenteditable="true" id="results"></div>
+            <div class="operators">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>1</th>
+                            <th>2</th>
+                            <th>3</th>
+                            <th>4</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><button onclick="clearResults()" class="btn-lightgrey">AC</button></td>
+                            <td><button onclick="appendOperator('+/-')" class="btn-lightgrey">+/-</button></td>
+                            <td><button onclick="appendOperator('%')" class="btn-lightgrey">%</button></td>
+                            <td><button onclick="appendOperator('/')" class="btn-green">&divide;</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="appendNumber(7)" class="btn-darkgrey">7</button></td>
+                            <td><button onclick="appendNumber(8)" class="btn-darkgrey">8</button></td>
+                            <td><button onclick="appendNumber(9)" class="btn-darkgrey">9</button></td>
+                            <td><button onclick="appendOperator('*')" class="btn-green">&ast;</button></td>
+                        </tr>
+                        <tr>
+                            <td><button onclick="appendNumber(4)" class="btn-darkgrey">4</button></td>
+                            <td><button onclick="appendNumber(5)" class="btn-darkgrey">5</button></td>
+                            <td><button onclick="appendNumber(6)" class="btn-darkgrey">6</button></td>
+                            <td><button onclick="appendOperator('-')" class="btn-green">&minus;</button></td>
+                        </tr>
+                        <tr style="margin-top: 1rem;">
+                            <td><button onclick="appendNumber(1)" class="btn-darkgrey">1</button></td>
+                            <td><button onclick="appendNumber(2)" class="btn-darkgrey">2</button></td>
+                            <td><button onclick="appendNumber(3)" class="btn-darkgrey">3</button></td>
+                            <td><button onclick="appendOperator('+')" class="btn-green">&plus;</button></td>
+                        </tr>
+                        <tr>
+                            <td colspan="2"><button onclick="appendNumber(0)" class="btn-darkgrey" style="width: 140px; margin-top: .5em;">0</button></td>
+                            <td><button onclick="appendDecimal()" class="btn-darkgrey">.</button></td>
+                            <td><button onclick="calculate()" class="btn-green">&equals;</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let calculation = "";
+
+        function appendOperator(operator) {
+            calculation += operator;
+            updateResults();
+        }
+
+        function appendNumber(number) {
+            calculation += number;
+            updateResults();
+        }
+
+        function appendDecimal() {
+            if (!calculation.includes(".")) {
+                calculation += ".";
+                updateResults();
+            }
+        }
+
+        function clearResults() {
+            calculation = "";
+            updateResults();
+        }
+
+        function calculate() {
+            try {
+                const result = eval(calculation);
+                calculation = result.toString();
+                updateResults();
+            } catch (error) {
+                calculation = "Error";
+                updateResults();
+                console.log("Error:", error);
+            }
+        }
+
+        function updateResults() {
+            const targetResults = document.getElementById("results");
+            targetResults.textContent = calculation;
+        }
+    </script>
+</body>
+</html>

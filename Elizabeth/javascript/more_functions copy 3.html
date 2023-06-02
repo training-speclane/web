@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>More functions</title>
+</head>
+<body>
+<h1>Welcome to more JS functions</h1>
+
+<input id="num1">
+<input id="num2">
+
+<button onclick="add()">+</button> <!--EXERCISE 4 : Add 'onclick' event listener here to handle addition-->
+<button onclick="handleMultiply();">x</button>
+
+<br/><br/>
+<div>
+    <input id="results" style="background-color:aqua">
+</div>
+
+
+ <script>
+    function multiply (num1, num2) {
+        const resultOfMultiplication = num1*num2;  //performs multiplication
+        const results =document.getElementById("my-results")
+        // ExERCISE 3:  Dispaly results in the results area, element with id = "results"
+        console.log("The result of multiply is --> ", resultOfMultiplication);
+    }
+    
+    function add (num1, num2) {
+        const resultOfAddition = num1+num2; //performs addition
+        // EXERCISE 2:  Dispaly results in the results area, element with id = "results"
+        console.log("The result of addition  is --> ", resultOfAddition);
+    }
+   function handleMultiply () {
+       //Get the values for the 2 inputs that user provides
+       const num1 =  document.getElementById("num1").value; //num1 value
+       const num2 =  document.getElementById("num2").value; //num2 value
+      
+       //Calling multiply function here
+       multiply(num1, num2); //pass the 2 numbers to the multiply function
+   }
+   function handleAddition () {
+      //EXRECISE 1 : COMPLETE THIS FUNCTION
+   }
+
+
+ </script>
+</body>
+</html>
