@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+
+    <body>
+        <div>
+            <form>
+                How much do you have? <input type = "number" id = "how-much-user-has">
+                <button onclick="recommendations();" type="button">Check if you qualify</button>
+                <div id = "balance-info"></div>
+                <div id ="results"></div>
+                <br>
+                What travel maens do you want?
+                <select id="travelOptions">
+                    <option value="">Choose one</option>
+                    <option value="Road Trip">Road Trip</option>
+                    <option value="Sea Travel">Sea Travel</option>
+                    <option value="Private Jet">Private Jet/option>
+                    
+                </select>
+
+            </form>
+        </div>
+
+       <script>
+            
+            function recommendations () {
+                var destination = "NY"
+                var flight_cost = "800"
+                var input= document.getElementById("how-much-user-has")
+                var my_account_balance = input.value;
+
+                if(my_account_balance >= flight_cost){
+                    var target_id =  document.getElementById("balance-info");
+                        target_id.innerHTML = '<div style="color:green;">You Qualify to book this flight</div>';
+                } 
+            
+            else{
+                    var dropdown = document.createElement("travelOptions"); 
+                     var options = ["road trip", "sea travels", "private jets", "uber", "lyft", "taxi", "bus", "train"];
+                
+                     if (my_account_balance > 100 ) {
+                      option = '<div>You Qualify for any of the traveling option</div>';
+                 
+            }
+        }
+    }
+            
+        </script>
+    
+    
+    
+    </body>
+</html>
+
+
