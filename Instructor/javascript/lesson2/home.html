@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+
+        <div>
+            
+            <h1>Welcome to Javascript </h1>
+
+        </div>
+
+
+    
+        <!--LAST THING INSIDE OF  YOUR HTML BODY-->
+        <script>
+            //Global Scope and visible to all functions within this <script>
+            const weather = "rainy"; 
+            function proccessPrice () {
+                //local Scope
+                const price = 800;
+                var stops = 4;
+                //Assuming that if the price is less than 800, there should be 4 stops, not 3 
+                if(price >=  800){
+                    stops = 3;
+                    //price = 900;
+                }
+                   console.log( "stops are now ---> ", stops, price);
+                   console.log(price) 
+                   console.log(weather) // output = rainy
+            }
+
+            function proccessStops () {
+                console.log(price) // output will give error since price is not known t this function. 
+                console.log(weather) // output = rainy
+            }
+
+            function checkWeather () {
+                console.log(price) // output will give error since price is not known t this function. 
+                console.log(weather) // output = rainy
+
+            }
+
+            function verifyAirline () {
+                console.log(price) // output will give error since price is not known t this function. 
+                console.log(weather) // output = rainy
+
+            }
+
+        </script>
+    </body>
+</html>

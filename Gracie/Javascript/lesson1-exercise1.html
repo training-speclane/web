@@ -2,6 +2,15 @@
 <html>
     <head>
         <title>JS</title>
+        <style>
+            .show{
+                display:block;
+            }
+
+            .hide{
+                display: none;
+            }
+        </style>
     </head>
     <body>
 
@@ -11,12 +20,23 @@
                How much do you ?  <input type = "number" id = "how-muchuser-has">
                
                  <button onclick="checkQualification();" type="button">Check if you qualify</button>
-                
                  <div id = "balance-info"></div>
+                 <div id="travel-options" class="hide">
+                    What means of travel ?
+                    <select>
+                        <option>road trip</option>
+                        <option>sea travels</option>
+                        <option>private jets</option>
+                        <option>uber</option>
+                        <option>lyft</option>
+                        <option>taxi</option>
+                        <option>bus</option>
+                        <option>train</option>
+                    </select>
+                 </div>
 
             </form>
 
-             
 
         </div>
 
@@ -49,8 +69,32 @@
                     var amount_needed =  flight_cost - my_account_balance;
 
                     target_id.innerHTML = '<div style="color:red;">You did not Qualify to book this flight. You need additional ' + amount_needed + ' in your account</div>';
+               
+                    //Show the element with ID "travel-options"
+                    var theElement =  document.getElementById("travel-options");
+                    //if they have less than  $100, they will not qulaify for any travel option. Show a message in red
+                    //Indicating they don't qualify for any travel option//
+                    if(amount_needed <= travel_cost){
+                        var target_id=document.getElementById("balance-infor")
+                        target_id.innerHTML =  '<div style=color:r died;">You do not qualify for any travel options" id="travel-options" class="show">
+                    }
+               
+               
+               
                 }
 
+            }
+
+            function recommendations () {
+                if(amount_needed <= travel_cost){
+                        var target_id=document.getElementById("balance-infor")
+                        target_id.innerHTML =  '<div style=color:r died;">You do not qualify for any travel options" id="travel-options" class="show"</div>';
+                    }
+                
+            
+            
+            
+            
             }
 
 

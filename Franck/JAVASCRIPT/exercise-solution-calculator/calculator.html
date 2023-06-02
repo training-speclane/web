@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+    <title>Calcltor</title>
+    <link rel="stylesheet" href="./calculator.css">
+</head>
+<body>
+  <div class="calculator-container">
+      <div  class="calculator-inner-container">
+        <div class="results" contenteditable="" id="results">
+            0
+        </div>
+         <div class="operators">
+            <table>
+                <thead>
+                    <tr>
+                        <th>1</th>
+                        <th>2</th>
+                        <th>3</th>
+                        <th>4</th>
+                    </tr>
+               </thead>
+              <tbody>
+                <tr>
+                   <td><button class="btn-white">AC</button></td>
+                   <td><button class="btn-white">+/-</button></td>
+                   <td><button class="btn-white">%</button></td>
+                   <td><button class="btn-yellow"> &divide;</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="printOperators(7)" class="btn-grey">7</button></td>
+                    <td><button onclick="printOperators(8)" class="btn-grey">8</button></td>
+                    <td><button onclick="printOperators(9)" class="btn-grey">9</button></td>
+                    <td><button class="btn-yellow"> &cross;</button></td>
+                 </tr>
+                 <tr>
+                    <td><button onclick="printOperators(4)" class="btn-grey">4</button></td>
+                    <td><button onclick="printOperators(5)" class="btn-grey">5</button></td>
+                    <td><button onclick="printOperators(6)" class="btn-grey">6</button></td>
+                    <td><button onclick="printOperators('-')" class="btn-yellow">&minus;</button></td>
+                 </tr>
+                 <tr>
+                    <td><button onclick="printOperators(1)" class="btn-grey">1</button></td>
+                    <td><button onclick="printOperators(2)" class="btn-grey">2</button></td>
+                    <td><button onclick="printOperators(3)" class="btn-grey">3</button></td>
+                    <td><button class="btn-yellow" onclick="printOperators('+')"> &plus;</button></td>
+                 </tr>
+              </tbody>
+            </table>
+                 <div class="last-rw">
+                 <tr  colspan="3">
+                    <td><button onclick="printOperators(0)" class="btn-grey0">0</button></td>
+                    <td><button onclick="printOperators('.')" class="btn-grey1">.</button></td>
+                    <td><button class="btn-yellow"> &Equal;</button></td>
+                 </tr>
+                 </div>
+           
+
+        </div>
+      </div>
+  </div>
+
+
+  <script>
+
+            function printOperators (newCommand) {
+                    const targetResults =  document.getElementById("results");
+                    //get whatever we have in the results area
+                    const currentResultsContent =  targetResults.textContent;
+                    //add newCammd to the text that existed in the results
+                    const newValue =  newCommand + currentResultsContent;
+                    targetResults.innerHTML = newValue;
+            }
+
+  </script>
+
+
+</body>

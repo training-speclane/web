@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS</title>
+  <style>
+    .error {
+      color: red;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .modal-content {
+      background-color: #2196F3;
+      color: #FFFF00;
+      border: 1px solid #FFFF00;
+      border-radius: 6px;
+      padding: 20px;
+      margin: 20% auto;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .close {
+      color: #FFFF00;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .close:hover,
+    .close:focus {
+      color: #FFF;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+    <div>
+      <form>
+        How much do you have? <input type="number" id="how-muchuser-has">
+        <button onclick="checkQualification();" type="button">Check if you qualify</button>
+        <div id="balance-info"></div>
+        <h3>Travel Recommendation</h3>
+        Enter amount: <input type="number" id="recommendation-amount">
+        <button onclick="recommendations();" type="button">Check Travel Recommendations</button>
+        <div id="recommendation_container"></div>
+      </form>
+    </div>
+  
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <p id="modalContent"></p>
+      </div>
+    </div>
+    
+    <script>
+        function checkQualification() {
+          var flight_cost = 800;
+    
+          var input = document.getElementById("how-muchuser-has");
+          var my_account_balance = Number(input.value);
+    
+          if (my_account_balance >= flight_cost) {
+            var target_id = document.getElementById("balance-info");
+            target_id.innerHTML = '<div style="color:green;">You qualify to book this flight</div>';
+          } else {
+            var target_id = document.getElementById("balance-info");
+            var amount_needed = flight_cost - my_account_balance;
+            target_id.innerHTML = '<div style="color:red;">You did not qualify to book this flight. You need an additional $' + amount_needed + ' in your account. Enter the amount you have and Click the "Check Travel Recommendations" button for more options.</div>';
+          }
+        }
+
+
+
+// code for asignment begins here
+
+    function recommendations() {
+      var amount = Number(document.getElementById('recommendation-amount').value);
+      var recommendationContainer = document.getElementById('recommendation_container');
+
+      if (amount < 100) {
+        var errorMessage = document.createElement('p');
+        errorMessage.textContent = "Sorry, you do not qualify for any travel option.";
+        errorMessage.classList.add('error');
+        recommendationContainer.innerHTML = errorMessage.outerHTML;
+      } else {
+        var travelOptions = ['road trip', 'sea travels', 'private jets', 'uber', 'lyft', 'taxi', 'bus', 'train'];
+
+        var dropdown = document.createElement('select');
+        dropdown.id = 'travelSelect';
+
+        for (var i = 0; i < travelOptions.length; i++) {
+          var dropdownOption = document.createElement('option');
+          dropdownOption.value = travelOptions[i].toLowerCase().replace(/\s/g, '_');
+          dropdownOption.textContent = travelOptions[i];
+          dropdown.appendChild(dropdownOption);
+        }
+
+        recommendationContainer.innerHTML = ''; // Clear previous content
+        recommendationContainer.appendChild(dropdown);
+
+        if (amount >= 100 && amount <= 300) {
+          showModal("We recommend taking Taxi, Uber, or Lyft.");
+        } else if (amount > 800) {
+          showModal("Congratulations! You qualify for airplane and private jet.");
+        }
+      }
+    }
+
+    function showModal(message) {
+      var modal = document.getElementById("myModal");
+      var modalContent = document.getElementById("modalContent");
+      var closeBtn = document.getElementsByClassName("close")[0];
+
+      modal.style.display = "block";
+      modalContent.innerHTML = message;
+
+      closeBtn.onclick = function () {
+        modal.style.display = "none";
+      };
+
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+    }
+   
+
+
+
+  
+  </script>
+</body>
+</html>
