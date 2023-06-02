@@ -33,25 +33,26 @@
                     <td><button class="btn-yellow"> &cross;</button></td>
                  </tr>
                  <tr>
-                    <td>a</td>
-                    <td>b</td>
-                    <td>c</td>
+                    <td><button onclick="printOperators(4)" class="btn-grey">4</button></td>
+                    <td><button onclick="printOperators(5)" class="btn-grey">5</button></td>
+                    <td><button onclick="printOperators(6)" class="btn-grey">6</button></td>
                     <td><button onclick="printOperators('-')" class="btn-yellow">&minus;</button></td>
                  </tr>
                  <tr>
-                    <td>a</td>
-                    <td>b</td>
-                    <td>c</td>
+                    <td><button onclick="printOperators(1)" class="btn-grey">1</button></td>
+                    <td><button onclick="printOperators(2)" class="btn-grey">2</button></td>
+                    <td><button onclick="printOperators(3)" class="btn-grey">3</button></td>
                     <td><button class="btn-yellow" onclick="printOperators('+')"> &plus;</button></td>
-                 </tr>
-                 <tr  colspan="2">
-                    <td>a</td>
-                    <td>b</td>
-                    <td>c</td>
-                    <td><button class="btn-yellow"> &Equal;</button></td>
                  </tr>
               </tbody>
             </table>
+                 <div class="last-rw">
+                 <tr  colspan="3">
+                    <td><button onclick="printOperators(0)" class="btn-grey0">0</button></td>
+                    <td><button onclick="printOperators('.')" class="btn-grey1">.</button></td>
+                    <td><button class="btn-yellow"> &Equal;</button></td>
+                 </tr>
+                 </div>
            
 
         </div>
@@ -64,25 +65,13 @@
             function printOperators (newCommand) {
                     const targetResults =  document.getElementById("results");
                     //get whatever we have in the results area
-                    let currentResultsContent =  targetResults.textContent;
+                    const currentResultsContent =  targetResults.textContent;
                     //add newCammd to the text that existed in the results
-                    if(currentResultsContent == 0){
-                      currentResultsContent = null;
-                      targetResults.innerHTML = "";
-                    }
-                    const newValue =  currentResultsContent + newCommand;
+                    const newValue =  newCommand + currentResultsContent;
                     targetResults.innerHTML = newValue;
             }
-            
-            function myName(){
-              console.log("grace");
-
-            }
-
-            
 
   </script>
-
 
 
 </body>
