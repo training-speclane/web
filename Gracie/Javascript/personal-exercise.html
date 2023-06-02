@@ -8,50 +8,63 @@
     <body>
         <div class="container">
          <div class="box-model">
-            <form>
-                <div class="display">
-                    <input type="text" name="display">
-                </div>
-                <div>
-                <input type="button" value="C">
-                <input type="button" value="+-">
-                <input type="button" value="%">
-                <input type="button" value="/">
-                </div>
-                <div>
-                <input type="button" value="7">
-                <input type="button" value="8">
-                <input type="button" value="9">
-                <input type="button" value="*">
+            <div class="result" contenteditable="" id="results">
+                0
+            </div>
+            <div class="operators">
+                    <table>
+                        <thead>
+                            <tr>
+                               <!---- <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>--->
+                            </tr>
+                       </thead>
+                       <tbody>
+                        <tr>
+                            <td><button class="symbol">AC</button></td>
+                            <td><button class="symbol">+/-</button></td>
+                            <td><button class="symbol">%</button></td>
+                            <td><button class="signs">/</button></td>   
+                         </tr>
+                         
+                         <tr>
+                            <td><button>7</button></td>
+                            <td><button>8</button></td>
+                            <td><button>9</button></td>
+                            <td><button class="signs">*</button></td>   
+                         </tr>
+                         <tr>
+                            <td><button>4</button></td>
+                            <td><button>5</button></td>
+                            <td><button>6</button></td>
+                            <td><button class="signs">-</button></td>   
+                         </tr>
+                         <tr>
+                            <td><button>1</button></td>
+                            <td><button>2</button></td>
+                            <td><button>3</button></td>
+                            <td><button class="signs">+</button></td>   
+                         </tr>
+                         <tr>
+                            
+                            <td></td>
+                            <td><button class="double-btn"></button></td>
+                            <td><button>.</button></td>
+                            <td><button class="signs">=</button></td>
+            
+                               
+                         </tr>
 
-                </div>
-                <div>
-                <input type="button" value="4">
-                <input type="button" value="5">
-                <input type="button" value="6">
-                <input type="button" value="-">
-                </div>
-                <div>
-                <input type="button" value="1">
-                <input type="button" value="2">
-                <input type="button" value="3">
-                <input type="button" value="+">
-                </div>
-                <div>
-                <input type="button" value="0">
-                <input type="button" value=".">
-                <input type="button" value="=">
-                </div>
+
+
+                       </tbody>
+            </table>
 
 
 
-
-
-
-
-
-                
-            </form>
+            </div>
         </div>
         </div>
         
