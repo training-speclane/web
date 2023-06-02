@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <input type="number" id="input1" />
+<input type="number" id="input2" />
+<input type="text" id="resultField" />
+
+<button type="button" onclick="multiplyAndDisplay()">Multiply</button>
+
+<script>
+function multiplyAndDisplay() {
+  // Get the values from the input fields
+  var value1 = Number(document.getElementById("input1").value);
+  var value2 = Number(document.getElementById("input2").value);
+
+  // Perform the multiplication
+  var result = value1 * value2;
+
+  // Update the result input field with the multiplication result
+  document.getElementById("resultField").value = result;
+}
+</script>
+
+        
+                 
+    </body>
+</html>
