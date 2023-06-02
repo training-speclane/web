@@ -64,13 +64,25 @@
             function printOperators (newCommand) {
                     const targetResults =  document.getElementById("results");
                     //get whatever we have in the results area
-                    const currentResultsContent =  targetResults.textContent;
+                    let currentResultsContent =  targetResults.textContent;
                     //add newCammd to the text that existed in the results
-                    const newValue =  newCommand + currentResultsContent;
+                    if(currentResultsContent == 0){
+                      currentResultsContent = null;
+                      targetResults.innerHTML = "";
+                    }
+                    const newValue =  currentResultsContent + newCommand;
                     targetResults.innerHTML = newValue;
             }
+            
+            function myName(){
+              console.log("grace");
+
+            }
+
+            
 
   </script>
+
 
 
 </body>
