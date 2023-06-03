@@ -11,6 +11,7 @@
     <p id="example"></p>
     
     <script>
+        //Write a JavaScript function to print the “Hello World” message.
         function displayMessage() {
             document.getElementById("example").innerHTML= "Hello World";
             console.log("Hello World");
@@ -25,7 +26,8 @@
             return num*num;
         }
 
-        var result = findSquare(num,num);
+        const myNum = document.getElementById("my_id".value)
+        const result = findSquare(myNum);
 
         console.log(result);
 
