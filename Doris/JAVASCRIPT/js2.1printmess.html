@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="message"></div>
+    <script>
+        function displayMessage(message) {
+  if (message === "Hello World") {
+    console.log(message);
+  } else {
+    console.log("Message does not match! Please provide another message");
+  }
+}
+
+ 
+displayMessage("Hello World"); // Prints "Hello World" to the console
+
+displayMessage("Hi there"); // Prints "Message does not match! Please provide another message" to the console
+
+    </script>
+    <hr>
+    <script>
+         function displayMessage(message) {
+      if (message === "Hello World") {
+        document.getElementById("message").textContent = message;
+      } else {
+        document.getElementById("message").textContent = "Message does not match! Please provide another message";
+      }
+    }
+
+    // Testing the function
+    displayMessage("Hello World");
+    displayMessage("Hi there");
+    </script>
+    
+</body>
+</html>
