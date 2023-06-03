@@ -10,13 +10,15 @@
  <script>
    
     //Write code that will multiply  the two numbers below. Log results to console
+    const num1 = 18;
+    const num2 = 25;
   
    
-    const resultOfAddition = num1+num2; //performs addition
+    //const resultOfAddition = num1+num2; //performs addition
 
     
-    console.log("The result of multiply is --> ", resultOfMultiplication);
-    console.log("The result of addition  is --> ", resultOfAddition);
+   // console.log("The result of multiply is --> ", resultOfMultiplication);
+   // console.log("The result of addition  is --> ", resultOfAddition);
 
     
     function multiply () {
@@ -24,11 +26,18 @@
         const num2 = 25;
         const resultOfMultiplication = num1*num2;  //performs multiplication
     }
-    function addition () {
-      const num1 =18;
+    function add () {
+      const num1 = 18;
       const num2 = 25;
-      const resultOfAddition =num1+num2;
+      const resultOfAddition =num1+num2; // performs addition
+      console.log("the result of addition is -->",resultOfAddition);
     }
+    
+    // call the multiple function
+    multiply();
+
+    // call the add function
+    add();
 
 
 
