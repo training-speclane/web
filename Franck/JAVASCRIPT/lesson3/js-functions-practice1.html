@@ -33,6 +33,20 @@
 
         findSquare();
 
+        //Write a function to convert Celsius to Fahrenheit
+        function calFahrenheit(fah) {
+             /*
+            const Fahrenheit = (Celsius*9/5) + 32;
+            Fahrenheit -32 =  Celsius *9/5
+            Fahrenheit -32 = Celsius * 1.8;
+            (Fahrenheit - 32)/1.8
+            */
+            
+            const cel =  (fah - 32 ) /1.8;
+            displayMessage(cel);
+            return cel;
+        }
+
     </script>
 </body>
 </html>
