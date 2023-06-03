@@ -3,6 +3,7 @@
 <head></head>
 <body>
    <h1>MORE JS Practice</h1>
+   <div id="result" style="color:red">Message does not match!</div>
    
 
    <script>
@@ -16,12 +17,20 @@
 
      function displayMessage(message){
 
-            if(message ==="Hello World"){
+            if(message ==="Hello people"){
                 console.log(message);
+                document.getElementById("results").innerHTML= message ;
                 
             }else{
-                console.log("hi people");
+                console.log("Message does not match!");
+                
             }
+
+            /*nstructions: name the function displayMessage() the function should take message as argument/parameter 
+            and print the message to the console …Only  if the message received by this function is “Hello World”. 
+            If the message is not 'Hello World', 
+            Print the following to the console "Message does not match! Please provide another message"*/
+            
 
 
         //log message to console ONLY IF THE MESSAGE IS 'Hello World'
