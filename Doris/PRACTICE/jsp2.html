@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<h1>Welcome to js logic</h1>
+<body>
+    
+    <script>
+        /*
+          1. Write a JavaScript function that prints a message to the console
+          Instructions: Use VSC to write the code. Name the function displayMessage()  and the function should take 
+          message as argument/parameter and print the message to the console …Only  if the message received by 
+          this function is “Hello World”.
+        */
+    
+    
+         function displayMessage(message){
+    
+            //log message to console ONLY IF THE MESSAGE IS 'Hello World'
+            //when comparing two things in JS,always use three equal signs(===) While not Equal is (!==)
+           
+            /*In JavaScript, you can use different comparison operators to compare
+             values other than the strict equality operator (===).
+              Here are some commonly used comparison operators:
+
+Strict Equality (===): This operator checks if the values on both sides are equal in value and data type.
+ For example: 5 === 5 returns true, but 5 === "5" returns false.
+
+Loose Equality (==): This operator checks if the values on both sides are equal,
+ performing type coercion if necessary. For example: 5 == 5 returns true, 
+ and 5 == "5" also returns true because the string is coerced to a number.
+
+Inequality (!== or !=): The inequality operators are the negations of the 
+equality operators. They check if the values on both sides are not equal.
+ For example: 5 !== 10 returns true, and 5 != "5" returns false because
+  the loose equality comparison converts the string to a number.
+
+Greater Than (>), Greater Than or Equal To (>=), Less Than (<),
+ Less Than or Equal To (<=): These operators compare the values on
+  both sides to determine if one value is greater than, greater 
+  than or equal to, less than, or less than or equal to the other.
+   For example: 5 > 3 returns true, and 10 <= 10 returns true.*/
+            if(message ==="Hello World"){
+                console.log(message);
+            } else{
+                // if(message !=="Hello World")
+                console.log('not true or false');
+            }
+         }
+         displayMessage("Hello World");
+         
+    
+    
+       </script>
+       <hr>
+       <script>
+        
+       </script>
+</body>
+</html>
