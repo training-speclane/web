@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calc Function</h1>
+    <p id="demo" style="color: red;">Please try other combinations</p>
+    <p id="demo1" style="color: green;">You are good</p>
+    <p id="demo2" style="color: red;">Zero sum not allowed</p>
+
+    <input id="num1">
+    <input id="num2">
+
+    <script>
+        //If the sum is greater than  50, display an error message in red saying "Please  try other combinations".
+        function sum(num1, num2) {
+            if(sum > 50) {
+                document.getElementById("demo").innerHTML = "Please try other combinations";
+            }
+        //If the sum is less than 21, display a message in green saying that "you are good".
+            if(sum < 21) {
+                document.getElementById("demo1").innerHTML = "You are good";
+            }
+        // If the sum is less than zero, display a message  in red saying that "Zero sum not allowed".
+            if(sum < 0) {
+                document.getElementById("demo2").innerHTML = "Zero sum not allowed";
+            }        
+        }
+    </script>
+    
+</body>
+</html>
