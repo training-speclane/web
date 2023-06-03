@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <div id="message"></div>
+    <div id="message" style="color: blue; font-weight: bold;"></div>
     <script>
         function displayMessage(message) {
   if (message === "Hello World") {
@@ -29,7 +29,7 @@ displayMessage("Hi there"); // Prints "Message does not match! Please provide an
       if (message === "Hello World") {
         document.getElementById("message").textContent = message;
       } else {
-        document.getElementById("message").textContent = "Message does not match! Please provide another message";
+        document.getElementById("message").textContent =  "Message does not match! Please provide another message";
       }
     }
 
