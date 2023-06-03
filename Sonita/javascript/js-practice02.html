@@ -5,17 +5,17 @@
         <h1>js practice002</h1>
         
         <script>
-            function displayMessage() {
-             let message = "Hello World";
-             if (message = "Hello World"){
-             console.log("Hello World");
+            function displayMessage(message) {
+             //let message = "Hello World";
+             if (message === "Hello World") {
+             console.log("message");
               }
             else{
-                console.log("message is invalid")
+                console.log("Message does not match! Please provide another message");
             }
 
             }
-            displayMessage()
+            displayMessage("Hello World");
 
             
 
