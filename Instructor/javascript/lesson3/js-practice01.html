@@ -7,10 +7,46 @@
      
      <h1>PRACTICE JS</h1>
 
+     <div id = "results"></div>
+
 
      <script>
 
-        //Javascript goes here
+        //YOUR_CHANGE --commit =-> LOCAL GIT --push-git -> REMOTE ORGIN
+       
+        function displayMessage(message){
+            document.getElementById("results").innerHTML  =  message;
+            console.log(message);
+        }
+
+
+        function findSquare(num){
+           
+            const results =  num*num;
+            displayMessage(results);
+            return results;
+        }
+
+
+        function  calFahrenheit(fah) {
+            //const  fah = 10;
+            /*
+            const Fahrenheit = (Celsius*9/5) + 32;
+            Fahrenheit -32 =  Celsius *9/5
+            Fahrenheit -32 = Celsius * 1.8;
+            (Fahrenheit - 32)/1.8
+            */
+            
+            const cel =  (fah - 32 ) /1.8;
+            displayMessage(cel);
+            return cel;
+
+        }
+
+        findSquare(10);
+        calFahrenheit(47);
+        ///displayMessage(result);
+
 
 
      </script>

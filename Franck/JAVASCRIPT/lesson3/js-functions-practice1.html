@@ -11,6 +11,7 @@
     <p id="example"></p>
     
     <script>
+        //Write a JavaScript function to print the “Hello World” message.
         function displayMessage() {
             document.getElementById("example").innerHTML= "Hello World";
             console.log("Hello World");
@@ -19,15 +20,32 @@
         //Run the function called displayMessage
         displayMessage("Hello World");
 
+
+        //Write a function that returns the square of a number
         function findSquare(num) {
             return num*num;
         }
 
-        var result = findSquare(num,num);
+        const myNum = document.getElementById("my_id".value)
+        const result = findSquare(myNum);
 
         console.log(result);
 
         findSquare();
+
+        //Write a function to convert Celsius to Fahrenheit
+        function calFahrenheit(fah) {
+             /*
+            const Fahrenheit = (Celsius*9/5) + 32;
+            Fahrenheit -32 =  Celsius *9/5
+            Fahrenheit -32 = Celsius * 1.8;
+            (Fahrenheit - 32)/1.8
+            */
+            
+            const cel =  (fah - 32 ) /1.8;
+            displayMessage(cel);
+            return cel;
+        }
 
     </script>
 </body>
