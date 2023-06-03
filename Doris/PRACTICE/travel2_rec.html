@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS</title>
+  <style>
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <form>
+      How much do you have? <input type="number" id="how-muchuser-has">
+      <button onclick="checkQualification();" type="button">Check if you qualify</button>
+      <div id="balance-info"></div>
+      <h3>Travel Recommendation</h3>
+      Enter amount: <input type="number" id="recommendation-amount">
+      <button onclick="recommendations();" type="button">Check Travel Recommendations</button>
+      <div id="recommendation_container"></div>
+    </form>
+  </div>
+
+  <script>
+    function checkQualification() {
+      var flight_cost = 800;
+      var input = document.getElementById("how-muchuser-has");
+      var my_account_balance = Number(input.value);
+
+      if (my_account_balance >= flight_cost) {
+        var target_id = document.getElementById("balance-info");
+        target_id.innerHTML = '<div style="color:green;">You qualify to book this flight</div>';
+      } else {
+        var target_id = document.getElementById("balance-info");
+        var amount_needed = flight_cost - my_account_balance;
+        target_id.innerHTML = '<div style="color:red;">You did not qualify to book this flight. You need an additional $' + amount_needed + ' in your account. Enter the amount you have and Click the "Check Travel Recommendations" button for more options.</div>';
+      }
+    }
+
+    function recommendations() {
+      var amount = Number(document.getElementById('recommendation-amount').value);
+      var recommendationContainer = document.getElementById('recommendation_container');
+
+      if (amount < 100) {
+        var errorMessage = document.createElement('p');
+        errorMessage.textContent = "Sorry, you do not qualify for any travel option.";
+        errorMessage.classList.add('error');
+        recommendationContainer.innerHTML = errorMessage.outerHTML;
+      } else {
+        var travelOptions = ['road trip', 'sea travel', 'private jet', 'uber', 'lyft', 'taxi', 'bus', 'train'];
+
+        var recommendationList = document.createElement('ul');
+
+        for (var i = 0; i < travelOptions.length; i++) {
+          var listItem = document.createElement('li');
+          listItem.textContent = travelOptions[i];
+          recommendationList.appendChild(listItem);
+        }
+
+        recommendationContainer.innerHTML = ''; // Clear previous content
+        recommendationContainer.appendChild(recommendationList);
+      }
+    }
+  </script>
+</body>
+</html>
