@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS Practise site</title>
+    </head>
+    <body>
+        <div class="demo"></div>
+        <button type="button" onclick= "clickMe()">
+clickMe
+
+        </button>
+
+
+
+<script>
+/*The example below "finds" an HTML element (with id="demo"), 
+and changes the element content (innerHTML) to "Hello JavaScript":*/
+
+
+
+ function clickMe(){
+    const targetClass =  document.getElementsByClassName("demo")[0];
+
+    console.log(targetClass);
+
+     targetClass.innerHTML = "Hello JavaScript!";
+ }
+
+
+
+</script>
+
+
+    </body>
+
+
+
+
+
+
+</html>
