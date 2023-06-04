@@ -15,30 +15,33 @@
  
 
     <input id="num1">
-    <button onclick="handleSum();">+</button>
     <input id="num2">
-
+    <button onclick="handleSum();">+</button>
+    
     <div id="result"></div>
-   
+    
+
     <script>
         //If the sum is greater than  50, display an error message in red saying "Please  try other combinations".
         function sum(num1, num2) {
-            
             const result = parseInt(num1) + parseInt(num2);
             
-            if(result > 50) {
-                document.getElementById("result").innerHTML = "<div class='error'>Please try other combinations</div>";
+            if(sum > 50) {
+                document.getElementById("result").innerHTML = "Please try other combinations";
+               
             }
             
-            //If the sum is less than 21, display a message in green saying that "you are good".
-            if(result < 21) {
+            
+        //If the sum is less than 21, display a message in green saying that "you are good".
+            if(sum < 21) {
                 document.getElementById("result").innerHTML = "You are good";
             }
-            // If the sum is less than zero, display a message  in red saying that "Zero sum not allowed".
-            if(result < 0) {
+            
+        // If the sum is less than zero, display a message  in red saying that "Zero sum not allowed".
+            if(sum < 0) {
                 document.getElementById("result").innerHTML = "Zero sum not allowed";
             }
-           
+            
         }
 
 
