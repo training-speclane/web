@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Document</title>
+</head>
+<body>
+<!-- Write a function to calculate the sum of two numbers.
+    Instructions : If the sum is greater than  50, display an error message in red saying "Please  try other combinations". If the sum is less than 21, display a message in green saying that "you are good". If the sum is less than zero, display a message  in red saying that "Zero sum not allowed".
+    
+    Name the funtion any name you choose and you can either provide the 2 numbers as arguments or let user enter them on the screen. -->
+    
+    <div id="summation"></div>
+    <div>
+        <!-- we begin by defining two id's -->
+    <input id="num1" > <input id="num2" >
+</div>
+<button onclick="add()">+add</button>
+<script>
+    const outputArea = document.getElementById("summation");
+    const num1= document.getElementById("num1");
+    const num2= document.getElementById("num2");
+    //Add the two numbers
+    function add(){
+        const result = parseInt(num1.value) + parseInt(num2.value);
+        //call another function to format results. Pass the results as an Arguement
+        const formattedResults = formatOutput(result);//call function
+        outputArea.innerHTML = formattedResults;//set the output area so it has the formatted results
+       
+
+    }
+    function formatOutput (result){
+            return "results = "  + result.toLocaleString();// return the formatted value
+        }
+        function formatOutput(result){
+            if(result > 50){
+            return '<span style="color:red; background-color: aqua"><i class="fas fa-sad-tear"></i>Please  try other combinations</span>';
+            } else if (result < 21){
+                return '<span style="color:green;background-color: yellow;"><i class="fas fa-smile"></i>You are Good</span>';
+            } else if(result < 5){
+                return '<span style="color:red; background-color: aqua"><i class="fas fa-angry"></i>Zero sum not allowed</span>';
+            } else{
+                return 'Results =' + result.toLocaleString();
+            }
+             
+
+        }
+
+
+</script>
+    
+</body>
+</html>
