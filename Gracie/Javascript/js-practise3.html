@@ -1,12 +1,23 @@
 <!DOCTYPE html>
 <html>
-<head></head>
+<head>
+  <style>
+    .error{
+        color:red
+    }
+    .success{
+        color:green;
+    }
+  </style>
+
+
+</head>
 <body>
    <h1>MORE JS  if or else Practice</h1>
 
-    <div class="result1" style="color:red">"Please try other combinations</div>
-    <div class="result2" style="color:green">"You are good"</div>
-    <div class="result1" style="color:red">"Zero sum not allowed"</div>
+    <div id="result"></div>
+    <!-- <div class="result2" style="color:green">"You are good"</div>
+    <div class="result1" style="color:red">"Zero sum not allowed"</div> -->
 
 
 
@@ -22,23 +33,29 @@ Name the function any name you choose and you can either provide the 2 numbers a
 let user enter them on the screen.*/
 
 function calculate(num1,num2){
-    num1=24
-    num2=30
+    //num1=24; Not redefine these again since there are already passed as arguments
+   // num2=30;
     const sum=num1+num2;
+
+    console.log(sum);
+
+    
+    if(sum < 0 ){
+        document.getElementById("result").innerHTML= "Zero sum not allowed";
+    }
+
    if(sum>50){
-    document.getElementsByClassName("result1").innerHTML= "result";
-    console.log(sum>50);
+       document.getElementById("result").innerHTML= "<div class='error'>Please try other combinations</div>";
      }
-    if(sum<21){
-    document.getElementsByClassName("result2").innerHTML= "result";
-    }
-    if(sum<0){
-    document.getElementsByClassName("result1").innerHTML= "result";
-    }
+
+    if(sum > 0 && sum < 21){
+       document.getElementById("result").innerHTML= "<div class='success'>you are good</div>";
+    } 
+   
    
 }
 
-calculate(24,30);
+calculate(3,2);
 /*calculate(4,10);
 calculate(0,0);*/
 
