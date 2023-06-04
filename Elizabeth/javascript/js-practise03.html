@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>JavaScript Practice</h1>
+
+        <div id="my-output"></div>
+       <div>
+           <input id="num1"><input id="num2">
+           <button id="onclick" value="add()">+add</button>
+        </div>
+        <input id="resultArea">
+        
+        
+        <script>
+            function addSum() {
+                const num1 =20;
+                const num2 =10;
+                var button = document.getElementById(onclick)
+                if(num1 + num2 > 50){
+                    const result = parseInt(num1.value) + parseInt(num2.value);
+                    document.getElementById("resultArea").innerHTML="display an error message in 'red'saying 'please try other combination' "
+                    console.log("display an error message in 'red'saying 'please try other combination'");
+                }
+                 if(num1 + num1 < 21){
+                    document.getElementById("resultArea").innerHTML="display a message in 'Green'saying 'you are good'";
+                    console.log("display a message in 'Green'saying 'you are good'");
+                 }
+                 if(num1 + num2 < 0){
+                    document.getElementById("resultArea").innerHTML="display a message in 'Red' saying that 'Zero sum'not allowed"
+                    console.log("display a message in 'Red' saying that 'Zero sum'not allowed");
+                 }
+            }
+            button.addSum();
+            addSum()
+        </script>
+    </body>
+</html>
