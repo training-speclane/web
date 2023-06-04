@@ -14,8 +14,8 @@
     <div id="results"></div>
 
     <input id="num1">
-    <button onclick="handleSum();">+</button>
     <input id="num2">
+    <button onclick="handleSum();">+</button>
     
     <div>
     <input id="result" style="background-color: coral;">
@@ -25,30 +25,23 @@
         //If the sum is greater than  50, display an error message in red saying "Please  try other combinations".
         function sum(num1, num2) {
             const sum = parseInt(num1) + parseInt(num2);
-            
+
             if(sum > 50) {
                 document.getElementById("demo").innerHTML = "Please try other combinations";
                
             }
-            else {
-                document.getElementById("results").innerHTML = "";
-            }
+            
             
         //If the sum is less than 21, display a message in green saying that "you are good".
             if(sum < 21) {
                 document.getElementById("demo1").innerHTML = "You are good";
             }
-            else {
-                document.getElementById("results").innerHTML = "";
-            }
+            
         // If the sum is less than zero, display a message  in red saying that "Zero sum not allowed".
             if(sum < 0) {
                 document.getElementById("demo2").innerHTML = "Zero sum not allowed";
             }
-            else {
-                document.getElementById("results").innerHTML = "";
-            }
-            sum (num1, num2); 
+            
         }
         function handleSum() {
             //If we want the user to provide the numbers
