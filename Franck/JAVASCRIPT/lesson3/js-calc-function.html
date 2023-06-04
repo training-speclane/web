@@ -24,9 +24,11 @@
     <script>
         //If the sum is greater than  50, display an error message in red saying "Please  try other combinations".
         function sum(num1, num2) {
+            const sum = parseInt(num1) + parseInt(num2);
+            
             if(sum > 50) {
                 document.getElementById("demo").innerHTML = "Please try other combinations";
-                const sum = parseInt(num1) + parseInt(num2);
+               
             }
             else {
                 document.getElementById("results").innerHTML = "";
