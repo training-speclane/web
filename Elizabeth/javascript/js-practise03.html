@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head></head>
+    <style>
+        .error{
+            color: red;
+        }
+        .sucess{
+            color: green;
+        }
+    </style>
     <body>
         <h1>JavaScript Practice</h1>
        <div>
@@ -21,14 +29,14 @@
                // var button = document.getElementById(onclick)
                 if(sum > 50){
                    // const result = parseInt(num1.value) + parseInt(num2.value);
-                    document.getElementById("resultArea").innerHTML="<div class=''>please try other combination</div>"
+                    document.getElementById("resultArea").innerHTML="<div class='error'>please try other combination</div>";
                  }
                  if(sum > 0 && sum < 21){
-                    document.getElementById("resultArea").innerHTML="you are good'";
+                    document.getElementById("resultArea").innerHTML="<div class='sucess'>you are good</div>";
 
                  }
                  if(sum < 0){
-                    document.getElementById("resultArea").innerHTML="Zero sum not allowed"
+                    document.getElementById("resultArea").innerHTML="<div class='error'>Zero sum not allowed</div>";
                  }
             }
             //button.addSum();
