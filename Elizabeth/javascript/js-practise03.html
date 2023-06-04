@@ -3,36 +3,36 @@
     <head></head>
     <body>
         <h1>JavaScript Practice</h1>
-
-        <div id="my-output"></div>
        <div>
-           <input id="num1"><input id="num2">
-           <button id="onclick" value="add()">+add</button>
+           <input id="num1">
+           <input id="num2">
+           <!-- <button id="onclick" value="add()">+add</button> -->
+           <button onclick="addSum();">+add</button>
         </div>
-        <input id="resultArea">
+        <div id="resultArea"></div>
         
         
         <script>
             function addSum() {
-                const num1 =20;
-                const num2 =10;
-                var button = document.getElementById(onclick)
-                if(num1 + num2 > 50){
-                    const result = parseInt(num1.value) + parseInt(num2.value);
-                    document.getElementById("resultArea").innerHTML="display an error message in 'red'saying 'please try other combination' "
-                    console.log("display an error message in 'red'saying 'please try other combination'");
-                }
-                 if(num1 + num1 < 21){
-                    document.getElementById("resultArea").innerHTML="display a message in 'Green'saying 'you are good'";
-                    console.log("display a message in 'Green'saying 'you are good'");
+                const num1 =  document.getElementById("num1").value;  //20; 
+                const num2 =  document.getElementById("num2").value; //10;
+
+                const sum = parseInt(num1) + parseInt(num2);
+               // var button = document.getElementById(onclick)
+                if(sum > 50){
+                   // const result = parseInt(num1.value) + parseInt(num2.value);
+                    document.getElementById("resultArea").innerHTML="<div class=''>please try other combination</div>"
                  }
-                 if(num1 + num2 < 0){
-                    document.getElementById("resultArea").innerHTML="display a message in 'Red' saying that 'Zero sum'not allowed"
-                    console.log("display a message in 'Red' saying that 'Zero sum'not allowed");
+                 if(sum > 0 && sum < 21){
+                    document.getElementById("resultArea").innerHTML="you are good'";
+
+                 }
+                 if(sum < 0){
+                    document.getElementById("resultArea").innerHTML="Zero sum not allowed"
                  }
             }
-            button.addSum();
-            addSum()
+            //button.addSum();
+            //addSum()
         </script>
     </body>
 </html>
