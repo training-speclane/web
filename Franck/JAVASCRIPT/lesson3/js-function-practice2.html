@@ -11,18 +11,33 @@
 
     <p>The function should take message as argument and print the message to the console</p>
     <p id="demo">Hello World</p>
+    <div id="result">Message does not match</div>
 
     <script>
         function displayMessage(message) {
 
             if (message === "Hello World") {
-            document.getElementById("demo").innerHTML = "Hello World!";
+            document.getElementById("demo").innerHTML = "Hello World";
             console.log(message);
             }
+            
 
         }
-
         displayMessage("Hello World");
+
+        function displayMessage(message) {
+            if (message === "Hello World") {
+            document.getElementById("demo").innerHTML = "Hello World";
+            console.log(message);
+            }
+        //If the message is not "Hello World" print "Message does not match! Please print another message"
+            else {
+                document.getElementById("result").innerHTML = "Message does not match";
+                console.log("Message does not match!");
+            }
+        }
+
+        displayMessage("Message does not match!");
 
 
     </script>
