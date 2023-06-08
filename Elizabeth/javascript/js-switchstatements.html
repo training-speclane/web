@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>switch statement practice</title>
+        <style>
+            .hide{
+                display: none !important;
+            }
+            .error{
+                color:red;
+            }
+            .good{
+                color: green;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>MY SWITCH STATEMENT PRACTICE</h1>
+        <div>
+
+        <input id="num1">
+           <input id="num2">
+           <button onclick="addSum();">+add</button>
+        </div>
+        <div id = "resultArea"></div>
+
+        <script>
+            function addSum() {
+                const num1 =  document.getElementById("num1").value;   
+                const num2 =  document.getElementById("num2").value;
+                const sum = parseInt(num1) + parseInt(num2);
+
+                if(sum > 50) {
+                    document.getElementById("resultArea").innerHTML= "<div class ='error'> please try another combination </div>";
+
+                }
+               else if(sum > 0 && sum < 21){
+                    document.getElementById("resultArea").innerHTML= "<div class ='good'> you are good </div>";
+                }
+               else if(sum < 0){
+                    document.getElementById("resultArea").innerHTML = "<div class ='error'> zero sum not allowed </div>";
+                }
+                switch(resultArea){
+                 case 'sum > 50':
+                  document.getElementById("resultArea").innerHTML ="<div class ='error'> please try another combination </div>";
+                  break;
+                  case 'sum > 0 && sum < 21':
+                  document.getElementById("resultArea").innerHTML= "<div class ='good'> you are good </div>";
+                  break;
+                  case 'sum < 0':
+                  document.getElementById("resultArea").innerHTML = "<div class ='error'> please provide 2 integer numbers </div>";
+                  break;
+                  default:
+                  document.getElementById(resultArea).innerHTML.resultArea('hide');
+                }
+            }
+        </script>
+    </body>
+</html>
