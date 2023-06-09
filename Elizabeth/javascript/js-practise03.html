@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <style>
+        .error{
+            color: red;
+        }
+        .sucess{
+            color: green;
+        }
+    </style>
+    <body>
+        <h1>JavaScript Practice</h1>
+       <div>
+           <input id="num1">
+           <input id="num2">
+           <!-- <button id="onclick" value="add()">+add</button> -->
+           <button onclick="addSum();">+add</button>
+        </div>
+        <div id="resultArea"></div>
+        
+        
+        <script>
+            function addSum() {
+                const num1 =  document.getElementById("num1").value;  //20; 
+                const num2 =  document.getElementById("num2").value; //10;
+
+                const sum = parseInt(num1) + parseInt(num2);
+               // var button = document.getElementById(onclick)
+                if(sum > 50){
+                   // const result = parseInt(num1.value) + parseInt(num2.value);
+                    document.getElementById("resultArea").innerHTML="<div class='error'>please try other combination</div>";
+                 }
+                 if(sum > 0 && sum < 21){
+                    document.getElementById("resultArea").innerHTML="<div class='sucess'>you are good</div>";
+
+                 }
+                 if(sum < 0){
+                    document.getElementById("resultArea").innerHTML="<div class='error'>Zero sum not allowed</div>";
+                 }
+            }
+            //button.addSum();
+            //addSum()
+        </script>
+    </body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swicth Statements</title>
+</head>
+<body>
+    <h1>Welcome to switch statements</h1>
+
+    Enter question tag: <input id="user-value"> Note ! Only the following values are allowed 'bill', 'audit', 'transaction', 'amount'
+
+    <div>
+        <br/>
+        <button onclick="handleRequest();">Submit Request</button>
+    </div>
+
+    <script>
+        function handleRequest() {
+
+            const valueOfInput = document.getElementById("user-value").value;
+
+            if(valueOfInput === 'bill') {
+                alert('bill')
+            }else if(valueOfInput === 'audit') {
+                alert('audit')
+            }else if(valueOfInput === 'transaction') {
+                alert('transaction')
+            }else if(valueOfInput === 'amount') {
+                alert('amount')
+            }else {
+                alert('please enter correct value')
+            }
+
+            //Write th above if-else statements using switch
+
+            switch(valueOfInput) {
+                case 'bill' :
+                    alert('bill');
+                    break;
+                case 'audit' :
+                    alert('audit');
+                    break;
+                case 'transaction' :
+                    alert('transaction');
+                    break;
+                case 'amount' :
+                    alert('amount');
+                    break;
+                default :
+                    alert('please enter correct value');
+                
+            }
+        }
+    </script>
+</body>
+</html>
