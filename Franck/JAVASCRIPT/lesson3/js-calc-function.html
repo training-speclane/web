@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calc Function</h1>
+    
+
+    <input id="num1">
+    <input id="num2">
+    <button onclick="handleSum();">+</button>
+    
+    <div id="result"></div>
+    
+
+    <script>
+        //If the sum is greater than  50, display an error message in red saying "Please  try other combinations".
+        function sum(num1, num2) {
+            const result = parseInt(num1) + parseInt(num2);
+            
+            if(result > 50) {
+                document.getElementById("result").innerHTML = "<div class='error' style='color:red;'>Please try other combinations</div>";
+               
+            }
+            
+            
+        //If the sum is less than 21, display a message in green saying that "you are good".
+            if(result < 21) {
+                document.getElementById("result").innerHTML = "<div class='error1' style='color:green;'>You are good</div>";
+            }
+            
+        // If the sum is less than zero, display a message  in red saying that "Zero sum not allowed".
+            if(result < 0) {
+                document.getElementById("result").innerHTML = "<div class='error2' style='color:red;'>Zero sum not allowed</div>";
+            }
+            
+        }
+
+
+
+        function handleSum() {
+            //If we want the user to provide the numbers
+            const num1 = document.getElementById("num1").value;
+            const num2 = document.getElementById("num2").value;
+            sum (num1, num2);
+        }
+        //Add an input who represent the result area
+       // function sum(num1, num2) {
+           // const result = parseInt(num1) + parseInt(num2);
+           // document.getElementById("result").value = result;
+       // } 
+    </script>
+    
+</body>
+</html>

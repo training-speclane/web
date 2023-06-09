@@ -4,6 +4,8 @@
 <body>
    <h1>MORE JS Practice</h1>
 
+   <div id= "demo"> Hello World</div>
+
    
 
    <script>
@@ -17,17 +19,23 @@
 
      function displayMessage(message){
 
-<<<<<<< HEAD
+
       if(message === "Hello World"){
         //Do something
         console.log(message);
       }
 
-=======
+
      if(message ==="Hello World"){
       console.log(message);
      }
->>>>>>> 82c1df3bb7eb7089157a3088dad325621c847a00
+
+     else{
+      console.log("message does not match! please provide another message")
+      document.getElementById("demo").innerHTML="message does not match! please provide another message";
+     }
+    // console.log("message does not match! please provide another message")
+
         //log message to console ONLY IF THE MESSAGE IS 'Hello World'
      }
 

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Switch statements</title>
+
+   <style>
+     .hide {
+        display:none !important; /*  Add important to ovveride any style that may exist in the .main-container rule   */
+     }
+     .main-container {
+        display:flex; 
+        flex-direction:row;
+         row-gap:6; 
+         min-height:800px; 
+         width:100%;
+     }
+   </style>
+</head>
+<body>
+<h1>Welcome to Switch statements</h1>
+
+Enter question tag: <input id="user-value"> Note ! Only the following values are allowed 'bill', 'audit', 'transaction', 'amount'.
+  <div>
+    <br/>
+    <button onclick="handleRequest();">Submit request</button>
+  </div>
+
+  <hr>
+  <div id = "result-container" class="main-container">
+     <div style="width: 20%"></div>
+     <div style="border:solid 2px grey; box-shadow: 2px 4px; width:60%; border-radius:10px; text-align:center">
+        <h3 >Showing results for : <span id="showing-for" style="color:green">Nothing</span> </h3>
+     </div>
+     <div style="width:19%"></div>
+  </div>
+
+
+
+ <script>
+
+
+    function handleRequest () {
+
+        /*
+          Assuming you work for a data processing and visualization, and your product owner wants you 
+          to write code that would display data on the screen based on what the user wants to see. User
+          can only see data related to 'bill', 'audit', 'transaction', 'amount'. If they enter a search criteria
+          that doesn't match any of the standard 4 ways, Show an error message telling them to enter correct value.
+          and tell them what the correct values should be. Also donot show the result container
+        */
+
+
+
+        const valueOfInput = document.getElementById("user-value").value;
+
+        /*
+        if(valueOfInput === 'bill'){
+            alert('bill');
+        }else if(valueOfInput === 'audit'){
+            alert('audit');
+        }else if(valueOfInput === 'transaction'){
+            alert('transaction');
+        } else if(valueOfInput === 'amount'){
+            alert('amount');
+        }else{
+            alert('please enter correct value');
+        }
+        */
+
+
+        //Write the above if-else statements using switch
+
+        //Remove the hidden class and then add it only when needed
+        document.getElementById("result-container").classList.remove('hide');
+
+
+        switch(valueOfInput){
+              case 'bill' :
+                  document.getElementById("showing-for").innerHTML = "Bill";
+                  break; //Stop processing
+              case 'audit' :
+                  document.getElementById("showing-for").innerHTML = "Audit";
+                  break;
+              case 'transaction' :
+                  document.getElementById("showing-for").innerHTML = "Transaction";
+                  break;
+              case 'amount' :
+                  document.getElementById("showing-for").innerHTML = "Amount";
+                  break;
+              default :
+                   
+               //hide the whole result container
+               //document.getElementById("showing-for").innerHTML = "Please Enter correct value"
+               document.getElementById("result-container").classList.add('hide');
+
+        }
+
+
+
+    }
+
+
+
+
+
+   
+ </script>
+</body>
+</html>

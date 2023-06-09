@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error{
+        color:red
+    }
+    .success{
+        color:green;
+    }
+  </style>
+
+
+</head>
+<body>
+   <h1>MORE JS  if or else Practice</h1>
+
+    <div id="result"></div>
+    <!-- <div class="result2" style="color:green">"You are good"</div>
+    <div class="result1" style="color:red">"Zero sum not allowed"</div> -->
+
+
+
+
+
+<script>
+
+/*Write a function to calculate the sum of 2 numbers.If the sum is greater than 50, display an error message in red 
+saying "Please try other combinations".
+ If the sum is less than 21, display a message in green saying that "you are good". If the sum is less than zero,
+  display a message in red saying that "Zero sum not allowed".
+Name the function any name you choose and you can either provide the 2 numbers as arguments or 
+let user enter them on the screen.*/
+
+function calculate(num1,num2){
+    //num1=24; Not redefine these again since there are already passed as arguments
+   // num2=30;
+    const sum=num1+num2;
+
+    console.log(sum);
+
+    
+    if(sum < 0 ){
+        document.getElementById("result").innerHTML= "Zero sum not allowed";
+    }
+
+   if(sum>50){
+       document.getElementById("result").innerHTML= "<div class='error'>Please try other combinations</div>";
+     }
+
+    if(sum > 0 && sum < 21){
+       document.getElementById("result").innerHTML= "<div class='success'>you are good</div>";
+    } 
+   
+   
+}
+
+calculate(3,2);
+/*calculate(4,10);
+calculate(0,0);*/
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+   </body>
+</html>
