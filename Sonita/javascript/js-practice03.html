@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Js practice3</title>
+    </head>
+    <body>
+        <input id="num1">
+        <input id="num2">
+        <button onclick="displayResult()">result</button> 
+        <div id="result"></div>
+
+      <script>
+    
+        function displayResult () {
+                var num1 = parseInt(document.getElementById("num1").value);
+                var num2 = parseInt(document.getElementById("num2").value);
+                var totalSum = num1 + num2;
+               
+                if (totalSum > 50) {
+                    document.getElementById("totalSum").value = totalSum;
+                    console.log("Please try another combination.");
+
+                } else if (totalSum < 21) {
+                    console.log("you are good");
+           
+                } else if (totalSum < 0) {
+                    console.log("Zero not allowed")
+                }
+
+                
+        }
+
+            
+         
+    
+      </script>  
+    </body>
+</html>
