@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <title>Document</title>
+</head>
+<body>
+    <h1>Switch statements Exercise 1</h1>
+    <div id="addition" ></div>
+    <input id="num1"> <input id="num2">
+    <button onclick="add()">+add</button>
+    <!-- Instructions : If the sum is greater than  50, display an error message in
+         red saying "Please  try other combinations". If the sum is less than 21, display 
+         a message in green saying that "you are good". If the sum is less than zero, 
+         display a message  in red saying that "Zero sum not allowed".  By default ,
+          display text saying "Please provide 2 integer numbers" Use switch statements
+
+Name the funtion any name you choose and you can either provide the 2 numbers as arguments or let user enter them on the screen. -->
+
+    <script>
+        const outputArea = document.getElementById("addition");
+        const num1 = document.getElementById("num1");
+        const num2 = document.getElementById("num2");
+        
+        function add() {
+            const summation = parseInt(num1.value) + parseInt(num2.value);
+            formatOutput(summation);
+        }
+    
+        function formatOutput(summation) {
+            switch (true) {
+                case summation > 50:
+                    outputArea.innerHTML = '<span style="color: red; font-weight: bold; background-color: aqua; width:300px; padding:20px; text-align:centre"><i class="fas fa-sad-tear"></i>Please try other combinations</span>';
+                    break;
+
+                case summation < 21 && summation > 0:
+                    outputArea.innerHTML = '<span style="color: green; font-weight: bold; background-color: yellow;width:300px; padding:20px; text-align:centre"><i class="fas fa-laugh"></i>You are Good</span>';
+                    break;
+            
+                case summation < 0:
+                    outputArea.innerHTML = '<span style="color: red; font-weight: bold; background-color: aqua;  width:300px; padding:20px; text-align:centre"><i class="fas fa-angry"></i>Zero sum not allowed</span>';
+                    break;
+
+                default:
+                    outputArea.innerHTML = '<span style="color: blue; font-weight: bold; background-color: plum; width:300px; padding:20px; text-align:centre"><i class="fas fa-angry"></i>Please provide 2 integer numbers</span>';
+            }
+        }
+    </script>
+</body>
+</html>

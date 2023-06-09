@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
+    <title>Document</title>
+    <style>
+        .alert-popup {
+            width: 300px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .alert-icon {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .error {
+            background-color: aqua;
+            color: red;
+        }
+
+        .success {
+            background-color: yellow;
+            color: green;
+        }
+
+        .info {
+            background-color: plum;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Switch statements Exercise 1</h1>
+    <div id="addition"></div>
+    <input id="num1"> <input id="num2">
+    <button onclick="add()">+add</button>
+
+    <script>
+        const outputArea = document.getElementById("addition");
+        const num1 = document.getElementById("num1");
+        const num2 = document.getElementById("num2");
+
+        function add() {
+            const summation = parseInt(num1.value) + parseInt(num2.value);
+            formatOutput(summation);
+        }
+
+        function formatOutput(summation) {
+            switch (true) {
+                case summation > 50:
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Please try other combinations',
+                        showConfirmButton: false,
+                        timer: 2000,
+                        customClass: {
+                            popup: 'alert-popup error',
+                            icon: 'alert-icon error'
+                        }
+                    });
+                    break;
+
+                case summation < 21 && summation > 0:
+                    Swal.fire({
+                        icon: 'success',
+                        title: 'You are Good',
+                        showConfirmButton: false,
+                        timer: 2000,
+                        customClass: {
+                            popup: 'alert-popup success',
+                            icon: 'alert-icon success'
+                        }
+                    });
+                    break;
+
+                case summation < 0:
+                    Swal.fire({
+                        icon: 'error',
+                        title: 'Zero sum not allowed',
+                        showConfirmButton: false,
+                        timer: 2000,
+                        customClass: {
+                            popup: 'alert-popup error',
+                            icon: 'alert-icon error'
+                        }
+                    });
+                    break;
+
+                default:
+                    Swal.fire({
+                        icon: 'info',
+                        title: 'Please provide 2 integer numbers',
+                        showConfirmButton: false,
+                        timer: 2000,
+                        customClass: {
+                            popup: 'alert-popup info',
+                            icon: 'alert-icon info'
+                        }
+                    });
+            }
+        }
+    </script>
+
+    
+</body>
+</html>
