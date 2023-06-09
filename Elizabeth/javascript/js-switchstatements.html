@@ -39,20 +39,10 @@
                 }
                else if(sum < 0){
                     document.getElementById("resultArea").innerHTML = "<div class ='error'> zero sum not allowed </div>";
+                }else{
+                    document.getElementById("resultArea").innerHTML = "Something";
                 }
-                switch(resultArea){
-                 case 'sum > 50':
-                  document.getElementById("resultArea").innerHTML ="<div class ='error'> please try another combination </div>";
-                  break;
-                  case 'sum > 0 && sum < 21':
-                  document.getElementById("resultArea").innerHTML= "<div class ='good'> you are good </div>";
-                  break;
-                  case 'sum < 0':
-                  document.getElementById("resultArea").innerHTML = "<div class ='error'> please provide 2 integer numbers </div>";
-                  break;
-                  default:
-                  document.getElementById(resultArea).innerHTML.resultArea('hide');
-                }
+               
             }
         </script>
     </body>
