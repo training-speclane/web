@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Js practice3</title>
+    </head>
+    <body>
+        <input id="num1">
+        <input id="num2">
+        <button onclick="displayResult();">+add</button> 
+    
+
+      <script>
+            /* Write a function to calculate the sum of 2 numbers. 
+            If the sum is greater than 50, display an error message in red saying "Please try other combinations". 
+            If the sum is less than 21, display a message in green saying that "you are good". 
+            If the sum is less than zero, display a message in red saying that "Zero sum not allowed".
+           Name the function any name you choose and you can either provide the 2 numbers as arguments or let user 
+           enter them on the screen.*/
+        
+            function displayResult () {
+                var num1 = parseInt(document.getElementById("num1").value);
+                var num2 = parseInt(document.getElementById("num2").value);
+                var totalSum = num1 + num2;
+               
+                if (totalSum > 50) {
+                    document.getElementById("totalSum").value = totalSum;
+
+                } else if (totalSum < 21) {
+                    document.getElementById("totalSum").value = totalSum;
+            
+           
+                } else if (totalSum < 0) { 
+                    document.getElementById("totalSum").value = totalSum;
+                                   
+                }
+
+                
+        } 
+    
+      </script>  
+    </body>
+</html>

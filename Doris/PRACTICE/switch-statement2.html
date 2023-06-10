@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Loan Qualification</title>
+  <style>
+    .result-container {
+      border: 1px solid #ccc;
+      padding: 20px;
+      text-align: center;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>Loan Qualification</h1>
+  
+  <div>
+    <label for="credit-score">Credit Score:</label>
+    <input type="number" id="credit-score">
+    <button onclick="checkQualification()">Check Qualification</button>
+  </div>
+  
+  <div id="result-container" class="result-container">
+    <!-- Result will be displayed here -->
+  </div>
+
+  <script>
+    function checkQualification() {
+      var creditScore = parseInt(document.getElementById("credit-score").value);
+      var resultContainer = document.getElementById("result-container");
+      var result = "";
+
+      switch (true) {
+        case (creditScore < 300):
+          result = "You do not qualify";
+          break;
+        case (creditScore > 800):
+          result = "Congrats!! You qualified for $50,000 USD";
+          break;
+        case (creditScore >= 750 && creditScore <= 800):
+          result = "Congrats!! You qualified for $35,000 USD";
+          break;
+        case (creditScore >= 700 && creditScore < 750):
+          result = "Congrats!! You qualified for $25,000 USD";
+          break;
+        default:
+          result = "You do not qualify";
+          break;
+      }
+
+      resultContainer.innerHTML = "<h2>" + result + "</h2>";
+    }
+  </script>
+</body>
+</html>

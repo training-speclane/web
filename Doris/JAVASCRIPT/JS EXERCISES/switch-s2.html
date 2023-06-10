@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Qualification</title>
+    <style>
+      
+      body {
+      background-color: plum;
+    }
+      .result-container {
+  border: 1px solid #ccc;
+  padding: 20px;
+  text-align: center;
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: purple;
+  color: white;
+}
+
+    </style>
+</head>
+<body>
+    <h1>  &#128522;Loan Qualification</h1>
+    <p>This exercise  could not be done doing switch statements because  we use switch statements to compare one thing with
+others while if and else is used when comparing a range.
+    </p>
+  
+  <div>
+    <label for="credit-score">Credit Score:</label>
+    <input type="number" id="credit-score">
+    <button onclick="checkQualification()">Check Qualification</button>
+  </div>
+  
+  <div id="result-container" class="result-container">
+    <!-- Result will be displayed here -->
+  </div>
+
+  <script>
+    
+    function checkQualification() {
+      var creditScore = parseInt(document.getElementById("credit-score").value);
+      var resultContainer = document.getElementById("result-container");
+      var result = "";
+
+      const gradeAvg =  3.75;
+      
+
+      switch (true) {
+          case (creditScore < 300):  
+            break;
+          case (creditScore > 800):
+            result = "\uD83E\uDD29  Congrats!! You qualified for $50,000 USD \uD83D\uDCB0";  
+            break;
+          case (creditScore >= 750 && creditScore <= 800):
+            result = "\uD83E\uDD29 Congrats!! You qualified for $35,000 USD \uD83D\uDCB0";  
+            break;
+          case (creditScore >= 700 && creditScore < 750):
+            result = " \uD83E\uDD29 Congrats!! You qualified for $25,000 USD \uD83D\uDCB0";  
+            break;
+          default:
+            result = " \uD83D\uDE12 You do not qualify \u274C";  
+            break;
+        }
+
+      
+
+      resultContainer.innerHTML = "<h2>" + result + "</h2>";
+    }
+  </script>
+</body>
+</html>
+</body>
+</html>

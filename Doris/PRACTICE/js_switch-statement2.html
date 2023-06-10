@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Asumming you work for a data processing and visualization company,& ur product owner wants
+    u to write a code that would display data on the screen based  -->
+    
+    <h1>switch statements</h1>
+    Enter question tag <input id="user-value">
+    <!-- note, only the following values are allowed, 'bill''', 'audit,"transaction and amount" -->
+     <div>
+         <button onclick="handleRequest()">Submit Request</button>
+     </div>
+     <hr>
+     <div id="result-container"></div>
+        <div style="width: 20%;"></div>
+        <div style="border: so 2px palevioletred; box-shadow: 2px 4px; width: 60%; border-radius: 10px; text-align: center;">
+            <h3>showing results for : <span id="showinh for" style="color: blue; font-weight: bold;"></span>
+
+            </h3>
+        </div>
+        <div style="width: 19%;"></div>
+
+
+     </div>
+
+     <script>
+        function handleRequest(){
+            const valueOfInput = document.getElementById("user-value").value;
+            // this is writing the above if esle statements using switch
+            // swutch statements are faster than if else questions
+            switch(valueOfInput){
+                case'bill':
+                   document.getElementById("showinh for").innerHTML ='Bill'
+                   break;
+                
+
+                case'audit':
+                document.getElementById("showinh for").innerHTML ='Audit'
+                    break;
+
+                case'transaction':
+                document.getElementById("showinh for").innerHTML ='Transaction'
+                break;
+
+                case'amount':
+                document.getElementById("showinh for").innerHTML ='Amount'
+                break;
+
+                default :
+                document.getElementById("showinh for").innerHTML ='please enter the correct value'
+
+                
+            
+
+
+            }
+             
+        }
+
+    </script>
+</body>
+</html>

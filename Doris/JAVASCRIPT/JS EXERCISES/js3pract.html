@@ -19,28 +19,30 @@
     <input id="num1" > <input id="num2" >
 </div>
 <button onclick="add()">+add</button>
+<!-- a button alway has events, it could be onlick,on hover,onblur etc, and you can have multiple events on one button
+but they should be seperated by a comma -->
 <script>
     const outputArea = document.getElementById("summation");
     const num1= document.getElementById("num1");
     const num2= document.getElementById("num2");
     //Add the two numbers
     function add(){
-        const result = parseInt(num1.value) + parseInt(num2.value);
+         const result = parseInt(num1.value) + parseInt(num2.value);
         //call another function to format results. Pass the results as an Arguement
         const formattedResults = formatOutput(result);//call function
         outputArea.innerHTML = formattedResults;//set the output area so it has the formatted results
        
 
     }
-    function formatOutput (result){
-            return "results = "  + result.toLocaleString();// return the formatted value
-        }
+    // function formatOutput (result){
+    //         return "results = "  + result.toLocaleString();// return the formatted value
+    //     }
         function formatOutput(result){
             if(result > 50){
             return '<span style="color:red; background-color: aqua"><i class="fas fa-sad-tear"></i>Please  try other combinations</span>';
-            } else if (result < 21){
+            } else if (result < 21 && result > 0){
                 return '<span style="color:green;background-color: yellow;"><i class="fas fa-smile"></i>You are Good</span>';
-            } else if(result < 5){
+            } else if(result < 0 ){
                 return '<span style="color:red; background-color: aqua"><i class="fas fa-angry"></i>Zero sum not allowed</span>';
             } else{
                 return 'Results =' + result.toLocaleString();

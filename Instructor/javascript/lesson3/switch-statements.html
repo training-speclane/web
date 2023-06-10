@@ -12,6 +12,7 @@
         flex-direction:row;
          row-gap:6; 
          min-height:800px; 
+
          width:100%;
      }
    </style>
@@ -70,8 +71,9 @@ Enter question tag: <input id="user-value"> Note ! Only the following values are
 
         //Write the above if-else statements using switch
 
+    
         //Remove the hidden class and then add it only when needed
-        document.getElementById("result-container").classList.remove('hide');
+       /* document.getElementById("result-container").classList.remove('hide');*/
 
 
         switch(valueOfInput){
@@ -90,14 +92,15 @@ Enter question tag: <input id="user-value"> Note ! Only the following values are
               default :
                    
                //hide the whole result container
-               //document.getElementById("showing-for").innerHTML = "Please Enter correct value"
-               document.getElementById("result-container").classList.add('hide');
+               document.getElementById("showing-for").innerHTML = "Please Enter correct value"
+              /* document.getElementById("result-container").classList.add('hide');*/
 
         }
 
 
 
     }
+    
 
 
 
