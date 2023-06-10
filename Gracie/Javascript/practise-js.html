@@ -6,16 +6,19 @@
     <body>
      
      <h1>PRACTICE JS</h1>
-     <div class="result"></div>
-     <input id = "num1"><input id = "num2">
+     <div id="result"></div>
+    <!--<input id = "num1"><input id = "num2">-->
 
 
      <script>
-        function dispalyMessage(){
-              console.log("Hello World");
+        function dispalyMessage(num1,num2){
+             /* console.log("Hello World");
+              alert("Hello World");*/
+             return num1*num2;
+              document.getElementById(result).innerHTML=value;
 
         }
-  dispalyMessage()
+  dispalyMessage(4,6)
 
   function findSquare(num){
   const result =num*num;
