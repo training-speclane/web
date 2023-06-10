@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.min.js"></script>
     <title>Document</title>
     <style>
         .alert-popup {
@@ -52,61 +51,32 @@
         }
 
         function formatOutput(summation) {
-            switch (true) {
-                case summation > 50:
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Please try other combinations',
-                        showConfirmButton: false,
-                        timer: 2000,
-                        customClass: {
-                            popup: 'alert-popup error',
-                            icon: 'alert-icon error'
-                        }
-                    });
-                    break;
+            let alertClass = "";
+            let message = "";
 
-                case summation < 21 && summation > 0:
-                    Swal.fire({
-                        icon: 'success',
-                        title: 'You are Good',
-                        showConfirmButton: false,
-                        timer: 2000,
-                        customClass: {
-                            popup: 'alert-popup success',
-                            icon: 'alert-icon success'
-                        }
-                    });
-                    break;
-
-                case summation < 0:
-                    Swal.fire({
-                        icon: 'error',
-                        title: 'Zero sum not allowed',
-                        showConfirmButton: false,
-                        timer: 2000,
-                        customClass: {
-                            popup: 'alert-popup error',
-                            icon: 'alert-icon error'
-                        }
-                    });
-                    break;
-
-                default:
-                    Swal.fire({
-                        icon: 'info',
-                        title: 'Please provide 2 integer numbers',
-                        showConfirmButton: false,
-                        timer: 2000,
-                        customClass: {
-                            popup: 'alert-popup info',
-                            icon: 'alert-icon info'
-                        }
-                    });
+            if (summation > 50) {
+                alertClass = "error";
+                message = "Please try other combinations";
+            } else if (summation < 21 && summation > 0) {
+                alertClass = "success";
+                message = "You are Good";
+            } else if (summation < 0) {
+                alertClass = "error";
+                message = "Zero sum not allowed";
+            } else {
+                alertClass = "info";
+                message = "Please provide 2 integer numbers";
             }
+
+            const alertPopup = document.createElement("div");
+            alertPopup.classList.add("alert-popup", alertClass);
+            alertPopup.innerHTML = `
+                <i class="alert-icon ${alertClass}"></i>
+                <p>${message}</p>
+            `;
+            outputArea.innerHTML = "";
+            outputArea.appendChild(alertPopup);
         }
     </script>
-
-    
 </body>
 </html>
