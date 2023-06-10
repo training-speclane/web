@@ -8,11 +8,7 @@
 </head>
 <body>
     <h1>Calc Function</h1>
-    <!-- <p id="demo" style="color: red;">Please try other combinations</p>
-    <p id="demo1" style="color: green;">You are good</p>
-    <p id="demo2" style="color: red;">Zero sum not allowed</p> -->
-   
- 
+    
 
     <input id="num1">
     <input id="num2">
@@ -26,20 +22,20 @@
         function sum(num1, num2) {
             const result = parseInt(num1) + parseInt(num2);
             
-            if(sum > 50) {
-                document.getElementById("result").innerHTML = "Please try other combinations";
+            if(result > 50) {
+                document.getElementById("result").innerHTML = "<div class='error' style='color:red;'>Please try other combinations</div>";
                
             }
             
             
         //If the sum is less than 21, display a message in green saying that "you are good".
-            if(sum < 21) {
-                document.getElementById("result").innerHTML = "You are good";
+            if(result < 21) {
+                document.getElementById("result").innerHTML = "<div class='error1' style='color:green;'>You are good</div>";
             }
             
         // If the sum is less than zero, display a message  in red saying that "Zero sum not allowed".
-            if(sum < 0) {
-                document.getElementById("result").innerHTML = "Zero sum not allowed";
+            if(result < 0) {
+                document.getElementById("result").innerHTML = "<div class='error2' style='color:red;'>Zero sum not allowed</div>";
             }
             
         }
