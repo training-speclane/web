@@ -43,22 +43,25 @@
       var resultContainer = document.getElementById("result-container");
       var result = "";
 
+      const gradeAvg =  3.75;
+      
+
       switch (true) {
-  case (creditScore < 300):  
-    break;
-  case (creditScore > 800):
-    result = "\uD83E\uDD29  Congrats!! You qualified for $50,000 USD \uD83D\uDCB0";  
-    break;
-  case (creditScore >= 750 && creditScore <= 800):
-    result = "\uD83E\uDD29 Congrats!! You qualified for $35,000 USD \uD83D\uDCB0";  
-    break;
-  case (creditScore >= 700 && creditScore < 750):
-    result = " \uD83E\uDD29 Congrats!! You qualified for $25,000 USD \uD83D\uDCB0";  
-    break;
-  default:
-    result = " \uD83D\uDE12 You do not qualify \u274C";  
-    break;
-}
+          case (creditScore < 300):  
+            break;
+          case (creditScore > 800):
+            result = "\uD83E\uDD29  Congrats!! You qualified for $50,000 USD \uD83D\uDCB0";  
+            break;
+          case (creditScore >= 750 && creditScore <= 800):
+            result = "\uD83E\uDD29 Congrats!! You qualified for $35,000 USD \uD83D\uDCB0";  
+            break;
+          case (creditScore >= 700 && creditScore < 750):
+            result = " \uD83E\uDD29 Congrats!! You qualified for $25,000 USD \uD83D\uDCB0";  
+            break;
+          default:
+            result = " \uD83D\uDE12 You do not qualify \u274C";  
+            break;
+        }
 
       
 
