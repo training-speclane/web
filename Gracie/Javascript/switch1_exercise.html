@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Switch statements practise 1</title>
+
+   <style>
+    .error{
+        color:red;
+    }
+    .success{
+        color:green;
+    }
+   </style>
+</head>
+<body>
+    
+    <div id="result"></div>
+
+<script>
+    /*1. Write a function that calculate sum of two numbers
+    Instructions : If the sum is greater than  50, display an error message in red saying "Please  try other combinations".
+     If the sum is less than 21, display a message in green saying that "you are good". 
+     If the sum is less than zero, display a message  in red saying that "Zero sum not allowed".  
+     By default , display text saying "Please provide 2 integer numbers" Use switch statements
+    Name the funtion any name you choose and you can either provide the 2 numbers as arguments or 
+    let user enter them on the screen.*/
+  
+
+    function calculate(sum=num1,num2){
+   
+       /* let sum = document.getElementById("result").value;*/
+       /* sum = parseInt(sum);*/
+        /*const sum = num1 + num2;*/
+
+        if(sum>50){
+            return "Please try other combinations"
+        }else if (sum<21){
+            return "you are good"
+        }else if(sum > 0 && sum <= 21){
+            return "Zero sum is not allowed"
+        }else{ 
+            return ("you qualify for unspecified amount");
+
+        }
+
+    }
+
+    
+     /*calculate (51,22)*/
+
+
+
+</script>
+
+
+
+
+</body>
+
+</html>

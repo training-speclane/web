@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title>Switch statements practise 2</title>
+
+   <style>
+    
+    button {
+        min-height: 60px;
+        background-color: cornflowerblue;
+        color : white;
+        font-size: larger;
+        border : solid 2px green;
+        border-radius: 10px;
+    }
+
+    input {
+        min-height: 50px;
+        font-size: larger;
+        border : solid 2px green;
+        border-radius: 10px;
+    }
+    button:hover{
+        cursor: pointer;
+        background-color:darkgreen;
+    
+    }
+    
+
+   </style>
+</head>
+
+<body>
+    <h1>Iron Bank of braavos</h1>
+<br/>
+  <div style="font-size: larger;">
+   credit score <input id="credit-score-value"> &nbsp;
+    <button onclick="displayQualification();">Check Qaulification Amount</button>
+  </div>
+
+  <br/><br/>
+  
+  <div id = "result-container" class="main-container">
+     <div style="width: 20%"></div>
+     <div style="min-height:300px; border:solid 2px grey; box-shadow: 2px 4px green; width:60%; border-radius:10px; text-align:center">
+        <div id="result-display" style="color:green; font-size: larger;">Please  Enter Credit Score aboveto Check Qu,aification Amt</div>
+     </div>
+     <div style="width:19%"></div>
+  </div>
+
+   
+
+
+<script>
+
+/* Write a Javascript function to determine loan qualification amount
+    Write a function to determine if an applicant qualifies for a loan from a bank called "Iron Bank of braavos".
+     Applicant should enter their credit score in a text input. 
+      If the applicant's  credit score is less than 300, they don't qualify. 
+      If their credit score is greater than 800, they qualify for 50,000 USD.
+       If their credit score is between betwwen 700-750, they qualify for 25,000 USD. 
+       If their credit score is between 750-800, they qualify for 35,000 USD.
+    The function should return amount the user qalifies for or return text saying "You donot qualify " 
+    if they don't qualify. Note: You can display the result in a really nice looking container. 
+    Make the amount they qualify for big enough and provide some text congratulating them for qualifying for a loan. 
+    Something like  "Congrats !! You qalified for 35,000USD"*/
+
+    function qualification(){
+
+        let creditInputValue = document.getElementById("credit-score-value").value;
+        creditInputValue = parseInt(creditInputValue);
+    
+
+
+        if(creditInputValue<300){
+            return "you don't qualify"
+        }else if (creditInputValue>800){
+            return "50,000 USD"
+        }else if(creditInputValue > 700 && creditInputValue <= 750){
+            return "25,000 USD"
+        }else if(creditInputValue > 750 && creditInputValue <= 800){
+            return "35,000 USD"
+        }else{ 
+            return "you qualify for unspecified amount" 
+
+
+        }
+
+    }
+
+    function displayQualification(){
+        const textToDisplay = qualification();
+        const resultArea = document.getElementById("result-display");
+        resultArea.innerHTML = textToDisplay; 
+
+
+
+    }
+    
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>

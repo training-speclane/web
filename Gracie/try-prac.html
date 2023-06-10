@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript switch</h2>
+
+<p id="demo"></p>
+Credit score <input>
+
+<script>
+ /*Write a Javascript function to determine loan qualification amount
+    Write a function to determine if an applicant qualifies for a loan from a bank called "Iron Bank of braavos".
+     Applicant should enter their credit score in a text input. 
+      If the applicant's  credit score is less than 300, they don't qualify. 
+      If their credit score is greater than 800, they qualify for 50,000 USD.
+       If their credit score is between betwwen 700-750, they qualify for 25,000 USD. 
+       If their credit score is between 750-800, they qualify for 35,000 USD.
+    The function should return amount the user qalifies for or return text saying "You donot qualify " 
+    if they don't qualify. Note: You can display the result in a really nice looking container. 
+    Make the amount they qualify for big enough and provide some text congratulating them for qualifying for a loan. 
+    Something like  "Congrats !! You qalified for 35,000USD"*/
+
+    const valueOfInput = 800
+     /*> 300; "they don't qualify" ;
+    const credit score =  < 800 ;"they qualify for 50,000 USD";
+    const creditScore = 700 && 800 ;"they qualify for 25,000 USD"
+    const creditScore = 750 && 800 ; 'they qualify for 35,000 USD'*/
+
+    switch(valueOfInput){
+              case 'bill' :
+                  document.getElementById("showing-for").innerHTML = "Bill";
+                  break; //Stop processing
+              case 'audit' :
+                  document.getElementById("showing-for").innerHTML = "Audit";
+                  break;
+              case 'transaction' :
+                  document.getElementById("showing-for").innerHTML = "Transaction";
+                  break;
+              case 'amount' :
+                  document.getElementById("showing-for").innerHTML = "Amount";
+                  break;
+
+    }
+
+</script>
+
+</body>
+</html>
