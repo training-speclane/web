@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee List</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Employee List</h1>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>User ID</th>
+          <th>Job Title</th>
+          <th>Full Name</th>
+          <th>Employee Code</th>
+          <th>Region</th>
+          <th>Phone Number</th>
+          <th>Email Address</th>
+        </tr>
+      </thead>
+      <tbody id="employee-table-body"></tbody>
+    </table>
+  </div>
+
+  <script>
+    function displayEmployees() {
+      const employees = [
+        {
+          "userId": "rirani",
+          "jobTitleName": "Developer",
+          "firstName": "Romin",
+          "lastName": "Irani",
+          "preferredFullName": "Romin Irani",
+          "employeeCode": "E1",
+          "region": "CA",
+          "phoneNumber": "408-1234567",
+          "emailAddress": "romin.k.irani@gmail.com"
+        },
+        {
+          "userId": "nirani",
+          "jobTitleName": "Developer",
+          "firstName": "Neil",
+          "lastName": "Irani",
+          "preferredFullName": "Neil Irani",
+          "employeeCode": "E2",
+          "region": "CA",
+          "phoneNumber": "408-1111111",
+          "emailAddress": "neilrirani@gmail.com"
+        },
+        {
+          "userId": "thanks",
+          "jobTitleName": "Program Directory",
+          "firstName": "Tom",
+          "lastName": "Hanks",
+          "preferredFullName": "Tom Hanks",
+          "employeeCode": "E3",
+          "region": "CA",
+          "phoneNumber": "408-2222222",
+          "emailAddress": "tomhanks@gmail.com"
+        }
+      ];
+
+      const tableBody = document.getElementById("employee-table-body");
+
+      employees.forEach(function(employee) {
+        const row = document.createElement("tr");
+        row.innerHTML = `
+          <td>${employee.userId}</td>
+          <td>${employee.jobTitleName}</td>
+          <td>${employee.preferredFullName}</td>
+          <td>${employee.employeeCode}</td>
+          <td>${employee.region}</td>
+          <td>${employee.phoneNumber}</td>
+          <td>${employee.emailAddress}</td>
+        `;
+        tableBody.appendChild(row);
+      });
+    }
+
+    displayEmployees();
+  </script>
+</body>
+</html>
