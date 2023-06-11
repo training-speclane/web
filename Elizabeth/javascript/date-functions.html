@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+        <script>
+
+            let myDate =  new Date();
+
+            //Get year 
+            const currentYear =  myDate.getFullYear();
+
+            //get day of the week. Note that day starts from 0 and ends at 6 
+            // Sun = 0 , Mon =1, Tues = 2, wed = 3, thurs= 4 , Fri = 5 , sat = 6
+
+            const dayOfWeek =  myDate.getDay();
+
+            //Get month of the year
+            //Jan = 0, Feb=1 ......Dec = 11;
+            const monthOfThisYear =  myDate.getMonth();
+
+
+            console.log("Year", currentYear);
+            console.log("Day of the Week ", dayOfWeek);
+            console.log("Month of year ", monthOfThisYear);
+
+
+            /* EXERCISE: Write javascript code that would display todays date in the following format : YYYY/MM/DD example :2023/06/11
+               Display the date in a div on the screen.
+            */
+            let todaysDate = new Date();
+            const year = myDate.getFullYear();
+            const dayOfThisWeek = myDate.getDay();
+            const monthOfTheYear = myDate.getMonth();
+
+            console.log("year",currentYear);
+            console.log("month of this year",monthOfTheYear);
+            console.log("day Of This Week",dayOfThisWeek);
+
+ 
+
+        </script>
+    </body>
+</html>
