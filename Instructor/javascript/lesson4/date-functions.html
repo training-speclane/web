@@ -25,10 +25,35 @@
             console.log("Day of the Week ", dayOfWeek);
             console.log("Month of year ", monthOfThisYear);
 
+            //Get current date, 30days depending current month
+            const dateToday =  myDate.getDate();
+
 
             /* EXERCISE: Write javascript code that would display todays date in the following format : YYYY/MM/DD example :2023/06/11
                Display the date in a div on the screen.
             */
+
+
+            //date in YYYY/MM/DD
+
+           const yymmdd =   currentYear + "/" +  (parseInt(monthOfThisYear) +1) + "/" + dateToday;
+
+           //What day of the week was it 10 years ago? ie 2013
+           
+           const date10YearsInFuture = new Date("2033-06-11");
+
+           console.log(parseInt(date10YearsInFuture.getDay())+1);
+
+           //1000 millisecs =  1sec
+           //60secs = 1min
+           //60 mins =  1 hrs
+           //24hrs =  1day
+           //7days = 1week
+
+
+            
+
+
             
 
 

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        div{
+            margin: auto;
+            width: 50%;
+            font-size: 3rem;
+            height: 2rem;
+            background-color: aqua;
+            color: black;
+            padding: 2rem;
+            text-align: center;
+        }
+    </style>
+</head> 
+    
+  <body>
+      
+    <div id="dateDisplay"></div>
+
+    <script>
+      // Define a function called formatDate that takes a date parameter
+      function formatDate(date) {
+        // Extract the year component from the date object using getFullYear() method
+        const year = date.getFullYear();
+        // Extract the month component from the date object using getMonth() method
+        // Note that getMonth() returns a zero-based index, so we add 1 to get the actual month
+        let month = date.getMonth() + 1;
+        // Extract the day component from the date object using getDate() method
+        let day = date.getDate();
+
+        // Add a leading zero to the month if it's a single digit
+        if (month < 10) {
+          month = "0" + month;
+        }
+        // Add a leading zero to the day if it's a single digit
+        if (day < 10) {
+          day = "0" + day;
+        }
+
+        // Return the formatted date in the format YYYY/MM/DD
+        return year + "/" + month + "/" + day;
+      }
+
+      // Create a new Date object representing the current date and time
+      const currentDate = new Date();
+      // Call the formatDate function with the currentDate and store the formatted date
+      const formattedDate = formatDate(currentDate);
+
+      // Set the innerText property of the <div> element with the id "dateDisplay" to the formatted date
+      document.getElementById("dateDisplay").innerText = formattedDate;
+    </script>
+   
+ 
+  </body>
+</html>
