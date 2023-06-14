@@ -10,3 +10,87 @@
     <body>
         <h1>practice js listtable</h1>
     </body>
+    <table class=" table table-warning  table-hover">
+      <thead>
+        <tr>
+          <th>User ID</th>
+          <th>Job Title</th>
+          <th>First Name</th>
+          <th>Last Name</th>
+          <th>Prefared Full Name</th>
+          <th>Employee Code</th>
+          <th>Region</th>
+          <th>Phone Number</th>
+          <th>Email Address</th>
+        </tr>
+      </thead>
+      <tbody  id="employee-list">
+         
+      </tbody>
+      </table>
+      <tbody  id="employee-list">
+           
+      </tbody>
+    </table>
+    <script>
+      const employees = [
+      {
+ "userId":"rirani",
+ "jobTitleName":"Developer",
+ "firstName":"Romin",
+ "lastName":"Irani",
+ "preferredFullName":"Romin Irani",
+ "employeeCode":"E1",
+ "region":"CA",
+ "phoneNumber":"408-1234567",
+ "emailAddress":"romin.k.irani@gmail.com"
+ },
+ {
+ 	"userId":"nirani",
+ 	"jobTitleName":"Developer",
+ 	"firstName":"Neil",
+ 	"lastName":"Irani",
+ 	"preferredFullName":"Neil Irani",
+ 	"employeeCode":"E2",
+ 	"region":"CA",
+ 	"phoneNumber":"408-1111111",
+ 	"emailAddress":"neilrirani@gmail.com"
+ 	},
+   {
+ 	"userId":"thanks",
+ 	"jobTitleName":"Program Directory",
+ 	"firstName":"Tom",
+ 	"lastName":"Hanks",
+ 	"preferredFullName":"Tom Hanks",
+ 	"employeeCode":"E3",
+ 	"region":"CA",
+ 	"phoneNumber":"408-2222222",
+ 	"emailAddress":"tomhanks@gmail.com"
+ 	},
+   ];
+
+const  tableBody = document.getElementById("employee-list");
+ let tableRows = "";
+
+ for (let i = 0; i < employees.length; i++) {
+     const employee = employees[i];
+     const tableRow = "<tr>"+
+         "<td>"+ employee.userId +"</td>"+  
+         "<td>"+ employee.jobTitleName +"</td>"+  
+         "<td>"+ employee.firstName +"</td>"+  
+         "<td>"+ employee.lastName  +"</td>"+  
+         "<td>"+ employee.preferredFullName +"</td>"+  
+         "<td>"+ employee.employeeCode+"</td>"+  
+         "<td>"+ employee.region +"</td>"+  
+         "<td>"+ employee.phoneNumber +"</td>"+  
+         "<td>"+ employee.emailAddress+"</td>"+  
+         "</tr>"
+         tableRows += tableRow;        
+            
+          }
+          
+          tableBody.innerHTML = tableRows;
+          
+            </script>
+    </body>
+</html>
