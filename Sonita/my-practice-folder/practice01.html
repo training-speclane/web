@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>practice</h1>
+        <div>
+            <output>Hello World</output>
+        </div>
+        <div id="messages" style="color:blue"></div>
+
+
+        <script>
+
+            /*Instructions: name the function displayMessage() the function should take message as argument/parameter 
+            and print the message to the console …Only  if the message received by this function is “Hello World”. 
+            If the message is not 'Hello World', Print the following to the console "Message does not match! Please provide another message"
+           */
+            //
+           function displayMessage (){
+                var message= "Hello World";
+                if(message==="Hello World"){
+                    console.log(message);
+                    
+                }else{
+                    console.log("Message does not match! Please provide another message")
+                }
+            }  
+                // displaying function using parameter/argumements
+
+            function display(message){
+                if (message==="Hello World"){
+                console.log(message);
+
+               }else{
+                console.log("Message does not match! Please provide another message")
+                }
+            }
+            //printing out put on the screen 
+            function displayHello(messages){
+               if(messages==="Hello World"){
+               document.getElementById("messages").innerText = messages; 
+               
+              }else{
+                document.getElementById("messages").innerText = "Message does not match! Please provide another message"
+                 }
+
+           
+            } 
+        
+                displayMessage()
+                display("Hello World")
+                displayHello("Hello World")  
+
+        </script>
+    </body>
+</html>
