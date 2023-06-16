@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <input id="num1">
+        <input id="num2">
+        <div id="result"></div>
+        <button onclick="displaySum();">+add</button>
+
+
+        <script>
+           /* Write a function that calculate sum of two numbers
+            Instructions : If the sum is greater than  50, display an error message in red saying "Please  try other combinations". 
+            If the sum is less than 21, display a message in green saying that "you are good". If the sum is less than zero, display a
+             message  in red saying that "Zero sum not allowed".  By default , display text saying "Please provide 2 integer numbers" Use switch statements
+            Name the funtion any name you choose and you can either provide the 2 numbers as arguments or let user enter them on the screen.*/
+
+
+         function displaySum(){
+            const num1= document.getElementById("num1").value;
+            const num2= document.getElementById("num2").value;
+            const sum= parseInt(num1) + parseInt(num2)
+
+            const valueOfInput= document.getElementById("result");
+
+            switch (true) {
+                case sum > 50:
+                    valueOfInput.innerHTML = '<span style="color:red;"> Please try another combination</span>'
+                    break;
+                case sum === 21:
+                    valueOfInput.innerHTML = '<span style="color:green;"> You are good</span>'
+                    break;
+                case sum < 0:
+                    valueOfInput.innerHTML = "Zero sum not allowed";
+                    break;
+                default:
+                    valueOfInput.innerHTML ='<span style="color:blue;"> Please provide 2 integer numbers</span>'
+                    break;
+                }
+
+         }   
+         
+                /*Write a function to determine if an applicant qualifies for a loan from a bank called "Iron  Bank of braavos".
+                 Applicant should enter their credit score in a text input.  If the applicant's  credit score is less than 300, they don't qualify.
+                 If their credit score is greater than 800, they qualify for 50,000 USD. If their credit score is between between 700-750, they qualify for 25,000 USD.
+                 If their credit score is between 750-800, they qualify for 35,000 USD. The function should return amount the user qualifies for or return text saying
+                "You do not qualify " if they don't qualify.
+                Note: You can display the result in a really nice looking container. Make the amount they qualify for big enough and provide some text congratulating them for
+                qualifying for a loan. Something  like  "Congrats !! You qualified for 35,000USD"*/  
+                
+               
+
+
+        </script>
+    </body>
+</html>

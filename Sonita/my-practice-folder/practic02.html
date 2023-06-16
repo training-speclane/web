@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Addition</h1>
+        <div id ="result"></div>
+        <input id="num1">
+        <input id="num2">
+        <button onclick="add();">+add</button>
+
+        <script>
+
+                    /*Write a function to calculate the sum of two numbers.
+                    Instructions : If the sum is greater than  50, display an error message in red saying "Please  try other combinations". 
+                    If the sum is less than 21, display a message in green saying that "you are good". 
+                    If the sum is less than zero, display a message  in red saying that "Zero sum not allowed".
+                    Name the funtion any name you choose and you can either provide the 2 numbers as arguments or let user enter them on the screen.*/
+           
+ //PRINTING RESULTS ON THE CONSOLE          
+                    function sum(num1, num2){
+                //var num1= 20;
+                //var num2= 10;
+                var totalsum= num1+num2;
+
+                if(totalsum >50){
+                    console.log("Please  try other combinations");
+                }else if(totalsum <21){
+                    console.log("you are good");    
+                }else if(totalsum <0){
+                    console.log("Zero not allowed");
+                }
+           } 
+            
+//METHOD 1
+           function add(num1,num2){
+                var num1 = parseInt(document.getElementById("num1").value);
+                var num2 = parseInt(document.getElementById("num2").value);
+                var totaladd= num1+num2;
+
+                if(totaladd >50){
+                    document.getElementById("result").innerText = "Please try other combinations";
+                }else if(totaladd <21){
+                    document.getElementById("result").innerText="you are good" ;
+                }else if (totaladd <0){
+                    document.getElementById("result").innerText="Zero not allowed" ;
+                }
+            }  
+
+//METHOD 2
+            function add(num1, num2) {
+                var num1 = parseInt(document.getElementById("num1").value);
+                var num2 = parseInt(document.getElementById("num2").value);
+                var totaladd = num1 + num2;
+                var resultElement = document.getElementById("result");
+
+                if (totaladd > 50) {
+                    resultElement.innerHTML = '<span style="color: red;">Please try other combinations</span>';
+                } else if (totaladd < 21) {
+                    resultElement.innerHTML = '<span style="color: green;">You are good</span>';
+                } else if (totaladd < 0) {
+                    resultElement.innerHTML = '<span style="color: red;">Zero not allowed</span>';
+                }
+            }
+
+           sum(20,50);
+           add()
+
+        </script>
+    </body>
+</html>
