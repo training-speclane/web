@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Credit Check</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./credit-check.css">
+    </head>
+<body>
+
+
+     <div class="card" style="width: 18rem;">
+        <div class="card-body">
+          <hr/>
+          <br/>
+          <div id = "result-area"> </div>
+          <hr/>
+          <button onclick=" startTimer();" type="button" class="btn btn-primary">Start</button>             
+          <button onclick=" stopTimer();" type="button" class="btn btn-danger">Stop</button>
+        </div>
+      </div>
+    <script>
+
+        /**
+            Build a small JavaScript app that allows user to start and stop count down time. Counting down 
+            should start from 30 secs and count down to 0 secs
+            The timer should have a start and a stop button that allows user to start/stop the count down.
+            When user presses the start button, the count down starts counting from 30, 29, 28 ………till 0.
+            The timer should stop if user clicks the ‘stop’ button.
+            Design as best as you can!! Bring your creativity to life
+        **/
+
+         
+        //Run the displayDateEverySec function EVERY 1000 millisecs(1 sec)
+
+        let intervalId = null; // We need to access this varibale in another function, so it needs to be global
+        let startTime =  31; // Define a global variable for our start time. We need to have 31, not 30 since we subtract 1 from it
+
+        function startTimer () {
+          intervalId =   setInterval(displayDateEverySec, 1000); //1 sec = 1000 milisecs
+          timerStarted = true;
+        }
+
+        function stopTimer () {
+            clearInterval(intervalId); // Javascript function that pauses the timer.
+        }
+
+        function displayDateEverySec () {
+            startTime = startTime - 1;
+
+            
+            /**ASIGNMENT: Modify the code so that it plays an alarm when it is only 5 seconds left on the timer.
+             Also change the color to red when there are only 5 secs left. The alram can be any audio sound. FYI. This is normal HTML audio element.
+             Also, stop the timer when it gets to zero and stop the sound(alarm as well)
+             ***/
+
+            document.getElementById("result-area").innerHTML  = `<span style = "color:green; font-size:30px">${startTime}</span><sub>secs</sub>`;
+            
+        }
+
+
+
+    
+    </script>
+</body>
+
+</html>
