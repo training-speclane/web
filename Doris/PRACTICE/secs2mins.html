@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="resultarea"></div>
+<!--     
+            Write a
+             function that takes an integer minutes and converts it to seconds.
+            Examples
+            convert(5) ➞ 300
+            convert(3) ➞ 180
+            convert(2) ➞ 120
+            Notes
+            Don't forget to return the result. -->
+            
+            <script>
+                function convertInteger(minutes ){
+                var minute = minutes;
+                var seconds = 60;
+                return minutes *seconds;
+                }
+                const results = convertInteger(1);
+                document.getElementById("resultarea").innerHTML = results;
+            </script>
+</body>
+</html>
