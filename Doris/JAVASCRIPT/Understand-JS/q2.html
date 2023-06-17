@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minutes to Seconds Conversion</title>
+</head>
+<body>
+    <h1>Minutes to Seconds Conversion</h1>
+    <label for="minutes">Enter minutes:</label>
+    <input type="number" id="minutes">
+    <button onclick="minutesToSeconds()">Convert</button>
+    <p id="result"></p>
+
+    <script>
+        function minutesToSeconds() {
+            var minutes = document.getElementById("minutes").value;
+            var seconds = minutes * 60;
+            document.getElementById("result").innerHTML = "The equivalent in seconds is: " + seconds + " seconds";
+        }
+    </script>
+</body>
+</html>
