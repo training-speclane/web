@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+    <body>
+        <h1>Data Types</h1>
+
+         <script>
+            
+        /*1. Write Javascript code to display the number of students in a school represented by the following object
+        It could be in a function or you could also write it outside of a function */
+    function AmtOfStudents (){ /* it can st be diplayed without writing a function name*/
+        const school = {
+         "students" : 230,
+         "teachers" : 45,
+         "address" : "1542 Broadway Street"
+        }
+
+        console.log("Number of students in a school represented are -->", school.students);
+    }
+    AmtOfStudents ()
+
+        /*2. Write Javascript code to display the number of stops for "American Airline flight from Chicago to JFK"*/
+  
+     const airlines =  {
+
+        "deltaAirlines" : {
+            "price" : "$700",
+            "stops" : "2",
+            "aircraft" : "Boeing 747"
+        },
+        "americanAirlines" : {
+            "price" : "$600",
+            "stops" : "3",
+            "aircraft" : "Airbus"
+    }
+
+    }
+    console.log("Numer of stops for America Airline -->", airlines.americanAirlines.stops)
+
+
+    //3. Given a list of shopping items in a cart. Write Javascript code to display the second item in the list
+
+    const shoppingList = ["Bread", "Apples", "Eggs"]
+    const secondItem = shoppingList [1]
+        console.log(secondItem)
+         </script>
+
+    </body>
+</html>
