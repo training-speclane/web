@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+       <div id ="results-area" style="font-size: 40px;">
+         
+       </div>
+        <script>
+         
+            /**
+             Create a function that takes the age in years and returns the age in days.
+             Examples
+             calcAge(65) ➞ 23725
+
+             calcAge(0) ➞ 0
+             calcAge(20) ➞ 7300
+        Notes
+        use 365 days as the length of a year for this challenge.
+        gnore leap years and days between last birthday and now.
+        Expect only positive integer inputs.  
+          **/ 
+         
+          function convertAgeToDays(age){
+            return age * 365;
+
+          }
+          const results =  convertAgeToDays(65);
+          document.getElementById("results-area").innerHTML = results;
+
+
+        </script>
+    </body>
+</html>
