@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+       <div id ="results-area" style="font-size: 40px;">
+         
+       </div>
+        <script>
+           
+            /**
+            Write a function that takes an integer minutes and converts it to seconds.
+            Examples
+            convert(5) ➞ 300
+            convert(3) ➞ 180
+            convert(2) ➞ 120
+            Notes
+            Don't forget to return the result.
+            **/
+
+          function convertMinsToSecs (mins){
+            let seconds =minutes * 60
+            return seconds;
+
+            // write return code.
+
+          }
+
+
+
+          const results =  convertMinsToSecs(60);
+          document.getElementById("results-area").innerHTML = results;
+
+
+        </script>
+    </body>
+</html>
