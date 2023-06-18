@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result-area"></div>
+    <!-- 8. Convert Hours into Seconds
+Write a function that converts hours into seconds.
+
+Examples
+howManySeconds(2) ➞ 7200
+
+howManySeconds(10) ➞ 36000
+
+howManySeconds(24) ➞ 86400
+Notes
+60 seconds in a minute, 60 minutes in an hour
+Don't forget to return your answer. -->
+ 
+
+    <script>
+        function convertHours(hours){
+            let secondsIn1hour = 3600;
+            return secondsIn1hour * hours;
+        }
+
+        const results = convertHours(2);
+        document.getElementById("result-area").innerHTML = results;
+
+
+</script>
+    
+</body>
+</html>
