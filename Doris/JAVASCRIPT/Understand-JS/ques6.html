@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="resultarea"></div>
+   
+   
+    <!-- 6. Fix the code below
+ 
+
+function cubes(a) {
+    retunr a ** 3
+}
+
+ Look at the examples below to get an idea of what the function should do.
+
+Examples
+cubes(3) ➞ 27
+
+cubes(5) ➞ 125
+
+cubes(10) ➞ 1000
+Notes
+READ EVERY WORD CAREFULLY, CHARACTER BY CHARACTER!
+Don't overthink this challenge; it's not supposed to be hard. -->
+<script>
+
+    function calculateCube(num){
+        let cube = num*num*num;
+        return cube;
+    }
+    const results = calculateCube(10);
+    document.getElementById("resultarea").innerHTML = results;
+</script>
+    
+</body>
+</html>
