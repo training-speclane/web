@@ -25,6 +25,16 @@
             **/
 
           function convertHoursToSecs (hours){
+            /* 1min = 60secs
+                2 min = 60 x2secs
+                3 min = 60 x3secs
+                40 min = 60 x40secs
+                60 min = 60 x 60secs
+                1hr = 60x60secs
+                1hr = 3600secs
+                2hr = 3600secsx2
+                3hr = 3600secsx 3
+*/
             const convertedValue = hours * 3600;
             return convertedValue ;
           }
