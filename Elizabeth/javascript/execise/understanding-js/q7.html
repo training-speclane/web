@@ -20,10 +20,25 @@ getFirstValue([-500, 0, 50]) ➞ -500
          **/ 
 
          function getFirstValue(array){
-            let array =[1, 2, 3];
+           /// let array = [1, 2, 3];
 
-            return array[0]
+            return array[0];
           }
+
+          const results =  getFirstValue([0,9,8]);
+
+          console.log(results);
+
+          document.getElementById("results-area").innerHTML = results;
+
+
+           function laundaryMachine (detergent){
+            var detergent = "gain" //ignore any other dtergent and use 'gain' at all times. This assumes that the detergent was built into the machine
+
+             //washes the laudary 
+             return "clean laudry";
+          }
+          laundaryMachine("tide"); 
 
 
         </script>
