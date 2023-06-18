@@ -10,25 +10,27 @@
         <script>
            
             /**
-              Return the First Element in an Array
-Create a function that takes an array containing only numbers and return the first element.
+              Basic Variable Assignment
+                A student learning JavaScript was trying to make a function. 
+                His code should concatenate a passed string name with string "Spec" and 
+                store it in a variable called result. He needs your help to fix this code.
 
-        Examples
-        getFirstValue([1, 2, 3]) ➞ 1
+                Examples
+                nameString("James") ➞ "Jamesspec"
 
-        getFirstValue([80, 5, 100]) ➞ 80
+                nameString("Matt") ➞ "MattSpec"
 
-        getFirstValue([-500, 0, 50]) ➞ -500
-        Notes
-The first element in an array always has an index of 0.
+                nameString("javaScript") ➞ "javaScriptSpec"
+                Notes
+                Don't forget to return the result.
             **/
 
-          const element = [ 1, 2, 3];
-          const firstElement = element [0];
+          function stringName(name1,name2){
+         const element = (name1+name2);
+         return element ;
+          }
           
-          console.log("First element -->", firstElement);
-          
-
+          const results = stringName(Jame,spec);
           document.getElementById("results-area").innerHTML = results;
 
 
