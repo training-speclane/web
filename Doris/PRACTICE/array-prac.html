@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result-area"></div>
+    <script>
+        const fruits = ["mangoes", "oranges", "apples", "Gauvas"];
+        const firstFruit = fruits[0];
+        fruits.pop( ); //pop( removes the lat item from the list of fruits whill push adds to the list)
+                                                
+        const results = fruits.join(", ");
+        document.getElementById("result-area").innerHTML = results;
+        
+    </script>
+</body>
+</html>
