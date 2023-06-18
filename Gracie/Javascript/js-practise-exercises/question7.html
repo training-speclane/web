@@ -23,15 +23,17 @@ Create a function that takes an array containing only numbers and return the fir
 The first element in an array always has an index of 0.
             **/
 
-          const element = [ 1, 2, 3];
-          const firstElement = element [0];
+          //const element = [ 1, 2, 3];
+         
           
-          console.log("First element -->", firstElement);
-          
+          ///console.log("First element -->", firstElement);
 
-          /*document.getElementById("results-area").innerHTML = results;*/
-
-
+          function getFirstElement (array) {
+            const firstElement = array[0];
+            return firstElement;
+          }
+          const results = getFirstElement([8, 5, 100]);
+          document.getElementById("results-area").innerHTML = results;
         </script>
     </body>
 </html>

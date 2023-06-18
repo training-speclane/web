@@ -1,0 +1,47 @@
+ <!DOCTYPE html>
+ <html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+       <div id ="results-area" style="font-size: 40px;">
+         
+       </div>
+        <script>
+        /**
+          Create a function that takes an array containing only numbers and return the first element.
+
+Examples
+getFirstValue([1, 2, 3]) ➞ 1
+
+getFirstValue([80, 5, 100]) ➞ 80
+
+getFirstValue([-500, 0, 50]) ➞ -500
+         **/ 
+
+         function getFirstValue(array){
+           /// let array = [1, 2, 3];
+
+            return array[0];
+          }
+
+          const results =  getFirstValue([0,9,8]);
+
+          console.log(results);
+
+          document.getElementById("results-area").innerHTML = results;
+
+
+           function laundaryMachine (detergent){
+            var detergent = "gain" //ignore any other dtergent and use 'gain' at all times. This assumes that the detergent was built into the machine
+
+             //washes the laudary 
+             return "clean laudry";
+          }
+          laundaryMachine("tide"); 
+
+
+        </script>
+    </body>
+</html>  
+         
