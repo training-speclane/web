@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result-area"></div>
+    
+
+    <!-- Create a function that takes a number as an argument, increments the number by +1 and returns the result.
+
+Examples
+addition(0) ➞ 1
+
+addition(9) ➞ 10
+
+addition(-3) ➞ -2 -->
+<script>
+ 
+        function increment(num) {
+            var result = num + 1;
+            return result;
+        }
+
+        var number = 0; 
+        var incrementedNumber = increment(4);
+        document.getElementById("result-area").innerHTML = "The result is: " + incrementedNumber;
+    </script>
+</script>
+</body>
+</html>

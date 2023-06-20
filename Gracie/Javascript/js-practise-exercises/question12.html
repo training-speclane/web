@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+       <div id ="results-area" style="font-size: 40px;">
+         
+       </div>
+        <script>
+           
+            /**
+              Basic Variable Assignment
+                A student learning JavaScript was trying to make a function. 
+                His code should concatenate a passed string name with string "Spec" and 
+                store it in a variable called result. He needs your help to fix this code.
+
+                Examples
+                nameString("James") ➞ "Jamesspec"
+
+                nameString("Matt") ➞ "MattSpec"
+
+                nameString("javaScript") ➞ "javaScriptSpec"
+                Notes
+                Don't forget to return the result.
+            **/
+
+          function stringName(name1,name2){
+         const element = (name1+name2);
+         return element ;
+          }
+          
+          const results = stringName(Jame,spec);
+          document.getElementById("results-area").innerHTML = results;
+
+
+        </script>
+    </body>
+</html>
