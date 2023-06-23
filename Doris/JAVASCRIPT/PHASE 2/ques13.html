@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 13. Using Ternary Operators
+ 
+
+Write a function that uses the ternary operator to return "yeah" if bool is true, and "nope" otherwise.
+
+Info
+The ternary operator (sometimes called Conditional Expressions) in JavaScript is an alternative to the if... else... statement.
+
+It is written in the format:
+
+condition ? result_if_true : result_if_false
+Ternary operators are often more compact than multi-line if statements, and are useful for simple conditional tests.
+
+For example:
+
+is_nice = true
+
+// Using ternary operator.
+state = is_nice ? "nice" : "not nice"
+
+// Equivalent code using multi-line if statements.
+if (is_nice)
+  state = "nice"
+else
+  state = "not nice"
+ 
+
+Examples
+yeah_nope(true) ➞ "yeah"
+
+yeah_nope(false) ➞ "nope" -->
+    <div id="result-area"></div>
+
+
+    <script>
+        function yeahNope(bool) {
+            const result = bool ? "yeah" : "nope";
+            return result;
+        }
+
+        const output1 = yeahNope(true);
+        const output2 = yeahNope(false);
+
+        const resultArea = document.getElementById("result-area");
+        resultArea.innerHTML = `Output 1: ${output1}<br>Output 2: ${output2}`;
+    </script>
+    
+</body>
+</html>

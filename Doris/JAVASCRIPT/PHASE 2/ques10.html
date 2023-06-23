@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result-area"></div>
+
+    <!-- 10. Drinks Allowed?
+A bartender is writing a simple program to determine whether he should serve drinks to someone.
+ He only serves drinks to people 18 and older and when he's not on break.
+
+Given the person's age, and whether break time is in session, create a function which returns whether he should serve drinks.
+
+Examples
+shouldServeDrinks(17, true) ➞ false
+
+shouldServeDrinks(19, false) ➞ true
+
+shouldServeDrinks(30, true) ➞ false
+Notes
+Return true or false.
+Some countries have a slightly higher drinking age, but for the purposes of this challenge, it will be 18. -->
+<script>
+    const age = 19;
+    notOnBreak = true;
+function canServeDrinks(age,notOnBreak){
+    if( age >= 18 && "notOnBreak"){
+return true;
+    }
+    else false;
+}
+    const results = canServeDrinks(17,true);
+document.getElementById("result-area").innerHTML = results;
+    
+
+</script>
+</body>
+</html>

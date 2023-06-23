@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="resultsarea"></div>
+    <!-- 1. Two Makes Ten
+Create a function that takes two arguments. Both arguments are integers, a and b. Return true if one of them is 10 or if their sum is 10.
+
+Examples
+makesTen(9, 10) ➞ true
+
+makesTen(9, 9) ➞ false
+
+makesTen(1, 9) ➞ true
+Notes
+Don't forget to return the result. -->
+<script>
+    function checkSumOfNumbers(num1,num2){
+        sumNumbers = num1 +num2;
+        if(num1 ===10|| num2 ===10 || num1 + num2 ===10){
+            return true;   
+        }
+        else return false;
+    }
+    const results =checkSumOfNumbers(9,10);
+    document.getElementById("resultsarea").innerHTML=results;
+
+
+
+
+
+</script>
+    
+</body>
+</html>

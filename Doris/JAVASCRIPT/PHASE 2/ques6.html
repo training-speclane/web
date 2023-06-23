@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="resultarea"></div>
+    <!-- 6. Concatenate First and Last Name into One String
+Given two strings, firstName and lastName, return a single string in the format "last, first".
+
+Examples
+concatName("First", "Last") ➞ "Last, First"
+
+concatName("John", "Doe") ➞ "Doe, John"
+
+concatName("Mary", "Jane") ➞ "Jane, Mary"
+Notes
+Don't forget to return the result. -->
+<script>
+    function concatNames(str1,str2){
+        joinNames= str1+str2;
+        return joinNames;
+    }
+    const results =concatNames("John","Doe");
+document.getElementById("resultarea").innerHTML = results;
+</script>
+    
+</body>
+
+</html>
