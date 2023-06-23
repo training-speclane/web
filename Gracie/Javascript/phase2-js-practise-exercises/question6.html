@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+       <div id ="results-area" style="font-size: 40px;">
+         
+       </div>
+        <script>
+           
+            /**
+            Concatenate First and Last Name into One String
+            Given two strings, firstName and lastName, return a single string in the format "last, first".
+
+            Examples
+            concatName("First", "Last") ➞ "Last, First"
+
+            concatName("John", "Doe") ➞ "Doe, John"
+
+            concatName("Mary", "Jane") ➞ "Jane, Mary"
+            Notes
+            Don't forget to return the result.
+            **/
+
+          
+            function firstAndLastName(first,last){
+            const string = last + first ;
+               
+            return string ;
+          }
+        
+
+          const results = firstAndLastName("john","Doe");
+          document.getElementById("results-area").innerHTML = results;
+
+
+        </script>
+    </body>
+</html>
