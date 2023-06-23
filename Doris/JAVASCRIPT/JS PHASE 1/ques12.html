@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="resultarea"></div>
+    <!-- 12. Basic Variable Assignment
+A student learning JavaScript was trying to make a function. His code should concatenate a passed string name with string "Spec" and store it in a variable called result. He needs your help to fix this code.
+
+Examples
+nameString("James") ➞ "Jamesspec"
+
+nameString("Matt") ➞ "MattSpec"
+
+nameString("javaScript") ➞ "javaScriptSpec"
+Notes
+Don't forget to return the result. -->
+<script>
+    // function above is not correct 
+    //because the name has been defined as james, 
+    //it wont take other names since it was define as a constance
+    // function joinnames(){
+    //     const names = "James"+"Spec"
+    //     return names
+    // }
+    // const results = joinnames("Jamesspec");
+    // document.getElementById("resultarea").innerHTML = results
+
+
+    // the function below is the right one based on the question asked
+    function concatenateString(name){
+
+        const combinedNames= name +"spec"
+         return combinedNames;
+    }
+    const results = concatenateString("Scrit");
+    document.getElementById("resultarea").innerHTML = results
+</script>
+    
+</body>
+</html>
