@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function exercises</title>
+</head>
+<body>
+    <h1>Addition with the user providing the numbers</h1>
+    
+
+        <input id="num1">
+        <input id="num2">
+        <button onclick="handleAddition();">+</button>
+        <input id="result">
+
+         
+
+
+        <script>
+            //Write code that will add the two numbers. Let the user provide the numbers and Display the result in a result area
+
+            function handleAddition() {
+            const num1 = document.getElementById("num1").value;
+            const num2 = document.getElementById("num2").value;
+
+            Addition(num1, num2);
+
+            }
+
+            function Addition (num1, num2) {
+                const result = parseInt(num1) + parseInt(num2);
+                document.getElementById("result").value = result;
+            }
+
+           
+        </script>
+
+
+
+
+    <h2>Multiplication with the user providing the number</h2>
+
+    <input id="number1">
+    <input id="number2">
+    <button onclick="handleMultiplication();">*</button>
+    <input id="results">
+
+
+        <script>
+            //Write code that will mutiply two numbers. Let the user provide the numbers and Display the result in a result area 
+
+            function handleMultiplication () {
+            const number1 = document.getElementById("number1").value;
+            const number2 = document.getElementById("number2").value;
+
+            Multiplication(number1, number2);
+
+            }
+
+            function Multiplication (number1, number2) {
+                const results = number1 * number2;
+                document.getElementById("results").value = results;
+            }
+
+
+        </script>
+    
+</body>
+</html>
