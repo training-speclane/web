@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Array Contains Number Example</title>
+    <script>
+      function checkArray(array, number) {
+        return array.includes(number);
+      }
+
+      function displayResult() {
+        let array = document.getElementById("array").value.split(",").map(Number);
+        let number = parseInt(document.getElementById("number").value);
+        let result = checkArray(array, number);
+        document.getElementById("result").innerHTML = result;
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Array Contains Number Example</h1>
+    <p>Enter an array (comma-separated):</p>
+    <input type="text" id="array">
+    <p>Enter a number:</p>
+    <input type="text" id="number">
+    <button onclick="displayResult()">Check</button>
+    <p id="result"></p>
+  </body>
+</html>

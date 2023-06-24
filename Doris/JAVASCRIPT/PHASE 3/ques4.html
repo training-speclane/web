@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Word to Number Example</title>
+   
+  </head>
+  <body>
+    <h1>Word to Number Example</h1>
+    <p>Enter a word:</p>
+    <input type="text" id="word">
+    <button onclick="displayResult()">Convert</button>
+    <p id="result"></p>
+    <!-- Create a function that returns a number, based on the string provided. Here is a list of all digits:
+
+String	Number
+"one"	1
+"two"	2
+"three"	3
+"four"	4
+"five"	5
+"six"	6
+"seven"	7
+"eight"	8
+"nine"	9
+"zero"	0
+Examples
+word("one") ➞ 1
+
+word("two") ➞ 2
+
+word("nine") ➞ 9
+Notes
+All numbers will be single digit positive integers. -->
+
+
+    <script>
+        function wordToNumber(word) {
+          switch (word) {
+            case "one":
+              return 1;
+            case "two":
+              return 2;
+            case "three":
+              return 3;
+            case "four":
+              return 4;
+            case "five":
+              return 5;
+            case "six":
+              return 6;
+            case "seven":
+              return 7;
+            case "eight":
+              return 8;
+            case "nine":
+              return 9;
+            case "zero":
+              return 0;
+            default:
+              return "Invalid input";
+          }
+        }
+  
+        function displayResult() {
+          let word = document.getElementById("word").value;
+          let number = wordToNumber(word);
+          document.getElementById("result").innerHTML = number;
+        }
+      </script>
+  </body>
+</html>
