@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+       <div id ="results-area" style="font-size: 40px;">
+         
+       </div>
+        <script>
+           
+            /**
+             Inches to Feet
+            Create a function that accepts a measurement value in inches and 
+            returns the equivalent of the measurement value in feet.
+
+            Examples
+            inchesToFeet(324) ➞ 27
+
+            inchesToFeet(12) ➞ 1
+
+            inchesToFeet(36) ➞ 3
+            Notes
+            If inches are under 12, return 0.
+            12 inches = 1 foot.
+            
+            **/
+
+          
+            function measurement(sum){
+                //const calculate 1 foot = 12 inches ;
+                //1 foot *12 = 12
+                const value = sum / 12
+                return value ; 
+
+                }
+            
+
+          const results = measurement(36);
+          document.getElementById("results-area").innerHTML = results;
+
+
+        </script>
+    </body>
+</html>

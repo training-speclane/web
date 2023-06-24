@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+       <div id ="results-area" style="font-size: 40px;">
+         
+       </div>
+        <script>
+           
+            /**
+             Return a String as an Integer
+            Create a function that takes a string and returns it as an integer.
+
+            Examples
+            stringInt("6") ➞ 6
+
+            stringInt("1000") ➞ 1000
+
+            stringInt("12") ➞ 12
+            Notes
+            All numbers will be whole.
+            All numbers will be positive.
+            **/
+
+          
+            function returnStringToInterger(num1){
+                const string = parseInt(num1) ;
+
+            return string ;
+          }
+        
+
+          const results = returnStringToInterger(6);
+          document.getElementById("results-area").innerHTML = results;
+
+
+        </script>
+    </body>
+</html>

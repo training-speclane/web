@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+       <div id ="results-area" style="font-size: 40px;">
+         
+       </div>
+        <script>
+           
+            /**
+             Return the Last Element in an Array
+            Create a function that accepts an array and returns the last item in the array.
+
+            Examples
+            getLastItem([1, 2, 3]) ➞ 3
+
+            getLastItem(["cat", "dog", "duck"]) ➞ "duck"
+
+            getLastItem([true, false, true]) ➞ true
+            Notes
+            Don't forget to return the result
+            **/
+
+          
+            function returnLastElement(array){
+               const value = [1, 2, 6] ;
+                const lastItem = value [value.length - 1] ;
+                
+                return lastItem ;
+                }
+            
+
+          const results =returnLastElement ();
+          document.getElementById("results-area").innerHTML = results;
+
+
+        </script>
+    </body>
+</html>
