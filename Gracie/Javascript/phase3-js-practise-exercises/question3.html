@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+       <div id ="results-area" style="font-size: 40px;">
+         
+       </div>
+        <script>
+           
+            /**
+            Name Greeting!
+        Create a function that takes a name and returns a greeting in the form of a string.
+
+        Examples
+        helloName("Gerald") ➞ "Hello Gerald!"
+
+        helloName("Tiffany") ➞ "Hello Tiffany!"
+
+        helloName("Ed") ➞ "Hello Ed!"
+        Notes
+        The input is always a name (as string).
+        Don't forget the exclamation mark!
+            **/
+
+          
+            function nameGreeting(word){
+                const newWord = "Hello" + "" + word ;
+            
+                return newWord ; 
+
+                }
+             
+          const results = nameGreeting();
+          document.getElementById("results-area").innerHTML = results;
+
+
+        </script>
+    </body>
+</html>
