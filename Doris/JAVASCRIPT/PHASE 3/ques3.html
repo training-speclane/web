@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Name Greeting Example</title>
+    
+  </head>
+  <body>
+    <h1>Name Greeting Example</h1>
+    <p>Enter your name:</p>
+    <input type="text" id="name">
+    <button onclick="helloName(document.getElementById('name').value)">Greet</button>
+    <p id="result"></p>
+
+    <!-- 3. Name Greeting!
+Create a function that takes a name and returns a greeting in the form of a string.
+
+Examples
+helloName("Gerald") ➞ "Hello Gerald!"
+
+helloName("Tiffany") ➞ "Hello Tiffany!"
+
+helloName("Ed") ➞ "Hello Ed!"
+Notes
+The input is always a name (as string).
+Don't forget the exclamation mark! -->
+
+
+
+    <script>
+        function helloName(name) {
+          let greeting = "Hello " + name + "!";
+          document.getElementById("result").innerHTML = greeting;
+        }
+      </script>
+  </body>
+</html>
