@@ -1,0 +1,28 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title>Check String for Spaces</title>
+  
+</head>
+<body>
+  <h1>Check String for Spaces</h1>
+  <label for="input">Enter a string:</label>
+  <input type="text" id="input"><br>
+  <button onclick="displayOutput()">Check</button>
+  <p id="output"></p>
+
+  <script>
+    function hasSpaces(str) {
+      return str.includes(" ");
+    }
+
+    function displayOutput() {
+      var input = document.getElementById('input').value;
+
+      var result = hasSpaces(input);
+
+      document.getElementById('output').textContent = result;
+    }
+  </script>
+</body>
+</html>

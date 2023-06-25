@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Similar Bread</title>
+ 
+</head>
+<body>
+  <h1>Similar Bread</h1>
+  <label for="bread1">Bread 1:</label>
+  <input type="text" id="bread1"><br>
+  <label for="filling1">Filling 1:</label>
+  <input type="text" id="filling1"><br>
+  <label for="bread2">Bread 2:</label>
+  <input type="text" id="bread2"><br>
+  <label for="filling2">Filling 2:</label>
+  <input type="text" id="filling2"><br>
+  <button onclick="displayOutput()">Check</button>
+  <p id="output"></p>
+  <!-- 14. Similar Bread
+Given two arrays, which represent two sandwiches, return whether both sandwiches use the same type of bread. The bread will always be found at the start and end of the array.
+
+Examples
+hasSameBread(
+  ["white bread", "lettuce", "white bread"],
+  ["white bread", "tomato", "white bread"]
+) ➞ true
+
+hasSameBread(
+  ["brown bread", "chicken", "brown bread"],
+  ["white bread", "chicken", "white bread"]
+) ➞ false
+
+hasSameBread(
+  ["toast", "cheese", "toast"],
+  ["brown bread", "cheese", "toast"]
+) ➞ false
+Notes
+The arrays will always be three elements long. -->
+
+
+
+   <script>
+    function hasSameBread(sandwich1, sandwich2) {
+      return sandwich1[0] === sandwich2[0] && sandwich1[2] === sandwich2[2];
+    }
+
+    function displayOutput() {
+      let bread1 = document.getElementById('bread1').value;
+      let filling1 = document.getElementById('filling1').value;
+      let bread2 = document.getElementById('bread2').value;
+      let filling2 = document.getElementById('filling2').value;
+
+      let sandwich1 = [bread1, filling1, bread1];
+      let sandwich2 = [bread2, filling2, bread2];
+
+      let result = hasSameBread(sandwich1, sandwich2);
+
+      document.getElementById('output').innerHTML = result;
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
