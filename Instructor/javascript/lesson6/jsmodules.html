@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+        <div id ="results-area" style="font-size: 40px;"> </div>
+        <div id ="results-area2" style="font-size: 40px;"> </div>
+        <script type="module">
+
+            //load our my-module.js
+
+            import {carsNeeded, hasSpaces} from './my-modules.js';
+           
+            const results =  carsNeeded(11);
+            document.getElementById("results-area").innerHTML = results;
+
+            const results2 =  hasSpaces(": Todays date is>>")
+            document.getElementById("results-area2").innerHTML = results2;
+
+
+
+
+        </script>
+    </body>
+</html>
