@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <title>Document</title>
+</head>
+<body>
+    <div id="result-area"></div>
+    <!-- 7. Boolean to String Conversion
+Create a function that takes a boolean variable flag and returns it as a string.
+
+Examples
+boolToString(true) ➞ "true"
+
+boolToString(false) ➞ "false"
+Notes
+Don't forget to return the result. -->
+<script>
+    function booleanToString(boolean) {
+        let booleanToString = boolean.toString();
+        return booleanToString;
+         
+    }
+    const results = booleanToString(true);
+    document.getElementById("result-area").innerHTML = results;
+</script>
+</body>
+</html>
