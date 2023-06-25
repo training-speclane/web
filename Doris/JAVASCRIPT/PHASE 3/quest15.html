@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Front Three - Slice Check Repeat Concatenate</title>
+  
+</head>
+<body>
+  <h1>Front Three - Slice Check Repeat Concatenate</h1>
+  <label for="input">Enter a string:</label>
+  <input type="text" id="input"><br>
+  <button onclick="displayOutput()">Process</button>
+  <p id="output"></p>
+  <!-- 15. Front 3 - Slice Check Repeat Concatenate
+Create a function that takes a string; we'll say that the front is the first three characters of the string. If the string length is less than three characters, the front is whatever is there. Return a new string, which is three copies of the front.
+
+Examples
+frontThree("Python") ➞ "PytPytPyt"
+
+frontThree("Cucumber") ➞ "CucCucCuc"
+
+frontThree("bioshock") ➞ "biobiobio"
+Notes
+Don't forget to return the result. -->
+
+
+
+  <script>
+    function frontThree(str) {
+      var front = str.substring(0, 3);
+      return front + front + front;
+    }
+
+    function displayOutput() {
+      var input = document.getElementById('input').value;
+      var result = frontThree(input);
+      document.getElementById('output').textContent = result;
+    }
+  </script>
+</body>
+</html>
