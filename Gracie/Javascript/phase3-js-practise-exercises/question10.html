@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS</title>
+    </head>
+    <body>
+       <div id ="results-area" style="font-size: 40px;">
+         
+       </div>
+        <script>
+           
+          +  /**
+           Four Passengers and a Driver
+        A typical car can hold four passengers and one driver,
+        allowing five people to travel around. Given n number of people,
+        return how many cars are needed to seat everyone comfortably.
+
+        Examples
+        carsNeeded(5) ➞ 1
+
+        carsNeeded(11) ➞ 3
+
+        carsNeeded(0) ➞ 0
+        Notes
+        It's likely there will be a few people left over and some cars won't be filled to max capacity.
+            **/
+
+          
+            function carsNeeded(numberOfPeople){
+               // const numberOfPeople = 5
+                /*const numberOfCarsNeeded = 1 */
+                const numberOfFullCars = numberOfPeople / 5
+              const remainderOfPeople = numberOfPeople % numberOfCarsNeeded ;
+              const addCar= remainderOfPeople > 0 ? 1 : 0
+
+              const calculate = Number(numberOfFullCars) + 1
+                return calculate
+                
+            }
+
+                
+             
+          const results = carsNeeded(5);
+          document.getElementById("results-area").innerHTML = results;
+
+
+        </script>
+    </body>
+</html>
