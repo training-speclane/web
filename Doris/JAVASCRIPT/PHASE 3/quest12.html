@@ -27,10 +27,19 @@ Some inputs are floats(decimal numbers) -->
 <script>
     function toNumberArray(array) {
       return array.map(Number);
+
+      /*
+      const newNumbersOnlyList = []
+       for(i=0; i<array.length; i++){   
+       const num =  Number(array[i]);
+       newNumbersOnlyList.push(num);
+      } */
     }
 
      
       let numberArray = toNumberArray(["9.5", "8.8"]);
+
+      console.log(numberArray);
       document.getElementById("result").innerHTML = numberArray;
     
   </script>
