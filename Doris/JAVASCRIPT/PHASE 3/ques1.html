@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Leap Year Example</title>
+   
+  </head>
+  <body>
+    <h1>Leap Year Example</h1>
+    <p>Enter a year:</p>
+    <input type="text" id="year">
+    <button onclick="leapYear(document.getElementById('year').value)">Check</button>
+    <p id="result"></p>
+    <!-- 1. Find Out the Leap Year
+A leap year happens every four years, so it's a year that is perfectly divisible 
+by four. However, if the year is a multiple of 100 (1800, 1900, etc), the year must be divisible by 400.
+
+Write a function that determines if the year is a leap year or not.
+
+Examples
+leapYear(2020) ➞ true
+
+leapYear(2021) ➞ false
+
+leapYear(1968) ➞ true -->
+
+
+
+    <script>
+
+        
+        function leapYear(year) {
+          if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0) {
+            document.getElementById("result").innerHTML = year + " true is a leap year";
+          } else {
+            document.getElementById("result").innerHTML = year + " false  is not a leap year";
+          }
+        }
+      </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result-area"></div>
+    <!-- 9. Movie Theatre Admittance
+Write a function that checks whether a person can watch an MA15+ rated movie. One of the following two conditions is required for admittance:
+
+The person is at least 15 years old.
+They have parental supervision.
+The function accepts two parameters, age and isSupervised. Return a boolean.
+
+Examples
+acceptIntoMovie(14, true) ➞ true
+
+acceptIntoMovie(14, false) ➞ false
+
+acceptIntoMovie(16, false) ➞ true
+Notes
+age is a decimal.
+isSupervised is a boolean. -->
+<script>
+    const age =14;
+    const issupervised = true;
+function checkMovieAdmittance(age,issupervised){
+ return age>=15 ||issupervised;
+}
+
+
+const results = checkMovieAdmittance(14,false);
+document.getElementById("result-area").innerHTML = results;
+    
+
+</script>
+    
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result-area"></div>
+
+    <!-- Less Than 100?
+Given two numbers, return true if the sum of both numbers is less than 100. Otherwise return false.
+
+Examples
+lessThan100(22, 15) ➞ true
+// 22 + 15 = 37
+
+lessThan100(83, 34) ➞ false
+// 83 + 34 = 117
+
+lessThan100(3, 77) ➞ true -->
+<script>
+    function sumNumbers(num1,num2){
+        const sum = num1+num2;
+        if(sum < 100){
+            return true;
+        }
+        else return false;
+    }
+    const results = sumNumbers(3,77);
+    document.getElementById("result-area").innerHTML= results;
+</script>
+    
+</body>
+</html>

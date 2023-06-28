@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result-area"></div>
+    <!-- 14. Solve the farmer's problem
+In this challenge, a farmer is asking you to tell him how many legs can be counted among all his animals. The farmer breeds three species:
+
+chickens = 2 legs
+cows = 4 legs
+pigs = 4 legs
+The farmer has counted his animals and he gives you a subtotal for each species. You have to implement a function that returns the total number of legs of all the animals.
+
+Examples
+animals(2, 3, 5) ➞ 36
+
+animals(1, 2, 3) ➞ 22
+
+animals(5, 2, 8) ➞ 50
+Notes
+Don't forget to return the result.
+The order of animals passed is animals(chickens, cows, pigs).
+Remember that the farmer wants to know the total number of legs and not the total number of animals.
+     -->
+     <script>
+        // this function was just adding the numbers and not counting legs
+//         let chickensLegs = 2  ;
+//         let cowsLegs  =  4 ;
+//         let pigsLegs  = 4 ;
+
+// function countAnimalLegs(chickens,cows,pigs){
+//     const totalLegsCounted = chickens+cows+pigs;
+//     return totalLegsCounted;
+// }
+// const results = countAnimalLegs(1,2,3);
+// document.getElementById("result-area").innerHTML = results;
+
+
+//this is the correct function that can help the farmer solve his problem.
+
+        let chickensLegs = 2  ;
+        let cowsLegs  =  4 ;
+        let pigsLegs  = 4 ;
+
+function countAnimalLegs(chickens,cows,pigs){
+    const totalLegsCounted = (chickens*2)+ (cows*4)  + (pigs*4);
+    return totalLegsCounted;
+}
+const results = countAnimalLegs(5,2,8);
+document.getElementById("result-area").innerHTML = results;
+
+     </script>
+</body>
+</html>

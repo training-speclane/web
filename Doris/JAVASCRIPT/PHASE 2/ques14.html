@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="result-area"></div>
+    <!-- 14. Inches to Feet
+    Create a function that accepts a measurement value in inches and returns the equivalent of the measurement value in feet.
+
+    Examples
+    inchesToFeet(324) ➞ 27
+
+    inchesToFeet(12) ➞ 1
+
+    inchesToFeet(36) ➞ 3
+    Notes
+    If inches are under 12, return 0.
+    12 inches = 1 foot. -->
+
+    <script>
+        function inchesToFeet(inches) {
+            const inchesIn1Foot = 12;
+            if (inches < 12) {
+                return 0;
+            }
+            const convertedInchesToFeet = inches / inchesIn1Foot;
+            return convertedInchesToFeet;
+        }
+
+        const result = inchesToFeet(324);
+        document.getElementById("result-area").innerHTML = result;
+    </script>
+
+</body>
+</html>
