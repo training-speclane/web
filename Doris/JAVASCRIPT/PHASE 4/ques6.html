@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Count D's Example</title>
+</head>
+<body>
+    <div id="result-area"></div>
+    <!-- How Many D's Are There?
+Create a function that counts how many D's are in a sentence.
+
+Examples
+countDs("My friend Dylan got distracted in school.") ➞ 4
+
+countDs("Debris was scattered all over the yard.") ➞ 3
+
+countDs("The rodents hibernated in their den.") ➞ 3
+Notes
+Your function must be case-insensitive.
+Remember to return the result. -->
+
+<!-- The function uses a for loop to iterate over each character of the sentence,
+ and checks if the character is equal to the letter "D" (case-insensitive). 
+ If the character is equal to "D", the function increments a counter variable. -->
+    <script>
+        function countDs(sentence) {
+            let count = 0;
+            for (let i = 0; i < sentence.length; i++) {
+                if (sentence[i].toLowerCase() === 'd') {
+                    count++;
+                }
+            }
+            return count;
+        }
+        const result = countDs("My friend Dylan got distracted in school.");
+        document.getElementById("result-area").innerHTML = result;
+    </script>
+</body>
+</html>

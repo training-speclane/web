@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rotate Array by One Example</title>
+</head>
+<body>
+    <div id="result-area"></div>
+    <!-- 10. Rotate the Array by One
+Given an array, rotate the values clockwise by one (the last value is sent to the first position).
+
+Check the examples for a better understanding.
+
+Examples
+rotateByOne([1, 2, 3, 4, 5]) ➞ [5, 1, 2, 3, 4]
+
+rotateByOne([6, 5, 8, 9, 7]) ➞ [7, 6, 5, 8, 9]
+
+rotateByOne([20, 15, 26, 8, 4]) ➞ [4, 20, 15, 26, 8] -->
+    <script>
+        function rotateByOne(array) {
+            let lastValue = array.pop();
+            array.unshift(lastValue);
+            return array;
+        }
+        const result = rotateByOne([1, 2, 3, 4, 5]);
+        document.getElementById("result-area").innerHTML = result;
+    </script>
+</body>
+</html>

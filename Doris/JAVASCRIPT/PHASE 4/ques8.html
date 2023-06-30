@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Even or Odd Example</title>
+</head>
+<body>
+    <div id="result-area"></div>
+    <!-- 8. Even or Odd?
+Given an array of integers, determine whether the sum of its elements is even or odd.
+
+The return value should be a string ("odd" or "even").
+
+If the input array is empty, consider it as an array with a zero ([0]).
+
+Examples
+evenOrOdd([0]) ➞ "even"
+
+evenOrOdd([1]) ➞ "odd"
+
+evenOrOdd([]) ➞ "even"
+
+evenOrOdd([0, 1, 5]) ➞ "even" -->
+    <script>
+        function evenOrOdd(array) {
+            let sum = 0;
+            for (let i = 0; i < array.length; i++) {
+                sum += array[i];
+            }
+            if (sum % 2 === 0) {
+                return "even";
+            } else {
+                return "odd";
+            }
+        }
+        const result = evenOrOdd([0, 1, 5]);
+        document.getElementById("result-area").innerHTML = result;
+    </script>
+</body>
+</html>

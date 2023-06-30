@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Highest Digit Example</title>
+</head>
+<body>
+    <div id="result-area"></div>
+    <!-- 10. Highest Digit
+Create a function that takes a number as an argument and returns the highest digit in that number.
+
+Examples
+highestDigit(379) ➞ 9
+
+highestDigit(2) ➞ 2
+
+highestDigit(377401) ➞ 7
+Notes
+Don't forget to return the result. -->
+    <script>
+        function highestDigit(number) {
+            let digits = number.toString().split("").map(Number);
+            let maxDigit = Math.max(...digits);
+            return maxDigit;
+        }
+        const result = highestDigit(379);
+        document.getElementById("result-area").innerHTML = result;
+    </script>
+</body>
+</html>
