@@ -22,8 +22,15 @@
                         age is a decimal.
                         isSupervised is a boolean.*/
 
-
-            document.getElementById("result-area").innerHTML = result
+            function acceptanceInToMovies(age, isSupervised){
+                if(age >=15 || isSupervised){
+                    return true
+                }else{
+                    return false
+            }
+            }
+            const theatreAdmittance =acceptanceInToMovies(11, false);
+            document.getElementById("result-area").innerHTML = theatreAdmittance
                    
               
         </script>
