@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS FORMS</title>
+    </head>
+    <body>
+
+
+        <h1> AJAX </h1>
+
+        
+        <script>
+
+            const httpRequest = new XMLHttpRequest();
+            
+            httpRequest.open("GET","https://speclane.com/images/learner-img2.jpeg", true);
+            httpRequest.send();
+            
+            httpRequest.onreadystatechange = notifyNewConnectionContent;
+
+
+            function notifyNewConnectionContent (){
+
+               /********************************************************
+                 1) Informational response ==> 100 -199 
+                 2) Successfull response ==> 200-299 
+                 3) Redirect mesage ==> 300-399
+                 4) Client/browser error ==> 400-499
+                 6) Server error response ==> 500-599
+
+               ***************************************************/
+               if(httpRequest.status === 200){
+
+                console.log("We heard bacjk from the server");
+
+               }else if(httpRequest.status === 404){
+                console.log("content not foud")
+               }
+
+            }
+
+
+
+
+           
+        </script>
+
+
+
+    </body>
+</html>
