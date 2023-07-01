@@ -26,12 +26,26 @@
                     Remember that the farmer wants to know the total number of legs and not the total number of animals.*/
 
 
-        function farmersProblem(chickens, cows, pigs){
+       /* function farmersProblem(chickens, cows, pigs){
             return chickens + cows + pigs;
 
         }
-        const animalLegs=farmersProblem(2, 4, 4)
-                document.getElementById("result-area").innerHTML = animalLegs
+        const animalLeg=farmersProblem(2, 4, 4)
+                document.getElementById("result-area").innerHTML = animalLegs*/
+
+
+
+                function animals(chickens, cows, pigs) {
+                    const chickenLegs = 2; // Number of legs for each chicken
+                    const cowLegs = 4; // Number of legs for each cow
+                    const pigLegs = 4; // Number of legs for each pig
+
+                    const totalLegs = (chickens * chickenLegs) + (cows * cowLegs) + (pigs * pigLegs);
+                    return totalLegs;
+                    }
+                    const animalLegs=animals(3, 4, 5);
+                    document.getElementById("result-area").innerHTML = animalLegs
+
                             
         </script>
     </body>
