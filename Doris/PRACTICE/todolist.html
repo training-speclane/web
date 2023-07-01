@@ -1,0 +1,59 @@
+ <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>To-do List</title>
+    <style>
+      body {
+        background: linear-gradient(aqua, black);
+      }
+      button {
+        width: 6rem;
+        background-color: aqua;
+        border: none;
+        border-radius: 3em;
+        display: flex;
+        margin: auto;
+        margin-top: 2rem;
+        padding: 2rem;
+      }
+      input {
+        border: solid 2px aqua;
+        margin: auto;
+        border-radius: 2rem;
+        display: flex;
+      }
+      p {
+        color: aqua;
+        font-size: 1rem;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="form">
+      <div class="input">
+        <label for="value" style="font-size: large;">Todo-list</label>
+        <input type="text" id="value" />
+      </div>
+      <button type="submit">Add</button>
+    </form>
+    <div id="list"></div>
+    <script>
+      const form = document.getElementById("form");
+      const list = document.getElementById("list");
+      const input = document.getElementById("value");
+      
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        addTodo(input.value);
+        input.value = "";
+      });
+
+      function addTodo(string) {
+        const todo = document.createElement("p");
+        todo.innerText = string;
+        list.appendChild(todo);
+      }
+    </script>
+  </body>
+</html>

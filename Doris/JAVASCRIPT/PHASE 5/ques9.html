@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Emotify the Sentence Example</title>
+</head>
+<body>
+    <div id="result-area"></div>
+    <!-- 9. Emotify the Sentence
+Create a function that changes specific words into emoticons. 
+Given a sentence as a string, replace the words smile, grin, sad and mad with their corresponding emoticons.
+
+word	emoticon
+smile	:D
+grin	:)
+sad	:(
+mad	:P
+Examples
+emotify("Make me smile") ➞ "Make me :D"
+
+emotify("Make me grin") ➞ "Make me :)"
+
+emotify("Make me sad") ➞ "Make me :("
+Notes
+The sentence always starts with "Make me". -->
+
+
+    <script>
+        function emotify(sentence) {
+            let emoticons = {
+                "smile": ":D",
+                "grin": ":)",
+                "sad": ":(",
+                "mad": ":P"
+            };
+            let words = sentence.split(" ");
+            for (let i = 0; i < words.length; i++) {
+                if (emoticons.hasOwnProperty(words[i])) {
+                    words[i] = emoticons[words[i]];
+                }
+            }
+            return words.join(" ");
+        }
+        const result = emotify("Make me smile");
+        document.getElementById("result-area").innerHTML = result;
+    </script>
+</body>
+</html>

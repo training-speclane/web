@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Error Messages Example</title>
+</head>
+<body>
+    <div id="result-area"></div>
+    <!-- 7. Error Messages
+Create a function that takes a number as an argument and returns the appropriate error message.
+
+The input error will be 1 to 5:
+
+1 >> "Check the fan: e1"
+2 >> "Emergency stop: e2"
+3 >> "Pump Error: e3"
+4 >> "c: e4"
+5 >> "Temperature Sensor Error: e5"
+For any other value, return 101
+
+Examples
+error(1) ➞ "Check the fan: e1"
+
+error(2) ➞ "Emergency stop: e2"
+
+error(3) ➞ "Pump Error: e3" -->
+    <script>
+        function error(number) {
+            switch(number) {
+                case 1:
+                    return "Check the fan: e1";
+                case 2:
+                    return "Emergency stop: e2";
+                case 3:
+                    return "Pump Error: e3";
+                case 4:
+                    return "c: e4";
+                case 5:
+                    return "Temperature Sensor Error: e5";
+                default:
+                    return 101;
+            }
+        }
+        const result = error(1);
+        document.getElementById("result-area").innerHTML = result;
+    </script>
+</body>
+</html>

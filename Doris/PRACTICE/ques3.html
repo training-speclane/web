@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Match Houses</title>
+  <h1>Match Houses</h1>
+  <label for="stepInput">Enter the step:</label>
+  <input type="number" id="stepInput" min="0" />
+  <button onclick="displayResult()">Calculate</button>
+  <br />
+  <label for="result">Number of matchsticks:</label>
+  <span id="result"></span>
+  <script>
+    function matchHouses(step) {
+      return 5 * step + 1;
+    }
+
+    function displayResult() {
+      var step = parseInt(document.getElementById('stepInput').value);
+      var result = matchHouses(step);
+      document.getElementById('result').textContent = result;
+    }
+  </script>
+</head>
+<body>
+  
+</body>
+</html>
