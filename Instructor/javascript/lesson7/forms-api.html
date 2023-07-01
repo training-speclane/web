@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>JS FORMS</title>
+    </head>
+    <body>
+
+        <div>
+
+          <form method="post" action="/server" id ="my-form">
+                First Name :<input type = "text" name="firstName"> <br/>
+                Last Name :<input type = "text" name ="lastName"> <br/>
+                Date of Birth :   <input type = "date" name = "dateOfBirth"> <br/>
+           </form>
+
+           <button onClick="submitForm();">Submit</button>
+        </div>
+
+
+
+        <script>
+
+            function submitForm(){
+                const existing =  document.getElementById("my-form")
+                let form = new FormData(existing);
+                
+                // const finalFormData =  JSON.parse(form);
+
+                console.log(existing.submit());
+            }
+
+        </script>
+
+
+
+    </body>
+</html>
