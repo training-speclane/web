@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Valid Zip Code</title>
+</head>
+<body>
+    <div id="result-area"></div>
+
+    <!-- 16. Valid Zip Code
+    Zip codes consist of 5 consecutive digits. Given a string, write a function
+    to determine whether the input is a valid zip code. A valid zip code is as follows:
+    - Must only contain numbers (no non-digits allowed).
+    - Must not contain any spaces.
+    - Must not be greater than 5 digits in length.
+    Examples:
+    isValid("59001") ➞ true
+    isValid("853a7") ➞ false
+    isValid("732 32") ➞ false
+    isValid("393939") ➞ false -->
+     <script>
+        function isValid(zipCode) {
+            // Check if the input is null, empty, or undefined
+            if (!zipCode) {
+                return false;
+            }
+            // Check if the input contains only digits and has a length of 5
+            for (let i = 0; i < zipCode.length; i++) {
+                if (isNaN(zipCode[i]) || zipCode.length !== 5) {
+                    return false;
+                }
+            }
+            return true;
+        }
+        const result = isValid("59001");
+        document.getElementById("result-area").innerHTML = result;
+    </script>
+</body>
+</html>
