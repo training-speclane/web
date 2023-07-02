@@ -27,12 +27,12 @@
              **/
              function distanceOfTaxi(cost) {
             if (cost <= 3) {
-                return 1;
+                return cost/3;
             } else {
                 return parseInt((cost - 3) / 2) + 1;
             }
         }
-        const result = distanceOfTaxi(5);
+        const result = distanceOfTaxi(0.5);
         document.getElementById("result-area").innerHTML = result;
     </script>
 
