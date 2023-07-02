@@ -1,0 +1,33 @@
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <title>How Many D's Are There</title>
+    </head>
+    <body>
+        <div id="result-area"></div>
+
+        <script>  
+        /**
+         * 6. How Many D's Are There?
+ Create a function that counts how many D's are in a sentence.
+
+ Examples
+ countDs("My friend Dylan got distracted in school.") ➞ 4
+
+ countDs("Debris was scattered all over the yard.") ➞ 3
+
+ countDs("The rodents hibernated in their den.") ➞ 3
+ Notes
+ Your function must be case-insensitive.
+ Remember to return the result.
+         **/
+        function countDs(str){
+            return str.split("D's").length;
+
+        }
+        const result =countDs("The rodents hibernated in their den.");
+        document.getElementById("result-area").innerHTML = result;
+    </script>
+
+ </body>
+ </html>
