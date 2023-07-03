@@ -1,0 +1,30 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Create ID Example</title>
+</head>
+<body>
+    <div id="result-area"></div>
+    <!-- 11. Creating IDS
+Many IDS (for emails or Google ID) are created using the person's name.
+
+Create a function that will return a four-character ID using the person's first name and last name. The first character will be the first letter of the first name but in lowercase. The next three characters will be the first three characters of the last name, but the first letter will be capitalized and the other two will be in lower case.
+
+Examples
+createID("mary", "lamb") ➞ "mLam"
+
+createID("John", "SMITH") ➞ "jSmi"
+
+createID("mary", "smith") ➞ "mSmi" -->
+    <script>
+        function createID(firstName, lastName) {
+            let firstChar = firstName.charAt(0).toLowerCase();
+            let lastChars = lastName.substring(0, 3).toLowerCase();
+            let id = firstChar + lastChars.charAt(0).toUpperCase() + lastChars.substring(1);
+            return id;
+        }
+        const result = createID("mary", "lamb");
+        document.getElementById("result-area").innerHTML = result;
+    </script>
+</body>
+</html>

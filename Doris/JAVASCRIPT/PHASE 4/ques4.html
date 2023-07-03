@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     
+    <title>Fix the broken code</title>
+</head>
+<body>
+    <div id="result-area"></div>
+ 
+<!--  
+
+function sortWord(word) {
+    return word.sorts().to_s;
+}
+
+A student learning JavaScript was trying to make a function 
+that sorts all the letters of a word, but their code is broken,
+ and they can't figure out why.
+
+Spot and fix the error(s) in the code to make the function work.
+
+Examples
+sortWord("dcba") ➞ "abcd"
+
+sortWord("Unpredictable") ➞ "Uabcdeeilnprt"
+
+sortWord("pneumonoultramicroscopicsilicovolcanoconiosis") ➞ "aacccccceiiiiiilllmmnnnnooooooooopprrsssstuuv"
+Notes
+Input is a word. -->
+<!-- Importtant Tips
+The function splits the word into an array of letters using the split('')
+ method, sorts the array using the sort() method, 
+and joins the letters back into a string using the join('') method. -->
+<script>
+        function sortWord(word) {
+            let sortedWord = word.split('').sort().join('');
+            return sortedWord;
+        }
+        const result = sortWord("Unpredictable");
+        document.getElementById("result-area").innerHTML = result;
+    </script>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Which Generation Are You? Example</title>
+  </head>
+  <body>
+    <div id="result-area"></div>
+    <!-- 19. Which Generation Are You?
+Try finding your ancestors and offspring with code.
+
+Create a function that takes a number x and a character y ("m" for male, "f" for female),
+ and returns the name of an ancestor (m/f) or descendant (m/f).
+
+If the number is negative, return the related ancestor.
+If positive, return the related descendant.
+You are generation 0. In the case of 0 (male or female), return "me!".
+Examples
+generation(2, "f") ➞ "granddaughter"
+
+generation(-3, "m") ➞ "great grandfather"
+
+generation(1, "f") ➞ "daughter"
+Notes
+Generation	Male	Female
+-3	great grandfather	great grandmother
+-2	grandfather	grandmother
+-1	father	mother
+0	me!	me!
+1	son	daughter
+2	grandson	granddaughter
+3	great grandson	great granddaughter -->
+    <script>
+      function generation(x, y) {
+        // Check if x is 0
+        if (x === 0) {
+          return "me!";
+        }
+        // Check if x is negative
+        if (x < 0) {
+          if (y === "m") {
+            if (x === -1) {
+              return "father";
+            } else if (x === -2) {
+              return "grandfather";
+            } else if (x === -3) {
+              return "great grandfather";
+            }
+          } else if (y === "f") {
+            if (x === -1) {
+              return "mother";
+            } else if (x === -2) {
+              return "grandmother";
+            } else if (x === -3) {
+              return "great grandmother";
+            }
+          }
+        }
+        // Check if x is positive
+        if (x > 0) {
+          if (y === "m") {
+            if (x === 1) {
+              return "son";
+            } else if (x === 2) {
+              return "grandson";
+            } else if (x > 2) {
+              return `great grandson`;
+            }
+          } else if (y === "f") {
+            if (x === 1) {
+              return "daughter";
+            } else if (x === 2) {
+              return "granddaughter";
+            } else if (x > 2) {
+              return `great granddaughter`;
+            }
+          }
+        }
+      }
+      const result = generation(2, "f");
+      document.getElementById("result-area").innerHTML = result;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+
+<html>
+    <head>
+        <title>start/stop Timer</title>
+    </head>
+    <body>
+        
+        <script>
+
+            let myDate =  new Date();
+
+            //Get year 
+            const currentYear =  myDate.getFullYear();
+
+            //get day of the week. Note that day starts from 0 and ends at 6 
+            // Sun = 0 , Mon =1, Tues = 2, wed = 3, thurs= 4 , Fri = 5 , sat = 6
+
+            const dayOfWeek =  myDate.getDay();
+
+            //Get month of the year
+            //Jan = 0, Feb=1 ......Dec = 11;
+            const monthOfThisYear =  myDate.getMonth();
+
+
+            console.log("Year", currentYear);
+            console.log("Day of the Week ", dayOfWeek);
+            console.log("Month of year ", monthOfThisYear);
+
+            
+
+
+            /* EXERCISE: Write javascript code that would display todays date in the following format : YYYY/MM/DD example :2023/06/11
+               Display the date in a div on the screen.
+            */
+
+            //Get current date, 30days depending current month
+            const dateToday =  myDate.getDate();
+            //date in YYYY/MM/DD
+
+           const yymmdd =   currentYear + "/" +  (parseInt(monthOfThisYear) +1) + "/" + dateToday;
+
+           //What day of the week was it 10 years ago? ie 2013
+           
+           const date10YearsInFuture = new Date("2033-06-11");
+
+           console.log(parseInt(date10YearsInFuture.getDay())+1);
+
+           //1000 millisecs =  1sec
+           //60secs = 1min
+           //60 mins =  1 hrs
+           //24hrs =  1day
+           //7days = 1week
+
+
+            
+
+
+            
+
+
+
+        </script>
+    </body>
+</html>
