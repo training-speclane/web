@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+ <html lang="en">
+    <head>
+        <title>Get The Sum Of All Array Elements</title>
+    </head>
+    <body>
+        <div id="result-area"></div>
+
+        <script>  
+        /**
+         * 7. Get the Sum of All Array Elements
+ Create a function that takes an array and returns the sum of all numbers in the array.
+
+ Examples
+ getSumOfItems([2, 7, 4]) ➞ 13
+
+ getSumOfItems([45, 3, 0]) ➞ 48
+
+ getSumOfItems([-2, 84, 23]) ➞ 105
+         **/
+        
+         function getSumOfItems(arr){
+            var total = 0;
+            arr.forEach(function(element){
+                total += element;
+            });
+            return total;
+
+         }
+         const result =getSumOfItems([2,7,4]);
+        document.getElementById("result-area").innerHTML = result;
+    </script>
+
+ </body>
+ </html>
