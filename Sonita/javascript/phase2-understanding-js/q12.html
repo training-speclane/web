@@ -39,8 +39,13 @@
 
                             const template = `Their names were: ${a}, ${b}, and ${c}.`;
                             console.log(template);  // Output: "Their names were: John, Joe, and Jack."
-
-
+                        //OR
+                        function templateString(string, content) {
+                            const newString = content.replaceAll("${}", string);
+                            return newString;
+                        }
+                        const resultsq12 = templateString("John", "my name is: ${}");
+                        document.getElementById("result-area").innerHTML = resultsq12;
 
         </script>
     </body>

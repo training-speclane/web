@@ -34,6 +34,20 @@
             } 
             const totalFuturePopulation =futurePopulation(1000, 3);
             document.getElementById("result-area").innerHTML = totalFuturePopulation
+
+            //OR
+            function numberOfPeople(population, monthlyBirths) {
+                //10 years = 1 decade
+                //12 months =  1 year
+
+                const BirthIn1yr = 12 * monthlyBirths;
+                const birthIn10yrs = 10 * BirthIn1yr;
+                const popIn3decades = birthIn10yrs * 3;
+
+                return population + popIn3decades;
+
+            }
+
                    
               
         </script>
