@@ -1,7 +1,7 @@
  <!DOCTYPE html>
  <html lang="en">
  <head>
-   <title>Creating IDs</title>
+   <title>Add a Consecutive List of Numbers</title>
  </head>
  <body>
    <div id="result-area"></div>
@@ -25,4 +25,20 @@ You will only be given valid inputs.
 There are various ways of doing this; try finding them!
 Remember to return the result.
      **/
-    
+    function addUpTo(s){
+        let result =[], temp = 0;
+        for(let i = 0; i<s.length; i++){
+            if(s[i] === s[i+1]){
+                temp += s[i];
+            }else if(s[i] !== s[i+1]){
+                result.push(temp + s[i]);
+                temp = 0;
+            }
+        }
+           return result;
+    };
+    const result =addUpTo(3);
+        document.getElementById("result-area").innerHTML = result;
+    </script>
+ </body>
+ </html>    
