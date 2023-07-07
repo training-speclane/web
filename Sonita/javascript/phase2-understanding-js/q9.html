@@ -23,13 +23,13 @@
                         isSupervised is a boolean.*/
 
             function acceptanceInToMovies(age, isSupervised){
-                if(age >=15 || isSupervised){
+                if(age >=15 && isSupervised){
                     return true
                 }else{
                     return false
             }
             }
-            const theatreAdmittance =acceptanceInToMovies(11, false);
+            const theatreAdmittance =acceptanceInToMovies(16, false);
             document.getElementById("result-area").innerHTML = theatreAdmittance
                    
               

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Practice01</title>
+</head>
+<body>
+
+        <div id="results"></div>
+        <input id="num">
+        <button onclick="handleMultiply();">**</button>
+    <script>
+        //Write a JS function to print "Hello World" message
+        //Name the function displayMessage() and it should print "Hello World" string using Console log() function.
+       function displayMessage(message) {
+            document.getElementById("results").innerHTML = message;
+            console.log("Hello World");
+        }
+        displayMessage();
+
+        // Write a function that return a square of a number
+        //Name the function findSquare() and it should return the square of the input number
+        //which is passed as an argument in the function call
+        
+        function findSquare(num) {
+            return(num*num);
+        }
+        function handleMultiply() {
+            const num = document.getElementById("num").value;
+        }
+        const result = findSquare(5);
+        console.log(result);
+
+        //Write a function to convert celsius to fahrenheit
+        //Name the function "calFahrenheit()" and it should return the converted celsius value
+        //to fahrenheit value on the formula fahrenheit=(celsius*9/5)+32
+        function calFahrenheit(fahrenheit) {
+            const celsius = (fahrenheit - 32)/1.8;
+            return(celsius);
+            displayMessage(celsius);
+            
+        }
+        
+        
+        console.log(results);
+        calFahrenheit(10);
+
+    </script>
+</body>
+</html>

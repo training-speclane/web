@@ -20,8 +20,8 @@
                     Return true or false.
                     Some countries have a slightly higher drinking age, but for the purposes of this challenge, it will be 18.*/  
                     
-            function shouldDrinksBeServed(age, session){
-            if(age >=18 && session){
+            function shouldDrinksBeServed(age, onBreake){
+            if(age >=18 && !onBreake){
                 return true;
             }else{
                 return false;

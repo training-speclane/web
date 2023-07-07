@@ -23,7 +23,16 @@
             const getCountVotes=votes(20, 30);
             document.getElementById("result-area").innerHTML = getCountVotes
                    
-              
+            //OR
+
+             function computeVotes(votes) {
+                const likes = votes.upvotes;
+                const dislikes = votes.downvotes;
+                const totalVotes = likes - dislikes;
+                return totalVotes;
+            }
+            const resultsQ7 =  computeVotes({ upvotes: 100, downvotes: 33 });
+            document.getElementById("results-area-q7").innerHTML = resultsQ7;
         </script>
     </body>
     </html>
