@@ -1,0 +1,35 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <title>Add up the Numbers from a Single Number</title>
+ </head>
+ <body>
+  <div id="result-area"></div>
+
+  <script>
+    /**
+     *1. Add up the Numbers from a Single Number
+ Create a function that takes a number as an argument. Add up all the numbers from 1 to the number you passed to the function. For example, if the input is 4 then your function should return 10 because 1 + 2 + 3 + 4 = 10.
+
+ Examples
+ addUp(4) ➞ 10
+
+ addUp(13) ➞ 91
+
+ addUp(600) ➞ 180300
+ Notes
+ Expect any positive number between 1 and 1000. 
+     */
+    function addUpTo(lastNumber){
+        let sum =0;
+        for(let i =1; i <= lastNumber ; i++ ){ //loop through all numbers starting from 1
+               //sum += i;
+               sum = sum + i; // add the current value to the sum
+            }
+            return sum;  //return the su
+    }
+    const result =addUpTo(13);
+        document.getElementById("result-area").innerHTML = result;
+    </script>
+ </body>
+ </html>    
