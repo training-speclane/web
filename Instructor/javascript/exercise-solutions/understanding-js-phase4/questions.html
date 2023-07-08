@@ -20,9 +20,14 @@
         <div id ="results-area-q13" style="font-size: 40px;"></div>
         <div id ="results-area-q14" style="font-size: 40px;"></div>
         <div id ="results-area-q15" style="font-size: 40px;"></div>
+
+    
          
        </div>
         <script>
+
+          const third  = new Set();
+          third.add("John"); 
            
             
           const resultsQ1 = cityFacts({
@@ -31,19 +36,19 @@
             continent: "Europe"
           });
           const resultsQ2 =  moodToday("Happy");
-          const resultsQ3 =  getMultipliedArr([2, 5, 3]); //➞ [4, 6, 10]
+          const resultsQ3 =  getMultipliedArr([2, 5, 3]); 
           const resultsQ4 =  sortWord("dcba")
           const resultsQ5 =   journeyDistance(1)
           const resultsQ6 =   countDs("Debris was scattered all over the yard.")
-          const resultsQ7 =  ""
-          const resultsQ8 =  ""
-          const resultsQ9 =  ""
-          const resultsQ10 = ""
-          const resultsQ11 = ""
-          const resultsQ12 = ""
-          const resultsQ13 = ""
-          const resultsQ14 = ""
-          const resultsQ15 = ""
+          const resultsQ7 =   getSumOfItems([45, 3, 0])
+          const resultsQ8 =   evenOrOdd([8,3,7])
+          const resultsQ9 =   getFilename("ffprobe.exe")
+          const resultsQ10 =  rotateByOne([6, 5, 8, 9, 7]) 
+          const resultsQ11 =  createID("mary", "smith")  
+          const resultsQ12 =  addUpTo(7);
+          const resultsQ13 =  elementSet(third);
+          const resultsQ14 =  filterArray([1, 2, 3, "a", "b", 4]) 
+          const resultsQ15 =  largestNumbers(1, [7, 19, 4, 2])
           
           
           
