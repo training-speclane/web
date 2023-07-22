@@ -1,6 +1,7 @@
 
 import React from 'react';
 
+import './MySection.css';
 
  function MySection (props) {
 
@@ -8,7 +9,7 @@ import React from 'react';
      <div>
        <p>React is one of the most popular JS lib</p>
 
-       <form>
+       <form className='my-section'>
          Date of birth <input type = "date" /> <br/>
          FirstName <input type = "text" value = {props.firstName} />
        </form>
