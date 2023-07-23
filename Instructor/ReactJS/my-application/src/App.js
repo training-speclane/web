@@ -1,8 +1,10 @@
 import logo from './logo.svg';
-import './App.css';
 import MySection from './components/MySection';
 import MyName from './components/MyName';
 import UserInfo from './components/UserInfo';
+import PrimarySearchAppBar from './components/PrimarySearchAppBar';
+
+import './App.css';
 
 function App() {
 
@@ -17,14 +19,24 @@ function App() {
 
   return (
     <div className="App">
-
-
-     <UserInfo />
+     <header>
+       <PrimarySearchAppBar/>
+     </header>
+       {/* <UserInfo /> */}
     
       {/* <MySection firstName = "John Doe"  todaysDate = {todaysDate()} /> 
       <hr/>
       <MyName firstName = "Jane Doe"  todaysDate =  {todaysDate()} /> */}
      
+
+     <div className = 'main-body'>
+      <h1>Welcome to my App</h1>
+     </div>
+
+     <footer>
+     
+     </footer>
+      
     </div>
     
   );

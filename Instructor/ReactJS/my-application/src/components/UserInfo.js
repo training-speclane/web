@@ -37,7 +37,7 @@ return(
        { showUserSection === true ? 
         <div style={{minWidth: '60%', minHeight:'30vh', backgroundColor: 'green', color: 'white'}}>
                 first name:   <br/>
-                last name :  <br/>
+                last name :   <br/>
         </div>
         :
         null
