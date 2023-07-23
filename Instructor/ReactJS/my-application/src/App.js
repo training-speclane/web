@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import MySection from './components/MySection';
 import MyName from './components/MyName';
+import UserInfo from './components/UserInfo';
 
 function App() {
 
@@ -16,10 +17,13 @@ function App() {
 
   return (
     <div className="App">
+
+
+     <UserInfo />
     
-      <MySection firstName = "John Doe"  todaysDate = {todaysDate()} /> 
+      {/* <MySection firstName = "John Doe"  todaysDate = {todaysDate()} /> 
       <hr/>
-      <MyName firstName = "Jane Doe"  todaysDate =  {todaysDate()} />
+      <MyName firstName = "Jane Doe"  todaysDate =  {todaysDate()} /> */}
      
     </div>
     

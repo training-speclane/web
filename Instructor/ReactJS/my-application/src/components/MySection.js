@@ -10,8 +10,8 @@ import './MySection.css';
        <p>React is one of the most popular JS lib</p>
 
        <form className='my-section'>
-         Date of birth <input type = "date" /> <br/>
-         FirstName <input type = "text" value = {props.firstName} />
+         Date of birth <input type = "date" style={{height:'30px', minWidth: '50px', border : 'solid 1px green'}} /> <br/>
+         FirstName <input type = "text" value = {props.firstName}  style={{height:'30px', minWidth: '50px', border : 'solid 1px green'}} />
        </form>
      </div>
 
