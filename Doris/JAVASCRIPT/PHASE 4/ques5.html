@@ -27,13 +27,14 @@ Remember that you are calculating the distance from the cost, not the other way 
 
          function journeyDistance(cost) {
             if (cost <= 3) {
-                return 1;
+                return cost/3;
             } else {
                 return parseInt((cost - 3) / 2) + 1;
             }
         }
-        const result = journeyDistance(9);
+        const result = journeyDistance(1);
         document.getElementById("result-area").innerHTML = result;
+        //Alternative, same solu
         // function journeyDistance(cost) {
         //     if (cost <= 3) {
         //         return 1;

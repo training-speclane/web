@@ -22,17 +22,33 @@ Remember to return the result. -->
  and checks if the character is equal to the letter "D" (case-insensitive). 
  If the character is equal to "D", the function increments a counter variable. -->
     <script>
-        function countDs(sentence) {
-            let count = 0;
-            for (let i = 0; i < sentence.length; i++) {
-                if (sentence[i].toLowerCase() === 'd') {
-                    count++;
-                }
-            }
-            return count;
-        }
-        const result = countDs("My friend Dylan got distracted in school.");
-        document.getElementById("result-area").innerHTML = result;
+        // function countDs(sentence) {
+        //     let count = 0;
+        //     for (let i = 0; i < sentence.length; i++) {
+        //         if (sentence[i].toLowerCase() === 'd') {
+        //             count++;
+        //         }
+        //     }
+        //     return count;
+        // }
+        // const result = countDs("My friend Dylan got distracted in school.");
+        // document.getElementById("result-area").innerHTML = result;
+
+        //tutor solution
+        //Option 1
+        //split the string into an array
+
+        function countDs(string){
+            //convert all the string to lowercase
+            const lowerCaseString =string.toLowerCase();
+            // const newArray = string.split(`d`).length -1;
+            // return newArray;
+        
+
+        //Option 2
+        //Using regullar expression
+        return toLowerCaseString.match(/d/g||[]).length;   // /d/g||[] is a regular expression REGEXgg
+}
     </script>
 </body>
 </html>
