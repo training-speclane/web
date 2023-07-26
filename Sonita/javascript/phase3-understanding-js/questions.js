@@ -334,3 +334,78 @@ An empty string does not contain any spaces. */
 function doesStribgContainSpace(str){
     return str.includes(" ")
 }       
+/******************************************************************************************************************
+ * 
+ *****************************************************************************************************************/
+/*12. Convert Array of Strings to Array of Numbers
+Create a function that takes as a parameter an array of "stringified" numbers and returns an array of numbers.
+
+Example:
+
+["1", "3", "3.6"] ➞ [1, 3, 3.6]
+Examples
+toNumberArray(["9.4", "4.2"]) ➞ [9.4, 4.2]
+
+toNumberArray(["91", "44"]) ➞ [91, 44]
+
+toNumberArray(["9.5", "8.8"]) ➞ [9.5, 8.8]
+Notes
+Some inputs are floats(decimal numbers)*/
+            var arr1 = ["9.4", "4.2", "8"]; 
+            function arrayOfNumbers(arr){ //To convert an array of strings to an array of numbers in JavaScript, 
+            return arr.map(parseFloat);   //you can use the parseFloat() function to convert each string element to a floating-point number. 
+                
+}
+        /*The map() function is used to apply the parseFloat() function to each element of the array, converting it to a number.
+        The resulting array of numbers is then returned by the toNumberArray() function.*/
+
+/******************************************************************************************************************
+ * 
+ *****************************************************************************************************************/
+/*13. Many Operators!
+Some basic arithmetic operators are +, -, *, /, and %. In this challenge you will be given three parameters,
+ num1, num2, and an operator. Use the operator on number 1 and 2.
+
+Examples
+operate(1, 2, "+") ➞ 3
+// 1 + 2 = 3
+
+operate(7, 10, "-") ➞ -3
+// 7 - 10 = -3
+
+operate(20, 10, "%") ➞ 0
+// 20 % 10 = 0
+Notes
+There will not be any divisions by zero.*/
+
+            function operators(num1, num2){
+                return num1 % num2
+            }
+
+/******************************************************************************************************************
+ * 
+ *****************************************************************************************************************/
+/*14. Similar Bread
+Given two arrays, which represent two sandwiches, return whether both sandwiches use the same type of bread. 
+The bread will always be found at the start and end of the array.
+
+Examples
+hasSameBread(
+  ["white bread", "lettuce", "white bread"],
+  ["white bread", "tomato", "white bread"]
+) ➞ true
+
+hasSameBread(
+  ["brown bread", "chicken", "brown bread"],
+  ["white bread", "chicken", "white bread"]
+) ➞ false
+
+hasSameBread(
+  ["toast", "cheese", "toast"],
+  ["brown bread", "cheese", "toast"]
+) ➞ false
+Notes
+The arrays will always be three elements long.
+The first piece of bread on one sandwich must be the same as the first piece of bread on the other sandwich.
+ The same goes for the last piece of bread.*/
+
