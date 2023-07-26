@@ -1,0 +1,18 @@
+.App {
+  text-align: center;
+}
+
+.main-body {
+  min-height: 80vh;
+  padding: 15px;
+}
+
+h1 {
+  color: green
+}
+
+footer {
+    background-color: #1976d2;
+    border-top: solid orange 2px;
+    min-height: 100px;
+}

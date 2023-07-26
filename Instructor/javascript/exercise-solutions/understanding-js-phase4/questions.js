@@ -183,17 +183,278 @@ sortWord("pneumonoultramicroscopicsilicovolcanoconiosis") ➞ "aacccccceiiiiiill
        //Split the string into an array
        //const newArray =  lowerCaseString.split("d").length - 1;
       // return newArray;
-
        //Option 2
        //Use Regular expressions
-
        return  lowerCaseString.match(/d/g||[]).length;  ///d/g||[] is a regular expession REGEX;
-
-   
 
      }
 
 
+
+     /** 7)
+      * 
+      * Create a function that takes an array and returns the sum of all numbers in the array.
+      *  getSumOfItems([2, 7, 4, 10, 600]) ➞ 13
+
+         getSumOfItems([45, 3, 0]) ➞ 48
+
+         getSumOfItems([-2, 84, 23]) ➞ 105
+      */
+   
+      function getSumOfItems (array) {
+
+         let sum = 0; //45 
+
+         for(let i=0; i < array.length; i++){
+            
+            //round1 sum =  sum(0) +  array[0](45) = 45;
+            //round2 sum =  sum(45) + array[1](3) =  48;
+            //round3 sum = sum(48) + array[2](0) = 48;
+
+            //sum += array[i];
+             sum =  sum + array[i];
+         }
+         return sum;
+      }
+
+
+
+      /** 8)
+       *  Given an array of integers, determine whether the sum of its elements is even or odd.
+
+         The return value should be a string ("odd" or "even").
+
+         If the input array is empty, consider it as an array with a zero ([0]).
+
+         Examples
+         evenOrOdd([0]) ➞ "even"
+
+         evenOrOdd([1, 9]) ➞ "even"
+
+         evenOrOdd([8,3,1,7]) ➞ "odd"
+
+         evenOrOdd([0, 1, 5]) ➞ "even"
+       * 
+       */
+
+
+      function evenOrOdd (array) {
+        const sum =  getSumOfItems(array);
+        const remainder =  sum%2;
+
+        //return remainder === 0 ? 'even' : 'odd';
+        if( remainder === 0){
+         return "even";
+        }
+        return "odd";
+      }
+
+
+
+      /**
+       * Create a function that returns the selected filename from a path. Include the extension in your answer.
+
+         Examples
+         getFilename("C:/Projects/pil_tests/ascii/edabit.txt") ➞ "edabit.txt"
+
+         getFilename("C:/Users/johnsmith/Music/Beethoven_5.mp3") ➞ "Beethoven_5.mp3"
+
+         getFilename("ffprobe.exe") ➞ "ffprobe.exe"
+       * 
+       */
+
+     function getFilename(file) {
+         //check if the file has a forward slash
+         if(file.indexOf("/") < 0) {
+            return file;
+         }
+         //Step 1: cut the string(file name at the last occurence of "/")
+         const locationOfLastSlash = file.lastIndexOf("/"); //This will tell us the location/index of the last forward slash
+
+         //Step2: Now that we know location of the last slash, we just need to cut this string at that position
+         const results =  file.slice(locationOfLastSlash+1);
+         return results;
+     }
+
+
+     /** 10)
+      * Given an array, rotate the values clockwise by one (the last value is sent to the first position).
+
+         Check the examples for a better understanding.
+
+         Examples
+         rotateByOne([1, 2, 3, 4]) ➞ [5, 1, 2, 3, 4]
+
+         rotateByOne([6, 5, 8, 9, 7]) ➞ [7, 6, 5, 8, 9]
+
+         rotateByOne([20, 15, 26, 8, 4]) ➞ [4, 20, 15, 26, 8]
+      */
+
+      function  rotateByOne (array){
+         
+         //Take the last element and let it be first in the new array list, return that new list
+
+         //OPTION1
+         let newArray = [];
+         const lastElement = array[array.length-1]; //find the last element 
+         newArray.push(lastElement); //add the last element to our new array
+         array.pop(); // remove the last element from our array
+         newArray.push(...array); //... Means spread operator/everything , essentially add everything/every element  inside of 'array' to 'newArray'
+        
+         return newArray;
+
+
+         //OPTION 2
+         //array.ushift(array.pop())
+         //return array;
+
+
+      }
+
+
+      /** 11)
+       *  Many IDS (for emails or Google ID) are created using the person's name.
+
+         Create a function that will return a four-character ID using the person's first name and last name. 
+         The first character will be the first letter of the first name but in lowercase. 
+         The next three characters will be the first three characters of the last name,
+          but the first letter will be capitalized and the other two will be in lower case.
+
+         Examples
+         createID("maryJane", "lambert") ➞ "mLam"
+
+         createID("John", "SMITH") ➞ "jSmi"
+
+         createID("mary", "smith") ➞ "mSmi"
+       * 
+       */
+
+         function  createID (firstName, lastName) {
+
+            const firstChar = firstName.charAt(0).toLowerCase(); // Convert first character tolower case
+            const last3chars = lastName.substr(0,3).toLowerCase(); // get the first 3 chars of lastname and convert ALL of them to lower case 
+
+            // grab the first char of the lastname and convert to uppercase. The remianing 2 should be 
+            //lowercases that we already converted above. 
+            const nameId =  firstChar + last3chars.charAt(0).toUpperCase() +  last3chars.substr(1);
+
+            return nameId;
+
+         }
+
+
+         /** 12)
+          * Write a function that takes the last number of a consecutive list of numbers and returns the total 
+          * of all numbers up to and including it.
+          * 
+          * Examples
+            addUpTo(3) ➞ 6
+            // 1 + 2 + 3 = 6
+
+            addUpTo(100) ➞ 55
+            // 1 + 2 + 3 + ... + 100 = 55
+
+            addUpTo(7) ➞ 28
+            // 1 + 2 + 3 + ... + 7 = 28
+            Notes
+               You will only be given valid inputs.
+               There are various ways of doing this; try finding them!
+               Remember to return the result.
+          * 
+          */
+
+         
+         function addUpTo(lastNumber) {
+            let sum = 0;  // intialize a sum
+            for(let i =1; i <= lastNumber ; i++ ){ //loop through all numbers starting from 1
+               //sum += i;
+               sum = sum + i; // add the current value to the sum
+            }
+            return sum;  //return the sum after the loop has completely gone though each number.
+         }
+
+
+
+         /** 13)
+          * Given a set containing an element, return the sole element.
+          * Examples
+            const first = new Set();
+            first.add(1); 
+            elementSet(first) ➞ 1
+
+            const second = new Set();
+            second.add("apple"); 
+            elementSet(second) ➞ "apple"
+
+            const third  = new Set();
+            third.add(false); 
+            elementSet(third) ➞ false
+          */
+
+         function elementSet (set) {
+            //loop through the set and return the 1 element inside of it.
+             for(let element of set) {
+               return element;
+             }
+         }
+
+
+         /** 14)
+          * 
+          * Create a function that takes an array of strings and numbers, and filters out the array so 
+          * that it returns an array of integers only.
+
+            Examples
+            filterArray([1, 2, 3, "a", "b", 4]) ➞ [1, 2, 3, 4]
+
+            filterArray(["A", 0, "Edabit", 1729, "Python", "1729"]) ➞ [0, 1729]
+
+            filterArray(["Nothing", "here"]) ➞ []
+          * 
+          */
+
+
+         function  filterArray(array) {
+            let numbersOnlyArray = []; // create an array that would hold ONLY numbers
+            for(let i=0; i<array.length; i++){ //Loop through all elements and select just numbers
+               if(typeof array[i] === 'number'){ // Check if the element is a number type
+                  numbersOnlyArray.push(array[i]); // once an element is a number, push/add it to our numbers only array
+               }
+            }
+            return numbersOnlyArray; // When the loop is complete, return the new array of numbers only
+         }
+
+
+
+         /** 15)
+          * Create a function that takes two arguments of an array of numbers arr and a constant 
+          * number n and returns the n largest numbers from the given array.
+
+            Examples
+            largestNumbers(2, [4, 3, 2, 1]) ➞ [3, 4] 
+
+            largestNumbers(1, [7, 19, 4, 2]) ➞ [19] --> [2, 4, 7, 19]
+
+            largestNumbers(3, [14, 12, 57, 11, 18, 16]) ➞ [16, 18, 57]
+
+            largestNumbers(0, [1, 3, 4, 2]) ➞ []
+
+            Notes
+           The returned array must be sorted in ascending order.
+          * 
+          */
+
+           function largestNumbers(n, array) {
+           
+            //step 1 : Sort the array
+              const sortedArray =  array.sort((a,b) => a - b);
+              //[4, 3, 2, 1] ---> [1, 2, 3, 4]
+            //Step2 : cut the array at location of n, but backwards since we have sorted the arry in asc order.  
+            //sortedArray.slice(n) ---> [1, 2]
+            //sortedArray.slice(-n) ---> [3, 4]
+            
+            return sortedArray.slice(-n);
+           }
 
        
  

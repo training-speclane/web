@@ -20,35 +20,44 @@
         <div id ="results-area-q13" style="font-size: 40px;"></div>
         <div id ="results-area-q14" style="font-size: 40px;"></div>
         <div id ="results-area-q15" style="font-size: 40px;"></div>
+        <div id ="results-area-q16" style="font-size: 40px;"></div>
+        <div id ="results-area-q17" style="font-size: 40px;"></div>
+        <div id ="results-area-q18" style="font-size: 40px;"></div>
+        <div id ="results-area-q19" style="font-size: 40px;"></div>
+        <div id ="results-area-q20" style="font-size: 40px;"></div>
 
     
          
        </div>
         <script>
 
-          const third  = new Set();
-          third.add("John"); 
-           
-            
-          const resultsQ1 = cityFacts({
-            name: "Paris",
-            population: "2,140,526",
-            continent: "Europe"
-          });
-          const resultsQ2 =  moodToday("Happy");
-          const resultsQ3 =  getMultipliedArr([2, 5, 3]); 
-          const resultsQ4 =  sortWord("dcba")
-          const resultsQ5 =   journeyDistance(1)
-          const resultsQ6 =   countDs("Debris was scattered all over the yard.")
-          const resultsQ7 =   getSumOfItems([45, 3, 0])
-          const resultsQ8 =   evenOrOdd([8,3,7])
-          const resultsQ9 =   getFilename("ffprobe.exe")
-          const resultsQ10 =  rotateByOne([6, 5, 8, 9, 7]) 
-          const resultsQ11 =  createID("mary", "smith")  
-          const resultsQ12 =  addUpTo(7);
-          const resultsQ13 =  elementSet(third);
-          const resultsQ14 =  filterArray([1, 2, 3, "a", "b", 4]) 
-          const resultsQ15 =  largestNumbers(1, [7, 19, 4, 2])
+            drinks = [
+                {name: "lemonade", price: 50},
+                {name: "lime", price: 10},
+                {name: "pepsi", price: 3},
+                {name: "coke", price: 19}
+            ]
+
+          const resultsQ1 = addUpTo(600) 
+          const resultsQ2 = matchHouses(4)
+          const resultsQ3 = minMax([12, 3, 4, 5, 98])
+          const resultsQ4 = sortDrinkByPrice(drinks)
+          const resultsQ5 = tuckIn([15,150], [45, 75, 35])
+          const resultsQ6 = charCount("c", "Chamber of secrets at the clubs. Cars are not allowed")
+          const resultsQ7 = error(3)
+          const resultsQ8 = sortByLength(["may", "april", "september", "august"])
+          const resultsQ9 = emotify("Make me grin") 
+          const resultsQ10 = highestDigit(377401)
+          const resultsQ11 =  ""  
+          const resultsQ12 =  ""
+          const resultsQ13 =  ""
+          const resultsQ14 =  ""
+          const resultsQ15 =  ""
+          const resultsQ16 =  ""  
+          const resultsQ17 =  ""
+          const resultsQ18 =  ""
+          const resultsQ19 =  ""
+          const resultsQ20 =  ""
           
           
           
@@ -64,14 +73,16 @@
           document.getElementById("results-area-q8").innerHTML = resultsQ8;
           document.getElementById("results-area-q9").innerHTML = resultsQ9;
           document.getElementById("results-area-q10").innerHTML = resultsQ10;
-          
           document.getElementById("results-area-q11").innerHTML = resultsQ11;
           document.getElementById("results-area-q12").innerHTML = resultsQ12;
           document.getElementById("results-area-q13").innerHTML = resultsQ13;
           document.getElementById("results-area-q14").innerHTML = resultsQ14;
           document.getElementById("results-area-q15").innerHTML = resultsQ15;
-          
-
+          document.getElementById("results-area-q16").innerHTML = resultsQ16;
+          document.getElementById("results-area-q17").innerHTML = resultsQ17;
+          document.getElementById("results-area-q18").innerHTML = resultsQ18;
+          document.getElementById("results-area-q19").innerHTML = resultsQ19;
+          document.getElementById("results-area-q20").innerHTML = resultsQ20;
 
 
         </script>

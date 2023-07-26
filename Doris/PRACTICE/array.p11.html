@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <title>Document</title>
+</head>
+<body>
+    <div id="result-area"></div>
+     <!-- 3. Find the Smallest and Biggest Numbers
+Create a function that takes an array of numbers and return both the minimum and maximum numbers, in that order.
+
+Examples
+minMax([1, 2, 3, 4, 5]) ➞ [1, 5]
+
+minMax([2334454, 5]) ➞ [5, 2334454]
+
+minMax([1]) ➞ [1, 1]
+Notes
+All test arrays will have at least one element and are valid. -->
+<script>
+
+
+const result = minMax(4, 88889999);
+document.getElementById("result-area")
+function minMax(numbers){
+    let min =[0];
+    let max = [0];
+    for(let i = 1; i < numbers.length; i++){
+        if(numbers[i] < min){
+            min = numbers[i];
+        }
+    }
+    if(numbers[i] > max){
+        max = numbers[i];
+    }
+    return [min,max]
+}
+
+</script>
+    
+</body>
+</html>
