@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <script src="./questions.js"></script>
-    </head>
-
+<html lang="en">
+<head>
+    
+    <title>Document</title>
+    <script src="./js4uestions.js"></script>
+</head>
+<body>
     <body>
         <div id ="results-area-q1" style="font-size: 40px;"></div>
         <div id ="results-area-q2" style="font-size: 40px;"></div>
@@ -20,25 +22,39 @@
         <div id ="results-area-q13" style="font-size: 40px;"></div>
         <div id ="results-area-q14" style="font-size: 40px;"></div>
         <div id ="results-area-q15" style="font-size: 40px;"></div>
-
-
+         
+       </div>
         <script>
-          const resultsQ1 = leapYear(1968)
-          const resultsQ2 = word("computer")
-          const resultsQ3 =  helloName("Muluh", "Hello! ${}")
-          const resultsQ4 = [word("one"), word("two"), word("three"), word("four"), word("five")];
-          const resultsQ5 = check([1, 2, 3, 4], 4)
-          const resultsQ6 = profitableGamble(0.5, 60, 80)
-          const resultsQ7 = boolToString("false")
-          const resultsQ8 = pairManagement(40, 50)
-          const resultsQ9 = stringCounts("khan", "awah")
-          const resultsQ10 =carsNeeded(10)
-          const resultsQ11 =doesStribgContainSpace("hello_world")
-          const resultsQ12 = arrayOfNumbers(arr1)
-          const resultsQ13 = operators(4, 3)
+           
+            
+          
+
+
+          const resultsQ1 =    cityFacts({
+                              name: "Tokyo",
+                      population: "13,929,286",
+                        continent: "Asia"
+                                }) ;
+
+          const resultsQ2 =  moodToday(happy);
+          const resultsQ3 =  "" 
+          const resultsQ4 = ""   
+          const resultsQ5 =  ""  
+          const resultsQ6 =  ""  
+          const resultsQ7 =  ""
+          const resultsQ8 =  ""
+          const resultsQ9 =  ""
+          const resultsQ10 = ""
+          const resultsQ11 = ""
+          const resultsQ12 = ""
+          const resultsQ13 = ""
           const resultsQ14 = ""
           const resultsQ15 = ""
-
+          
+          
+          
+          
+          
           document.getElementById("results-area-q1").innerHTML = resultsQ1;
           document.getElementById("results-area-q2").innerHTML = resultsQ2;
           document.getElementById("results-area-q3").innerHTML = resultsQ3;
@@ -55,11 +71,16 @@
           document.getElementById("results-area-q13").innerHTML = resultsQ13;
           document.getElementById("results-area-q14").innerHTML = resultsQ14;
           document.getElementById("results-area-q15").innerHTML = resultsQ15;
+          
 
 
-         
-          
-          
+
         </script>
-    </body>
+
+
+       
+    
+
+    
+</body>
 </html>
