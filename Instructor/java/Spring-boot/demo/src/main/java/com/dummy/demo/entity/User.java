@@ -34,6 +34,9 @@ public class User {
     @Column(name = "street_name")
     private String streetName;
 
+     @Column(name = "email")
+    private String email;
+
 
 
 
@@ -81,7 +84,14 @@ public class User {
     public void setUsid(Integer usid) {
         this.usid = usid;
     }
+    public String getEmail() {
+        return email;
+    }
+    public void setEmail(String email) {
+        this.email = email;
+    }
  
+    
 
 
 

@@ -16,6 +16,10 @@ public class UserService {
         return repo.findByFirstName(firstName);
 
     }
+    
+    public User saveUser(User user) {
+        return repo.saveAndFlush(user);
+    }
 
     
 }
