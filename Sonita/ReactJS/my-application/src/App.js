@@ -1,23 +1,26 @@
 import logo from './logo.svg';
 import './App.css';
+import MyName from './components/MyName';
+import UserInfo from './components/UserInfo';
 
 function App() {
+
+  const todaysDate = () => {
+
+    const date = new Date();
+    const yr = date.getFullYear();
+    const mm = date.getMonth()+1;
+    const dd = date.getDate();
+    
+   return yr + "/" + mm + "/" + dd;
+  }
+  
+  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        {/* <MyName FirstName ="Sonita Muluh" todaysDate = {todaysDate()}/>*/}
+    <UserInfo />
+
     </div>
   );
 }
