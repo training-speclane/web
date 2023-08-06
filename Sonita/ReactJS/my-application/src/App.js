@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import MyName from './components/MyName';
 import UserInfo from './components/UserInfo';
+import PrimarySearchAppBar from './components/PrimarySearchAppBar';
 
 function App() {
 
@@ -18,9 +19,22 @@ function App() {
   
   return (
     <div className="App">
+     <header>
+      <PrimarySearchAppBar/>
+     </header>
         {/* <MyName FirstName ="Sonita Muluh" todaysDate = {todaysDate()}/>*/}
-    <UserInfo />
+      { /*<UserInfo />*/}
 
+
+    <div className = 'main-body'>
+    <h1>Welcome to my App</h1> 
+    </div>
+
+    <footer>
+        
+    </footer>
+
+    
     </div>
   );
 }
