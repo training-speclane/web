@@ -1,8 +1,10 @@
 import logo from './logo.svg';
-import './App.css';
 import MyName from './components/MyName';
 import UserInfo from './components/UserInfo';
 import PrimarySearchAppBar from './components/PrimarySearchAppBar';
+import ApiUser from './components/ApiUser';
+import './App.css';
+
 
 function App() {
 
@@ -27,7 +29,14 @@ function App() {
 
 
     <div className = 'main-body'>
-    <h1>Welcome to my App</h1> 
+    <h1>Welcome to my App</h1>
+    
+
+      <ApiUser/>
+
+
+
+
     </div>
 
     <footer>

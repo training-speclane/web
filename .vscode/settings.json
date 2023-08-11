@@ -1,3 +1,4 @@
 {
-    "livePreview.defaultPreviewPath": "/Doris/HTML/Javscript/ndjassign.html"
+    "livePreview.defaultPreviewPath": "/Doris/HTML/Javscript/ndjassign.html",
+    "java.compile.nullAnalysis.mode": "automatic"
 }
