@@ -1,15 +1,9 @@
-package Instructor.java.oop;
+ public class Person {
 
-public class Person {
-
-
-    //members or properties
-private String firstName; 
+private String firstName;
 private String lastName;
 private int age;
 private double height;
-
-
 public String getFirstName() {
     return firstName;
 }
@@ -40,18 +34,13 @@ public String toString() {
 }
 
 
-public String getFirstAndLastNameOne () {
-    return firstName + " " + lastName;
+ public String getFirstAndLastNameOne () {
+    return firstName + "" + lastName;
+ }
 
-}
-
-public String getFirstAndLastNameTwo () {
-    return firstName + " " + lastName;
-
-}
-
-
-
-
-
+ public String getFirstAndLastNameTwo () {
+     
+    return firstName + "" + lastName;
+ }
+    
 }

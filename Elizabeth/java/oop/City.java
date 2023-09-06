@@ -1,13 +1,8 @@
-package Instructor.java.oop;
-
-public abstract class City {
-
-
-    private int  popn;
+ public  abstract class City {
+    private int popn;
     private String cityName;
-    private boolean electrified;
+    private boolean electricity;
     private String bgColor;
-    
     public int getPopn() {
         return popn;
     }
@@ -20,11 +15,11 @@ public abstract class City {
     public void setCityName(String cityName) {
         this.cityName = cityName;
     }
-    public boolean isElectrified() {
-        return electrified;
+    public boolean isElectricity() {
+        return electricity;
     }
-    public void setElectrified(boolean electrified) {
-        this.electrified = electrified;
+    public void setElectricity(boolean electricity) {
+        this.electricity = electricity;
     }
     public String getBgColor() {
         return bgColor;
@@ -34,16 +29,14 @@ public abstract class City {
     }
     @Override
     public String toString() {
-        return "City [popn=" + popn + ", cityName=" + cityName + ", electrified=" + electrified + ", bgColor=" + bgColor
+        return "City [popn=" + popn + ", cityName=" + cityName + ", electricity=" + electricity + ", bgColor=" + bgColor
                 + "]";
-    } 
-
-    
+    }
 
 
 
-    
 
 
-    
-}
+   
+
+ }

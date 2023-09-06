@@ -1,49 +1,38 @@
-package Instructor.java.oop;
+ package Elizabeth.java.oop;
 
+ //package Elizabeth .java .oop; //PACKAGE DEFININTION
+ import java.util.List; //IMPORT STATEMENT
 
-//package Instructor.java.oop; //PACKAGE DEFININTION
-import java.util.List;  //IMPORT STATEMENTS
-
-import Instructor.java.oop.Person;
-
-
-public class SimpleJavaClass {  //CLASS DECALRATION
-
+ import Elizabeth.java.oop.Person;
+ 
+ public class SimpleJavaClass { //CLASS DECALRATION
 
     //DEFINE CLASS VARIABLES
-
-    
-  String firstName = "John";
-  String lastName = "Doe";
-  int age = 25;
-
-
-
+ int age = 25;
+ String firstName ="john";
+ String lastName ="Doe";
 
 
     public static void main(String [] args){
 
-       
-        Person personInfo =  new Person();
+        Person personInfo = new Person();
 
         personInfo.setAge(45);
         personInfo.setFirstName("John");
 
-
-        System.out.println(personInfo.toString());
-
+         System.out.printIn(personInfo.toString());
+        
     }
+    public int computeAge(){
 
-
-    public int  computeAge() {
         return 0;
     }
 
-    public String  displayMessage() {
-        System.out.println(age);
+    public String displayMessage(){
+
+       System.out.println(age);
         return "0";
     }
-
 
 
     //CONSTRUCTOR
