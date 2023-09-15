@@ -1,4 +1,7 @@
-public class User{
+ 
+ package com.dummy.demo.entity;
+ 
+ public class User{
     private String firstName;
     private String lastName;
     private String dob;
