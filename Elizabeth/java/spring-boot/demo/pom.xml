@@ -52,7 +52,13 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
-	</dependencies>
+	
+   <dependency>
+     <groupId>org.jitsi</groupId>
+     <artifactId>jsocks</artifactId>
+     <version>1.0.1-jitsi-1</version>
+   </dependency>
+ </dependencies>
 
 	<build>
 		<plugins>
